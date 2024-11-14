@@ -1,0 +1,762 @@
+ERROR - 2022-11-01 07:01:46 --> ErrorException: pg_query(): Query failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, 'UPDATE "inventa...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "inventa...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "inventa...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE "inventa...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\restaurantes\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 C:\xampp\htdocs\restaurantes\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#8 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(236): CodeIgniter\Model->update()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(82): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('2022-11-01 07:0...', 0, '40000', '0', '34300', '22222222', '6', '1', '400000')
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-11-01 07:01:46 --> pg_query(): Query failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, 'UPDATE "inventa...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "inventa...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "inventa...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE "inventa...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\restaurantes\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 C:\xampp\htdocs\restaurantes\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#8 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(236): CodeIgniter\Model->update()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(82): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('2022-11-01 07:0...', 0, '40000', '0', '34300', '22222222', '6', '1', '400000')
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-11-01 07:01:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-11-01 07:08:32 --> Undefined variable $mesas
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\listado.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/listad...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\producto\productoController.php(12): view('producto/listad...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\producto\productoController->index()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-01 07:48:08 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\listado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 94)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/listad...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\producto\productoController.php(15): view('producto/listad...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\producto\productoController->index()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-01 08:10:36 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:15:46 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:16:20 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:17:48 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:20:03 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:20:53 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:22:11 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:23:06 --> Undefined array key "numero_caja"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 158)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 08:31:52 --> Undefined variable $lista_precios
+#0 C:\xampp\htdocs\restaurantes\app\Views\factura_pos\factura_pos_sin_productos.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('factura_pos/fac...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(103): view('factura_pos/fac...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->generar_apertura()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-01 09:08:59 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:08:59 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:08:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:01 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:01 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:01 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:02 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:02 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:02 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:09:06 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:06 --> pg_query(): Query failed: ERROR:  no existe la columna «hora_venta»
+LINE 4:         WHERE  hora_venta BETWEEN '10:00' AND '09:10' and fe...
+                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(210): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(270): App\Models\productoFacturaVentaModel->datos_producto('2022-10-31', '10:00', '2022-11-01', '09:10')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 09:09:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 09:36:18 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+CRITICAL - 2022-11-01 09:36:18 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "valorve...', Array, false)
+#2 C:\xampp\htdocs\restaurantes\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\restaurantes\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\producto\productoController.php(458): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\producto\productoController->cargar_producto_al_pedido()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-01 09:38:28 --> Undefined array key "lista_precios"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\producto\productoController.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 407)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\producto\productoController->buscar_por_codigo_de_barras()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 09:38:39 --> Undefined array key "lista_precios"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\producto\productoController.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 407)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\producto\productoController->buscar_por_codigo_de_barras()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 14:57:02 --> Undefined array key "fecha_y_hora_cierre"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(298): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 298)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-11-01 16:39:31 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 5: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(58): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(387): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 16:39:31 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 5: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(58): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(387): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 16:39:31 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-11-01 16:41:58 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 5: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(58): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(388): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 16:41:58 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 5: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(58): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(388): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-01 16:46:52 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 6: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(59): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(389): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 16:46:52 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «16»
+LINE 6: ...       fecha_y_hora_forma_pago BETWEEN 2022-11-01 16:07:09.0...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaFormaPagoModel.php(59): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(389): App\Models\facturaFormaPagoModel->ingresos_efectivo('2022-11-01 16:0...', '2022-11-01 16:3...')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-01 16:47:14 --> Undefined array key "ingresos_efectivo"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 390)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 17:21:39 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 18:33:59 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 18:37:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 363)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 18:38:41 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 363)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 18:39:15 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(363): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 363)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 18:41:28 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 18:51:32 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 20:00:56 --> Unsupported operand types: int + array
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 20:01:16 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(426): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 426)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 20:54:28 --> Cannot use object of type App\Models\devolucionVentaEfectivoModel as array
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 20:54:56 --> Cannot use object of type App\Models\devolucionVentaEfectivoModel as array
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 20:55:23 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(454): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 454)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 21:39:27 --> Undefined array key "ingresos_transaccion"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(495): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 495)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 21:40:22 --> Undefined array key "ingresos_transaccion"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 493)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 21:41:13 --> Undefined array key "ingresos_transaccion"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(493): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 493)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 21:53:45 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(490): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 490)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 21:55:03 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(491): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 491)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:26:18 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:28:15 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(503): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 503)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:32:42 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(515): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 515)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:34:57 --> number_format(): Argument #1 ($num) must be of type float, array given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(490): number_format(Array, 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:36:41 --> Undefined array key "id_cierre"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(337): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 337)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:36:51 --> number_format(): Argument #1 ($num) must be of type float, array given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(490): number_format(Array, 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-01 22:37:41 --> Unsupported operand types: array - int
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-01 22:37:50 --> Unsupported operand types: array - int
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

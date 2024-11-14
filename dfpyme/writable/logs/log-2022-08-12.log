@@ -1,0 +1,55 @@
+CRITICAL - 2022-08-12 07:52:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-12 08:34:16 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('0', '1500', '1500', '22222222', '6', '1', '01500')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-12 09:11:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('0', '1500', '1500', '22222222', '6', '1', '01500')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-12 10:08:01 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('1500', '0', '1500', '22222222', '6', '1', '15000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-12 10:08:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('1500', '0', '1500', '22222222', '6', '1', '15000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-12 10:08:43 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('1500', '0', '1500', '22222222', '6', '1', '15000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-08-12 10:08:56 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(484): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 484)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(55): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('2000', '0', '1500', '22222222', '6', '1', '20000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

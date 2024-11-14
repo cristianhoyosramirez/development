@@ -1,0 +1,40 @@
+CRITICAL - 2022-10-06 07:04:03 --> Undefined array key "idusuario_sistema"
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas_datos_credito.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 113)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(69): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 07:48:43 --> Undefined variable $saldo_pendiente
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas_datos_credito.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(70): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 07:54:37 --> Undefined variable $saldo_pendiente
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas_datos_credito.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(70): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-06 07:56:05 --> Undefined array key "saldo_pendiente"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

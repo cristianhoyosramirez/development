@@ -1,0 +1,541 @@
+CRITICAL - 2022-09-26 09:29:15 --> Call to a member function forma_pago_cierre() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 10:39:44 --> Undefined array key "nombreforma_pago"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 310)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:41:48 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 310)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:43:11 --> Undefined array key "nombreforma_pago"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 310)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-09-26 10:51:15 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «.1»
+LINE 6:         INNER JOIN forma_pago ON cierre_forma_pago.1 = forma...
+                                                          ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #159, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(311): App\Models\cajaModel->nombre_forma_pago_cierre(1027, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 10:51:15 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «.1»
+LINE 6:         INNER JOIN forma_pago ON cierre_forma_pago.1 = forma...
+                                                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #159, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(311): App\Models\cajaModel->nombre_forma_pago_cierre(1027, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-09-26 10:51:57 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «'1'»
+LINE 6: ...       INNER JOIN forma_pago ON cierre_forma_pago.'1' = form...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(311): App\Models\cajaModel->nombre_forma_pago_cierre(1027, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 10:51:57 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «'1'»
+LINE 6: ...       INNER JOIN forma_pago ON cierre_forma_pago.'1' = form...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(311): App\Models\cajaModel->nombre_forma_pago_cierre(1027, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 10:52:51 --> Undefined array key "nombreforma_pago"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:53:49 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:55:27 --> Undefined array key "nombreforma_pago"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:55:46 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 10:56:45 --> Undefined array key "nombreforma_pago"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 11:49:52 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 11:56:30 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 11:57:25 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 92)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->guardar_devolucion()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 11:57:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 92)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->guardar_devolucion()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 11:58:15 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 210)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 11:58:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 210)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 12:01:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 210)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 12:02:38 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 203)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->retiro()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-09-26 12:08:08 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «numero_pedido»
+LINE 9:             numero_pedido
+                    ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-25', '2022-09-25')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 12:08:08 --> pg_query(): Query failed: ERROR:  no existe la columna «numero_pedido»
+LINE 9:             numero_pedido
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-25', '2022-09-25')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 12:52:56 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 314)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 12:58:10 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(317): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 317)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:04:33 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 319)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:06:48 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 316)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:07:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 316)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:07:40 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 316)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:08:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 318)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 13:55:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 318)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 14:05:43 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(321): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 321)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-09-26 14:21:32 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «concepto»
+LINE 3:             nombreforma_pago, valor,concepto
+                                            ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #159, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->nombre_forma_pago_cierre(1112, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 14:21:32 --> pg_query(): Query failed: ERROR:  no existe la columna «concepto»
+LINE 3:             nombreforma_pago, valor,concepto
+                                            ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #159, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(32): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->nombre_forma_pago_cierre(1112, '1')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 14:41:30 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->forma_pago_retiro(Array, '1')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 14:42:05 --> Too few arguments to function App\Models\cajaModel::forma_pago_retiro(), 1 passed in C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php on line 327 and exactly 2 expected
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->forma_pago_retiro(Array)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 14:42:21 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->forma_pago_retiro(Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 14:44:35 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 14:46:05 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 14:46:15 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 14:47:08 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-09-26 14:48:42 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-26 14:51:13 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «.»
+LINE 6:             retiro.hora
+                          ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(49): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->forma_pago_retiro('12')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 14:51:13 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «.»
+LINE 6:             retiro.hora
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #158, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(49): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(327): App\Models\cajaModel->forma_pago_retiro('12')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 15:33:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 92)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->guardar_devolucion()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 15:34:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\devolucion\devolucionController.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 92)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\devolucion\devolucionController->guardar_devolucion()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\devolucion\devolucionController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 15:51:27 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 318)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 15:53:05 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 318)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 15:53:41 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(325): App\Models\cajaModel->forma_pago_retiro(Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 15:55:38 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(326): App\Models\cajaModel->forma_pago_retiro(Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 15:56:33 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\cajaModel.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(326): App\Models\cajaModel->forma_pago_retiro(Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 15:57:45 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 333)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 16:10:18 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(337): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 337)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 17:05:35 --> Undefined variable $idcierre
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(361): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 361)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_movimiento_caja()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 17:28:17 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 262)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 17:46:58 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 265)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 17:48:01 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 263)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 17:51:00 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\caja\cajaController.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 263)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\caja\cajaController->imprimir_cierre()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja\cajaController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 19:41:12 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 316)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(71): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos(0, '8000', '8000', '5100', '22222222', '6', '1', '80008000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 19:43:19 --> Undefined array key "valor"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(316): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 316)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturaDirectaController.php(71): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos(0, '5000', '4000', '7400', '22222222', '6', '1', '50004000')
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-09-26 20:33:06 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('9698809-1', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-09-26 20:34:15 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 13:             fecha_factura_venta BETWEEN '2022-09-26' AND '';
+                                                                  ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-26', '')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 20:34:15 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 13:             fecha_factura_venta BETWEEN '2022-09-26' AND '';
+                                                                  ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-26', '')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-26 20:50:14 --> Undefined variable $apertura
+#0 C:\xampp\htdocs\restaurantes\app\Views\factura_pos\factura_pos_sin_productos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('factura_pos/fac...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturacionConImpuestosController.php(381): view('factura_pos/fac...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->facturacion_pos()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

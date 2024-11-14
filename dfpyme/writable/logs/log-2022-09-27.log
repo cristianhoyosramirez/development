@@ -1,0 +1,397 @@
+CRITICAL - 2022-09-27 10:10:13 --> Undefined variable $apertura
+#0 C:\xampp\htdocs\restaurantes\app\Views\factura_pos\factura_pos_sin_productos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('factura_pos/fac...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturacionConImpuestosController.php(381): view('factura_pos/fac...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->facturacion_pos()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-27 10:29:29 --> Undefined variable $apertura
+#0 C:\xampp\htdocs\restaurantes\app\Views\factura_pos\factura_pos_sin_productos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('factura_pos/fac...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturacionConImpuestosController.php(352): view('factura_pos/fac...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->imprimir_factura()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-27 10:42:07 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 13:             fecha_factura_venta BETWEEN '2022-09-27' AND '';
+                                                                  ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-27', '')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-27 10:42:07 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 13:             fecha_factura_venta BETWEEN '2022-09-27' AND '';
+                                                                  ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\facturaVentaModel.php(28): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('2022-09-27', '')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-27 11:30:01 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('901195848-3', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:30:05 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('901195848-3', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:30:26 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(1311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 1311)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->forma_pago()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:54:09 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('901195848-3', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:56:13 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:56:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(1311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 1311)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->forma_pago()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:58:42 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('900922932-0', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 11:58:44 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 12:37:21 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 12:37:42 --> Undefined array key "descripcionestado"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturacionConImpuestosController.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 160)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->imprimir_factura()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 12:44:31 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 12:44:34 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 12:49:12 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\cliente\clienteController.php(103): number_format('816003350-7', 0, ',', '.')
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\cliente\ClienteController->clientes_autocompletado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\cliente\ClienteController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-27 13:21:50 --> Undefined variable $salones
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(12): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->index()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-27 13:22:02 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(12): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->index()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-27 16:04:33 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:04:33 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-09-27 16:05:59 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:05:59 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-09-27 16:06:06 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:06:06 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-09-27 16:06:31 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:06:31 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-27»
+LINE 3: WHERE &quot;id&quot; = '2022-09-27'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-27', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-27', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-09-27 16:07:01 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-02»
+LINE 3: WHERE &quot;id&quot; = '2022-09-02'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-02', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-02', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:07:01 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-02»
+LINE 3: WHERE &quot;id&quot; = '2022-09-02'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-02', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-02', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-09-27 16:08:04 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-02»
+LINE 3: WHERE &quot;id&quot; = '2022-09-02'
+                     ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-02', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-02', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:08:04 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «2022-09-02»
+LINE 3: WHERE &quot;id&quot; = '2022-09-02'
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #156, 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\restaurantes\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('2022-09-02', 'id', Array, NULL)
+#7 C:\xampp\htdocs\restaurantes\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('fecha_final_rep...', 'fecha_final_rep...', '2022-09-02', Array, Array)
+#8 C:\xampp\htdocs\restaurantes\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(21): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-09-27 16:12:32 --> Undefined variable $estado
+#0 C:\xampp\htdocs\restaurantes\app\Views\consultas_y_reportes\reporte_de_ventas_datos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(52): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consulta_de_ventas()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

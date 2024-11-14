@@ -1,0 +1,1224 @@
+CRITICAL - 2022-05-16 09:20:39 --> Call to a member function valor_iva() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 09:21:22 --> Undefined array key "valor_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 09:22:11 --> Undefined array key "valor_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 09:23:05 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', Array, Array)
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-16 09:23:52 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 09:26:19 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', Array, Array)
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-16 09:30:21 --> Undefined array key "valor_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 11:17:45 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «producto_factura_venta.valor_iva» debe aparecer en la cláusula GROUP BY o ser usada en una función de agregación
+LINE 6:     valor_iva
+            ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(152): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:17:45 --> pg_query(): Query failed: ERROR:  la columna «producto_factura_venta.valor_iva» debe aparecer en la cláusula GROUP BY o ser usada en una función de agregación
+LINE 6:     valor_iva
+            ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(152): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:17:45 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 11:23:13 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:23:42 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:24:53 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:25:22 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:27:00 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:27:14 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:28:08 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:28:21 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 11:30:18 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:30:18 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:30:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:30:38 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:30:38 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:30:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 11:31:45 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:32:23 --> Undefined array key "valor_total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:36:41 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:39:09 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:39:36 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:40:27 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:40:48 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:41:05 --> Undefined array key "cantidadproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:42:38 --> Undefined array key "cantidadproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 11:43:51 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:43:51 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:43:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:44:09 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:44:09 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:44:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:44:33 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:44:33 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(142): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:44:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:45:55 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:45:55 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:45:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:46:38 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:46:38 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:46:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:47:19 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:47:19 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(149): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:47:19 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 11:49:29 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(150): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:49:29 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «FROM»
+LINE 5:        FROM
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(150): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('0', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 11:49:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 11:53:17 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 11:59:44 --> Undefined array key "valorunitarioproducto_factura_venta"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 12:00:36 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «producto_factura_venta.valor_iva» debe aparecer en la cláusula GROUP BY o ser usada en una función de agregación
+LINE 5:             valor_iva
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(143): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('5', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 12:00:36 --> pg_query(): Query failed: ERROR:  la columna «producto_factura_venta.valor_iva» debe aparecer en la cláusula GROUP BY o ser usada en una función de agregación
+LINE 5:             valor_iva
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\productoFacturaVentaModel.php(143): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(41): App\Models\productoFacturaVentaModel->valor_iva('5', '11655', '11661')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-16 12:00:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 12:01:50 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 12:02:03 --> Undefined array key "valor_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:02:20 --> Undefined variable $valor_iv
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:10:29 --> Undefined array key "total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:10:52 --> Undefined array key "total_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:11:49 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 12:12:21 --> Undefined array key "valor_iva"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:27:45 --> array_push(): Argument #1 ($array) cannot be passed by reference
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 12:28:31 --> array_push(): Argument #1 ($array) cannot be passed by reference
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 12:47:38 --> array_push(): Argument #1 ($array) must be of type array, int given
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(59): array_push(0, '54857.142857142')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:50:23 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 65)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 12:57:08 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:17:26 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 68)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:18:48 --> Uninitialized string offset 1
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:43:00 --> Uninitialized string offset 1
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:46:24 --> array_push(): Argument #1 ($array) must be of type array, string given
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(46): array_push('', '5')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:47:07 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:47:14 --> syntax error, unexpected double-quoted string "</br>", expecting "," or ";"
+#0 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 13:49:27 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 13:56:13 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 14:20:11 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 14:35:37 --> array_push(): Argument #1 ($array) must be of type array, null given
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(44): array_push(NULL, '5')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 14:36:22 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 14:58:17 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 15:02:57 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+#0 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\web\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 15:04:33 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 15:04:47 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 15:05:02 --> Uninitialized string offset 0
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 15:15:08 --> Undefined variable $valores_iva
+#0 C:\xampp\htdocs\web\app\Views\consultas_y_reportes\informe_fiscal_ventas_diarias_datos.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(66): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 15:25:04 --> Unsupported operand types: string * string
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->cargar_producto_al_pedido()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-16 17:05:58 --> Undefined variable $iva
+#0 C:\xampp\htdocs\web\app\Views\consultas_y_reportes\informe_fiscal_ventas_diarias_datos.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(76): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 17:07:15 --> Call to undefined method App\Models\productoFacturaVentaModel::valor_ico
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(54): CodeIgniter\Model->__call('valor_ico', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:07:17 --> Call to undefined method App\Models\productoFacturaVentaModel::valor_ico
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(54): CodeIgniter\Model->__call('valor_ico', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:09:46 --> Call to undefined method App\Models\productoFacturaVentaModel::valor_ico
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(55): CodeIgniter\Model->__call('valor_ico', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:15:54 --> Undefined array key "fecha"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:16:44 --> Undefined array key "fecha"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:17:08 --> Undefined array key "fecha"
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 17:37:53 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:37:53 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:37:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 17:39:21 --> Call to undefined method App\Models\facturaVentaModel::facturas_contado
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(65): CodeIgniter\Model->__call('facturas_contad...', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 17:39:37 --> Call to undefined method App\Models\facturaVentaModel::facturas_contado
+#0 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(65): CodeIgniter\Model->__call('facturas_contad...', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-05-16 17:41:03 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:41:03 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:41:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 17:42:56 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:42:56 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:42:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 17:43:12 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:43:12 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(27): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:43:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 17:47:20 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:47:20 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 17:47:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-16 17:48:34 --> Undefined variable $ventas_contado
+#0 C:\xampp\htdocs\web\app\Views\consultas_y_reportes\informe_fiscal_ventas_diarias_datos.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 126)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(86): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-16 19:59:51 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 19:59:51 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 19:59:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-05-16 20:05:15 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 20:05:15 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 3: WHERE &quot;fecha_factura_venta&quot; = ''
+                                      ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT MIN("id"...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT MIN("id"...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MIN("id"...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT MIN("id"...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\web\app\Controllers\consultas_y_reportes\informeFiscalVentasController.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\informeFiscalVentasController->informe_fiscal_ventas_datos()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\informeFiscalVentasController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-16 20:05:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

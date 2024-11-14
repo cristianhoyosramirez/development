@@ -1,0 +1,262 @@
+CRITICAL - 2023-09-10 14:59:27 --> strtotime(): Argument #1 ($datetime) must be of type string, array given
+#0 C:\xampp\htdocs\dfpyme\app\Views\consultas_y_reportes\reporte_ventas_producto.php(12): strtotime(Array)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\cajaDiariaController.php(1225): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\cajaDiariaController->reporte_de_ventas()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\cajaDiariaController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 14:59:45 --> strtotime(): Argument #1 ($datetime) must be of type string, array given
+#0 C:\xampp\htdocs\dfpyme\app\Views\consultas_y_reportes\reporte_ventas_producto.php(12): strtotime(Array)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\cajaDiariaController.php(1225): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\cajaDiariaController->reporte_de_ventas()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\cajaDiariaController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-10 15:00:01 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 8:         
+                ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #148, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\kardexModel.php(36): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\cajaDiariaController.php(1188): App\Models\kardexModel->get_total('28', NULL, '120')
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\cajaDiariaController->reporte_de_ventas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\cajaDiariaController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-10 15:00:01 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\cajaDiariaController.php(1188): App\Models\kardexModel->get_total('28', NULL, '120')
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\cajaDiariaController->reporte_de_ventas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\cajaDiariaController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-10 15:57:45 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 1411)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-10 16:01:41 --> Undefined array key "nombreproducto"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:02:03 --> Undefined array key "nombreproducto"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:04:31 --> Undefined variable $fecha_apertura
+#0 C:\xampp\htdocs\dfpyme\app\Views\consultas_y_reportes\reporte_ventas_producto.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:04:49 --> Undefined variable $fecha_apertura
+#0 C:\xampp\htdocs\dfpyme\app\Views\consultas_y_reportes\reporte_ventas_producto.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('consultas_y_rep...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('consultas_y_rep...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:06:37 --> Undefined variable $id_apertura
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 127)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:06:59 --> Undefined variable $total_devoluciones
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 132)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:08:58 --> Undefined array key "nombreproducto"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:09:22 --> Undefined array key "nombreproducto"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:09:37 --> Undefined array key "valor_unitario"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:09:51 --> Undefined array key "total"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 148)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:09:59 --> Undefined variable $total_devoluciones
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 154)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1461): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 16:13:09 --> Undefined array key "nombreproducto"
+#0 C:\xampp\htdocs\dfpyme\app\Views\producto\datos_consultar_agrupado_pdf.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 145)
+#1 C:\xampp\htdocs\dfpyme\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\dfpyme\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\dfpyme\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1462): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-10 17:06:07 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\TableRow.php(57): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\Dompdf.php(770): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1468): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#11 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-10 17:06:12 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 268439552 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-10 17:06:25 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\TableRow.php(57): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\Dompdf.php(770): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1468): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#11 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-10 17:06:29 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-10 17:06:46 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\TableRow.php(57): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\Dompdf.php(770): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1468): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#11 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-10 17:06:50 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264245248 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-10 17:08:36 --> Call to a member function get_cellmap() on null
+#0 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableCell->reflow(NULL)
+#1 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\TableRow.php(57): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#2 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\TableRow->reflow(Object(Dompdf\FrameDecorator\Block))
+#3 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Block.php(865): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow(Object(Dompdf\FrameDecorator\Block))
+#4 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Block->reflow(NULL)
+#5 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameReflower\Page.php(142): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#6 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(916): Dompdf\FrameReflower\Page->reflow(NULL)
+#7 C:\xampp\htdocs\dfpyme\vendor\dompdf\dompdf\src\Dompdf.php(770): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#8 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1468): Dompdf\Dompdf->render()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#11 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-10 17:08:41 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-10 17:12:18 --> Array to string conversion
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(1469): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 1469)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto_agrupado_pdf()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

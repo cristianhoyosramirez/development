@@ -1,0 +1,126 @@
+CRITICAL - 2022-03-11 10:55:53 --> Invalid file: pedidos/mesasSalon.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pedidos/mesasSa...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedidos/mesasSa...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(46): view('pedidos/mesasSa...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salon_mesas()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 10:55:57 --> Invalid file: pedidos/mesasSalon.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pedidos/mesasSa...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedidos/mesasSa...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(46): view('pedidos/mesasSa...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salon_mesas()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 10:56:00 --> Invalid file: pedidos/mesasSalon.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pedidos/mesasSa...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedidos/mesasSa...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(46): view('pedidos/mesasSa...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salon_mesas()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 10:56:35 --> Invalid file: pedidos/mesasSalon.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pedidos/mesasSa...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedidos/mesasSa...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(46): view('pedidos/mesasSa...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salon_mesas()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 12:12:13 --> Call to undefined method App\Models\probarModel::salonMesas
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(11): CodeIgniter\Model->__call('salonMesas', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->index()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 12:12:39 --> Call to undefined method App\Models\mesasModel::salonMesas
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(11): CodeIgniter\Model->__call('salonMesas', Array)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->index()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-11 12:14:20 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «delete»
+LINE 7: ...JOIN salones ON mesas.fk_salon = salones.id where delete =0 ...
+                                                             ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #121, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\mesasModel.php(16): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(11): App\Models\mesasModel->salonMesas()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->index()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-11 12:14:20 --> pg_query(): Query failed: ERROR:  no existe la columna «delete»
+LINE 7: ...JOIN salones ON mesas.fk_salon = salones.id where delete =0 ...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #121, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\mesasModel.php(16): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(11): App\Models\mesasModel->salonMesas()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->index()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-11 12:14:50 --> Invalid file: mesas/listado.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mesas/listado.p...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('mesas/listado', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(14): view('mesas/listado', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->index()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 12:25:50 --> Invalid file: mesas/datos_iniciales.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mesas/datos_ini...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('mesas/datos_ini...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(21): view('mesas/datos_ini...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->datos_iniciales()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-11 14:35:58 --> Attempt to read property "insertID" on null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 170)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->MesaPedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:25:59 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 169)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(35): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:26:09 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 169)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(35): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

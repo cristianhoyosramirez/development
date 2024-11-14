@@ -1,0 +1,1105 @@
+CRITICAL - 2022-10-20 12:36:03 --> Undefined array key "id_usuario"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\factura_pos\facturacionConImpuestosController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->factura_pos()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-20 13:34:05 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:05 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:05 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:06 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:06 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:07 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:07 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:07 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:08 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:08 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-10-20 13:34:08 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:08 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 17:                 hora_venta BETWEEN '04:44' AND '' AND fecha_...
+                                                        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(223): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(279): App\Models\productoFacturaVentaModel->datos_consulta_producto('2022-10-20', '04:44', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 13:34:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\restaurantes\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\restaurantes\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\restaurantes\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-10-20 14:11:12 --> Undefined array key "hora_final__agrupado"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 369)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 14:11:59 --> Undefined array key "hora_final__agrupado"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 369)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 14:12:47 --> Undefined array key "hora_final__agrupado"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 369)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-20 14:13:27 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '02:02' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('02:02', '2022-10-20')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 14:13:27 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '02:02' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('02:02', '2022-10-20')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 14:14:04 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '14:30' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('14:30', '2022-10-18')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 14:14:04 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '14:30' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('14:30', '2022-10-18')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 14:14:27 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '14:30' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('14:30', '2022-10-18')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 14:14:27 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «fecha_inicial»
+LINE 4: ...ta BETWEEN '14:30' AND '23:59:59' and fecha_venta='fecha_ini...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('14:30', '2022-10-18')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 14:27:44 --> Invalid file: producto/datos_consultar_producto_agrupado.php
+#0 C:\xampp\htdocs\restaurantes\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto/datos_...')
+#1 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(375): view('producto/datos_...')
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-20 14:56:23 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 263)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(374): App\Models\productoFacturaVentaModel->datos_producto_sumados(Array, Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-20 14:57:14 --> Undefined array key "idproducto_factura_venta"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(374): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 374)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 14:57:40 --> Undefined array key "idproducto_factura_venta"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(374): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 374)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 14:58:20 --> Undefined array key "idproducto_factura_venta"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(375): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 375)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 14:58:33 --> Undefined array key "idproducto_factura_venta"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(375): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 375)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-20 14:59:29 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 11:             idproducto_factura_venta BETWEEN '67067' AND ''
+                                                                  ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(377): App\Models\productoFacturaVentaModel->datos_producto_sumados('67067', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 14:59:29 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 11:             idproducto_factura_venta BETWEEN '67067' AND ''
+                                                                  ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(377): App\Models\productoFacturaVentaModel->datos_producto_sumados('67067', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 15:00:23 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 12:         
+                 ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(377): App\Models\productoFacturaVentaModel->datos_producto_sumados('67067', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 15:00:23 --> pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 12:         
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(377): App\Models\productoFacturaVentaModel->datos_producto_sumados('67067', NULL)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 15:06:48 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 4:         where hora_venta BETWEEN '' AND '23:59:59' and fecha...
+                                         ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('', '2022-10-20')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 15:06:48 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo time: «»
+LINE 4:         where hora_venta BETWEEN '' AND '23:59:59' and fecha...
+                                         ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        selec...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        selec...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        selec...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(234): CodeIgniter\Database\BaseConnection->query('\r\n        selec...')
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(371): App\Models\productoFacturaVentaModel->min_id('', '2022-10-20')
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 15:48:30 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 263)
+#1 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(390): App\Models\productoFacturaVentaModel->datos_producto_sumados('67068', Array)
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-20 15:48:50 --> Undefined array key "id"
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 390)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 15:49:00 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(390): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 390)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 15:50:04 --> Undefined array key 0
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(391): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 391)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 16:05:54 --> Undefined array key "valor_unitario"
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(393): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 19:54:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:20 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:21 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:23 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:26 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->datos_consultar_producto()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-20 19:54:57 --> Array to string conversion
+#0 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 281)
+#1 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar(Array, Array, '200')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#5 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#8 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 19:55:34 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10: ...     idproducto_factura_venta BETWEEN '67067' AND '' AND cod...
+                                                              ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 19:55:34 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10: ...     idproducto_factura_venta BETWEEN '67067' AND '' AND cod...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 19:57:02 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10: ...     idproducto_factura_venta BETWEEN '67067' AND '' AND cod...
+                                                              ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 19:57:02 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10: ...     idproducto_factura_venta BETWEEN '67067' AND '' AND cod...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 19:57:31 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:         idproducto_factura_venta BETWEEN '67067' AND '' 
+                                                              ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 19:57:31 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:         idproducto_factura_venta BETWEEN '67067' AND '' 
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 19:57:49 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 11:         
+                 ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 19:57:49 --> pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 11:         
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 20:01:04 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND '' AND codi...
+                                                          ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 20:01:04 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND '' AND codi...
+                                                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 20:01:23 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «AND»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND  AND codigo...
+                                                           ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 20:01:23 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «AND»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND  AND codigo...
+                                                           ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 20:01:34 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 11:         
+                 ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 20:01:34 --> pg_query(): Query failed: ERROR:  error de sintaxis al final de la entrada
+LINE 11:         
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-20 20:01:45 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND '' 
+                                                          ^ in C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 20:01:45 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 10:     idproducto_factura_venta BETWEEN '67067' AND '' 
+                                                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\restaurantes\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\restaurantes\app\Models\productoFacturaVentaModel.php(281): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(27): App\Models\productoFacturaVentaModel->comparar('67067', NULL, '200')
+#6 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#9 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#10 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#11 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#12 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-20 20:13:38 --> Undefined variable $camparar
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 20:14:27 --> Undefined array key "codigointernoproducto"
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 20:15:30 --> Undefined array key "codigointernoproducto"
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 21:26:39 --> Undefined variable $resultado
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 21:32:45 --> Undefined variable $pr
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:45:00 --> Undefined variable $datos_producto
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(401): view('producto/datos_...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:45:31 --> Undefined variable $datos_producto
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(401): view('producto/datos_...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:45:48 --> Undefined variable $datos_producto
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(401): view('producto/datos_...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:46:26 --> Undefined variable $datos_producto
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(401): view('producto/datos_...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:46:38 --> Undefined variable $datos_productos
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(401): view('producto/datos_...')
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 22:48:48 --> Undefined variable $datos_producto
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-20 23:27:49 --> Undefined array key "total"
+#0 C:\xampp\htdocs\restaurantes\app\Views\producto\datos_consultar_agrupado.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\restaurantes\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\restaurantes\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\restaurantes\system\Common.php(1089): CodeIgniter\View\View->render('producto/datos_...', Array, true)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\consultas_y_reportes\reporteDeVentasController.php(397): view('producto/datos_...', Array)
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\reporteDeVentasController->consultar_producto_agrupado()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\reporteDeVentasController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

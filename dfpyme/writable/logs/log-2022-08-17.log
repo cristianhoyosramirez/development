@@ -1,0 +1,175 @@
+ERROR - 2022-08-17 10:28:35 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+CRITICAL - 2022-08-17 10:28:35 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:28:36 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+CRITICAL - 2022-08-17 10:28:36 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:18 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:18 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "idcaja"...', Array, false)
+#2 C:\xampp\htdocs\restaurantes\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\restaurantes\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(102): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-08-17 10:32:22 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:22 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:23 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:23 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:25 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:25 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:26 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:26 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:27 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:27 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:28 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:28 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:29 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:29 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:30 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:30 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:31 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:31 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\app\Models\pedidoModel.php(22): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(20): App\Models\pedidoModel->todosLospedidos()
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->pedidos_para_facturacion()
+#4 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-08-17 10:32:31 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+CRITICAL - 2022-08-17 10:32:31 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �UKUMARY�
+#0 C:\xampp\htdocs\restaurantes\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\restaurantes\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\restaurantes\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\restaurantes\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#4 C:\xampp\htdocs\restaurantes\app\Controllers\Salones\SalonesController.php(32): CodeIgniter\BaseModel->find()
+#5 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-08-17 10:40:30 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-17 10:44:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-17 10:49:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-08-17 10:56:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\restaurantes\app\Controllers\pedido\pedidoController.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->facturar_pedido()
+#2 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\restaurantes\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\restaurantes\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

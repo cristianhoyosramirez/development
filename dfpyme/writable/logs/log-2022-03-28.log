@@ -1,0 +1,33 @@
+CRITICAL - 2022-03-28 14:42:48 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(37): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 20:18:26 --> Undefined variable $idVentaTmp
+#0 C:\xampp\htdocs\web\app\Views\factura_pos\factura_pos.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('factura_pos/fac...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturacionConImpuestosController.php(27): view('factura_pos/fac...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturacionConImpuestosController->factura_pos()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturacionConImpuestosController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-28 20:26:42 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(37): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,100 @@
+ERROR - 2022-03-10 17:49:33 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-03-10 17:49:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\web\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\web\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\web\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(11): CodeIgniter\BaseModel->find()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->index()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-10 17:50:38 --> Invalid file: template/salones.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/salone...')
+#1 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/salone...', Array, true)
+#2 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/listado', Array, true)
+#3 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(13): view('salones/listado', Array)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->index()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-10 20:06:47 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\login\loginController->login()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\loginController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 20:07:58 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\login\loginController->login()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\loginController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 20:14:58 --> App\Filters\Auth filter must have a matching alias defined.
+#0 C:\xampp\htdocs\web\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('App\\Filters\\Aut...')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->enableFilter('App\\Filters\\Aut...', 'before')
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 20:15:15 --> Invalid file: usuarios/listado.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/listad...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/listad...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\usuarios\usuariosController.php(14): view('usuarios/listad...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\usuarios\usuariosController->index()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios\usuariosController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-10 20:15:18 --> Invalid file: usuarios/listado.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/listad...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/listad...', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\usuarios\usuariosController.php(14): view('usuarios/listad...', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\usuarios\usuariosController->index()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios\usuariosController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-10 20:15:52 --> Invalid file: template/mesas.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/mesas....')
+#1 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/mesas', Array, true)
+#2 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/listad...', Array, true)
+#3 C:\xampp\htdocs\web\app\Controllers\usuarios\usuariosController.php(14): view('usuarios/listad...', Array)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\usuarios\usuariosController->index()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios\usuariosController))
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-10 22:05:54 --> Call to a member function where() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->relacion_salon_mesas()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 22:07:28 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->relacion_salon_mesas()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 22:08:21 --> Invalid file: salones/pedidos.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('salones/pedidos...')
+#1 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/pedidos', Array, true)
+#2 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(41): view('salones/pedidos', Array)
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->relacion_salon_mesas()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-10 22:11:41 --> Invalid file: template/pedido.php
+#0 C:\xampp\htdocs\web\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/pedido...')
+#1 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/pedido', Array, true)
+#2 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/mesas', Array, true)
+#3 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(41): view('salones/mesas', Array)
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->relacion_salon_mesas()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

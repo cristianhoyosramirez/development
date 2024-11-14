@@ -1,0 +1,8 @@
+CRITICAL - 2022-05-11 00:01:27 --> Undefined variable $id_factura
+#0 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(643): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 643)
+#1 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(44): App\Controllers\factura_pos\facturaDirectaController->facturacion_con_impuestos('10000', '0', '8500', '22222222', '8', '1', '100000')
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -1,0 +1,1351 @@
+CRITICAL - 2022-04-20 00:02:59 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\administracion_impresora\impresionFacturaController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\administracion_impresora\impresionFacturaController->impresion_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\administracion_impresora\impresionFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-20 00:09:15 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11175, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:15 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11175, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:09:38 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11176, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:38 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11176, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:38 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:09:59 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11177, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:59 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11177, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:09:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:10:36 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11178, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '0', '4800', '22222222', '8', '1', '50000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:10:36 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11178, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '0', '4800', '22222222', '8', '1', '50000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:10:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:11:09 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11179, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '200', '4800', '22222222', '8', '1', '5000200')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:11:09 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11179, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '200', '4800', '22222222', '8', '1', '5000200')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:11:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:11:49 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11180, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:11:49 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11180, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:11:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:13:34 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11182, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:13:34 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ...0, FALSE, 0, '3215', 11182, '16000', 0, '16000', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(290): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(165): App\Controllers\pedido\pedidoController->facturacion_sin_impuestos('1', '60000', '0', '54800', '22222222', '8', '1', '600000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->cerrar_venta()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:13:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 00:16:13 --> ErrorException: pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11184, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo. in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '0', '4800', '22222222', '8', '1', '50000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:16:13 --> pg_query(): Query failed: ERROR:  la columna «aplica_ico» es de tipo boolean pero la expresión es de tipo integer
+LINE 1: ..., 0, FALSE, 0, '2598', 11184, '4800', 0, '4800', 0, 0, 0, 0)
+                                                                     ^
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(173): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\app\Controllers\factura_pos\facturaDirectaController.php(47): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('5000', '0', '4800', '22222222', '8', '1', '50000')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-04-20 00:16:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 08:34:59 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+CRITICAL - 2022-04-20 08:34:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+#0 C:\xampp\htdocs\web\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\web\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\web\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(32): CodeIgniter\BaseModel->find()
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-20 11:26:17 --> Undefined array key "id_usuario"
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(961): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 961)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->eliminacion_de_producto()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 12:42:39 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(367): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 367)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->editar_cantidades_de_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 12:43:23 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(368): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 368)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->editar_cantidades_de_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-20 13:34:24 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:34:24 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:34:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 13:34:29 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:34:29 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:34:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 13:35:20 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:35:20 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(22): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:35:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-20 13:36:58 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 13:38:07 --> Array to string conversion
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 16)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-20 13:45:34 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:45:34 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 13:45:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 14:03:41 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 14:03:41 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 1: SELECT &quot;id_tabla_producto_pedido&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, 'SELECT "id_tabl...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id_tabl...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id_tabl...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id_tabl...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 14:03:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-20 14:09:58 --> Too few arguments to function App\Models\partirFacturaModel::productos(), 1 passed in C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php on line 27 and exactly 2 expected
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): App\Models\partirFacturaModel->productos('11')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-20 14:10:43 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): App\Models\partirFacturaModel->productos('11', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 14:10:43 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): App\Models\partirFacturaModel->productos('11', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 14:10:43 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 14:27:01 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): App\Models\partirFacturaModel->productos('11', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 14:27:01 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #131, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(27): App\Models\partirFacturaModel->productos('11', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 14:27:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-20 15:00:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\pedidoController.php(1057): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 1057)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 15:09:17 --> Undefined array key "cantidad_producto"
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-20 15:10:56 --> Undefined array key "cantidad_producto"
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 26)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-20 15:12:48 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:12:48 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:12:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 15:15:22 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:15:22 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:15:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 15:16:07 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:16:07 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 15:16:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 15:36:18 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+CRITICAL - 2022-04-20 15:36:18 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  el sistema de base de datos est� en modo de recuperaci�n
+#0 C:\xampp\htdocs\web\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\web\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\web\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('8888', 'pinusuario_sist...', Array, NULL)
+#4 C:\xampp\htdocs\web\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('pin', 'pin', '8888', Array, Array)
+#5 C:\xampp\htdocs\web\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#6 C:\xampp\htdocs\web\app\Controllers\login\loginController.php(19): CodeIgniter\Controller->validate(Array)
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\login\loginController->login()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\loginController))
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-20 18:26:24 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:26:24 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(37): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:26:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:28:52 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:28:52 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:28:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:29:21 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:29:21 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:29:21 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:32:17 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:32:17 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(38): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:32:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:36:55 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(39): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:36:55 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(39): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:36:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:37:46 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(39): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:37:46 --> pg_query(): Query failed: ERROR:  no existe la columna «id_tabla_producto_pedido»
+LINE 8:             id_tabla_producto_pedido,
+                    ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\web\app\Models\partirFacturaModel.php(29): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(39): App\Models\partirFacturaModel->productos('5', '8')
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-20 18:37:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-20 18:45:18 --> Call to a member function select() on null
+#0 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-20 18:46:15 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:46:15 --> pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:46:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:47:48 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:47:48 --> pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:47:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 18:48:26 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:48:26 --> pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 18:48:26 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-04-20 21:14:16 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 21:14:16 --> pg_query(): Query failed: ERROR:  no existe la columna «fk_mesa»
+LINE 1: SELECT &quot;fk_mesa&quot;
+               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "fk_mesa...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "fk_mesa...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "fk_mesa...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "fk_mesa...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(40): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-20 21:14:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-20 21:35:16 --> Undefined array key "id"
+#0 C:\xampp\htdocs\web\app\Views\partir_factura\partir_factura.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('partir_factura/...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(43): view('partir_factura/...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->partir_factura()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
