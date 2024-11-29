@@ -1,0 +1,206 @@
+CRITICAL - 2022-06-05 16:21:41 --> Undefined variable $categorias
+#0 C:\xampp\htdocs\web\app\Views\ventanas_modal_pedido\categorias_producto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\View\View.php(424): CodeIgniter\View\View->render('ventanas_modal_...', NULL, true)
+#4 C:\xampp\htdocs\web\app\Views\template\salonMesa.php(38): CodeIgniter\View\View->include('ventanas_modal_...')
+#5 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/salonM...', Array, true)
+#8 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#9 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(52): view('pedido/producto...')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-06-05 16:23:32 --> Undefined variable $salones
+#0 C:\xampp\htdocs\web\app\Views\pedido\productos_pedido_comanda.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(52): view('pedido/producto...')
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-05 16:23:43 --> Undefined variable $salones
+#0 C:\xampp\htdocs\web\app\Views\pedido\productos_pedido_comanda.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(52): view('pedido/producto...')
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-05 16:24:27 --> Undefined variable $categorias
+#0 C:\xampp\htdocs\web\app\Views\ventanas_modal_pedido\categorias_producto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\View\View.php(424): CodeIgniter\View\View->render('ventanas_modal_...', NULL, true)
+#4 C:\xampp\htdocs\web\app\Views\template\salonMesa.php(38): CodeIgniter\View\View->include('ventanas_modal_...')
+#5 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/salonM...', Array, true)
+#8 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#9 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(52): view('pedido/producto...')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-06-05 16:25:29 --> Undefined variable $categorias
+#0 C:\xampp\htdocs\web\app\Views\ventanas_modal_pedido\categorias_producto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\View\View.php(424): CodeIgniter\View\View->render('ventanas_modal_...', NULL, true)
+#4 C:\xampp\htdocs\web\app\Views\template\salonMesa.php(38): CodeIgniter\View\View->include('ventanas_modal_...')
+#5 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\web\system\View\View.php(226): CodeIgniter\View\View->render('template/salonM...', Array, true)
+#8 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#9 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(52): view('pedido/producto...')
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#12 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-06-05 16:36:48 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 1: ... &quot;fecha_creacion&quot;, &quot;fecha_actualizacion&quot;) VALUES ('', '6', 4...
+                                                             ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pe...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pe...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pe...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pe...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(113): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-06-05 16:36:48 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 1: ... &quot;fecha_creacion&quot;, &quot;fecha_actualizacion&quot;) VALUES ('', '6', 4...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'INSERT INTO "pe...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pe...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pe...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pe...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\web\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(113): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-06-05 16:36:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-06-05 16:43:30 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 3: WHERE &quot;fk_mesa&quot; = ''
+                          ^ in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "id"\nFRO...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id"\nFRO...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id"\nFRO...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id"\nFRO...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(171): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-05 16:43:30 --> pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 3: WHERE &quot;fk_mesa&quot; = ''
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #133, 'SELECT "id"\nFRO...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "id"\nFRO...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "id"\nFRO...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "id"\nFRO...', Array, false)
+#5 C:\xampp\htdocs\web\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\web\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(171): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-05 16:43:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\web\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\web\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\web\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\web\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\web\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-05 16:46:24 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 102)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 16:47:07 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 102)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 16:47:44 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 102)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 16:48:32 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\web\app\Controllers\producto\productoController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 102)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\producto\productoController->insertar_productos_tabla_pedido()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-05 16:55:35 --> Undefined variable $id_mesa
+#0 C:\xampp\htdocs\web\app\Views\pedido\productos_pedido_comanda.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('pedido/producto...', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(60): view('pedido/producto...', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-05 16:56:06 --> Undefined array key "id_mesa"
+#0 C:\xampp\htdocs\web\app\Controllers\comanda\imprimirComandaController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 61)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\comanda\imprimirComandaController->imprimir_comanda()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\comanda\imprimirComandaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

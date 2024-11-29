@@ -1,0 +1,119 @@
+ERROR - 2022-06-18 10:59:50 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para integer: «»
+LINE 3: WHERE &quot;id&quot; = ''
+                     ^ in D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\DFPYME\\htdoc...', 135)
+#1 D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #123, 'SELECT "nombre"...')
+#2 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "nombre"...')
+#3 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "nombre"...')
+#4 D:\DFPYME\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "nombre"...', Array, false)
+#5 D:\DFPYME\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\DFPYME\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\DFPYME\htdocs\dfpyme\app\Controllers\Mesa\mesaController.php(122): CodeIgniter\BaseModel->first()
+#8 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->cambiar_de_mesa()
+#9 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#10 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-18 10:59:50 --> Call to a member function getFirstRow() on bool
+#0 D:\DFPYME\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 D:\DFPYME\htdocs\dfpyme\app\Controllers\Mesa\mesaController.php(122): CodeIgniter\BaseModel->first()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->cambiar_de_mesa()
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#4 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-18 11:17:05 --> Undefined array key "valor"
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\factura_pos\facturaDirectaController.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\DFPYME\\htdoc...', 301)
+#1 D:\DFPYME\htdocs\dfpyme\app\Controllers\factura_pos\facturaDirectaController.php(58): App\Controllers\factura_pos\facturaDirectaController->facturacion_sin_impuestos('6000', '6000', '5700', '22222222', '13', '1', '60006000')
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\factura_pos\facturaDirectaController->facturacion()
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_pos\facturaDirectaController))
+#4 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-18 12:11:05 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 13:20:45 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 13:20:46 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 13:20:47 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 13:20:47 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 13:20:47 --> Trying to access array offset on value of type null
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\pedido\pedidoController.php(1165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\DFPYME\\htdoc...', 1165)
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedido\pedidoController->valor_pedido()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\pedidoController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-18 21:08:50 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 10:         fecha_factura_venta BETWEEN '' AND '';
+                                             ^ in D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\DFPYME\\htdoc...', 135)
+#1 D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #122, '\r\n        SELEC...')
+#2 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 D:\DFPYME\htdocs\dfpyme\app\Models\facturaVentaModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 D:\DFPYME\htdocs\dfpyme\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('', '')
+#6 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-18 21:08:50 --> Call to a member function getResultArray() on bool
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('', '')
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-18 21:09:00 --> ErrorException: pg_query(): Query failed: ERROR:  la sintaxis de entrada no es válida para tipo date: «»
+LINE 10:         fecha_factura_venta BETWEEN '' AND '2022-06-18';
+                                             ^ in D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\DFPYME\\htdoc...', 135)
+#1 D:\DFPYME\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #122, '\r\n        SELEC...')
+#2 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 D:\DFPYME\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 D:\DFPYME\htdocs\dfpyme\app\Models\facturaVentaModel.php(25): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 D:\DFPYME\htdocs\dfpyme\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('', '2022-06-18')
+#6 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#7 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#8 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-18 21:09:00 --> Call to a member function getResultArray() on bool
+#0 D:\DFPYME\htdocs\dfpyme\app\Controllers\consultas_y_reportes\duplicadoFacturaController.php(31): App\Models\facturaVentaModel->facturas_por_rango_de_fechas('', '2022-06-18')
+#1 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\consultas_y_reportes\duplicadoFacturaController->facturas_por_rango_de_fechas()
+#2 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\consultas_y_reportes\duplicadoFacturaController))
+#3 D:\DFPYME\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\DFPYME\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

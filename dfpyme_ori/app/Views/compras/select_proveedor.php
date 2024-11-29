@@ -1,0 +1,1 @@
+<input type="date" class="form-control" id="fecha_factura" value="<?php  echo date('Y-m-d') ?>">

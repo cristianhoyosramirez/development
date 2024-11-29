@@ -1,0 +1,24 @@
+CRITICAL - 2022-05-20 14:46:55 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(746): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 746)
+#1 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(107): App\Controllers\pedido\partirFacturaController->facturacion_con_impuestos('630', '20000', '0', '18800', '22222222', '8', '1', '200000')
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->facturar()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-20 14:46:56 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(746): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 746)
+#1 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(107): App\Controllers\pedido\partirFacturaController->facturacion_con_impuestos('630', '20000', '0', '18800', '22222222', '8', '1', '200000')
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->facturar()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-20 14:48:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(746): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 746)
+#1 C:\xampp\htdocs\web\app\Controllers\pedido\partirFacturaController.php(107): App\Controllers\pedido\partirFacturaController->facturacion_con_impuestos('569', '20000', '0', '15400', '22222222', '8', '1', '200000')
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\pedido\partirFacturaController->facturar()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedido\partirFacturaController))
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -1,0 +1,418 @@
+CRITICAL - 2022-04-16 13:17:31 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 222)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(37): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-16 13:33:08 --> Undefined variable $observacion_general
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 255)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 13:39:12 --> Undefined variable $observacion_general
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 255)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 14:15:02 --> There is no data to update.
+#0 C:\xampp\htdocs\web\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\web\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(286): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-16 15:17:23 --> There is no data to update.
+#0 C:\xampp\htdocs\web\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\web\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(297): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-16 15:21:47 --> There is no data to update.
+#0 C:\xampp\htdocs\web\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\web\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(300): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-16 15:22:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 15:25:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 15:38:35 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 15:41:36 --> There is no data to update.
+#0 C:\xampp\htdocs\web\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\xampp\htdocs\web\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#2 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(301): CodeIgniter\Model->update()
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#4 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-16 18:56:43 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp\htdocs\web\app\Views\salones\salones.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 222)
+#1 C:\xampp\htdocs\web\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\web\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\web\system\Common.php(1089): CodeIgniter\View\View->render('salones/salones', Array, true)
+#4 C:\xampp\htdocs\web\app\Controllers\Salones\SalonesController.php(37): view('salones/salones', Array)
+#5 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Salones\SalonesController->salones()
+#6 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Salones\SalonesController))
+#7 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-16 19:01:07 --> ErrorException: pg_query(): Query failed: ERROR:  update o delete en «mesas» viola la llave foránea «id_mesa» en la tabla «factura_venta»
+DETAIL:  La llave (id)=(1) todavía es referida desde la tabla «factura_venta». in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #123, 'DELETE FROM "me...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "me...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "me...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM "me...', Array, false)
+#5 C:\xampp\htdocs\web\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 C:\xampp\htdocs\web\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 C:\xampp\htdocs\web\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(304): CodeIgniter\BaseModel->delete()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-16 19:01:07 --> pg_query(): Query failed: ERROR:  update o delete en «mesas» viola la llave foránea «id_mesa» en la tabla «factura_venta»
+DETAIL:  La llave (id)=(1) todavía es referida desde la tabla «factura_venta».
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #123, 'DELETE FROM "me...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "me...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "me...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM "me...', Array, false)
+#5 C:\xampp\htdocs\web\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 C:\xampp\htdocs\web\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 C:\xampp\htdocs\web\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(304): CodeIgniter\BaseModel->delete()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-16 19:07:35 --> ErrorException: pg_query(): Query failed: ERROR:  update o delete en «mesas» viola la llave foránea «id_mesa» en la tabla «factura_venta»
+DETAIL:  La llave (id)=(1) todavía es referida desde la tabla «factura_venta». in C:\xampp\htdocs\web\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #123, 'DELETE FROM "me...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "me...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "me...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM "me...', Array, false)
+#5 C:\xampp\htdocs\web\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 C:\xampp\htdocs\web\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 C:\xampp\htdocs\web\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(304): CodeIgniter\BaseModel->delete()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-16 19:07:35 --> pg_query(): Query failed: ERROR:  update o delete en «mesas» viola la llave foránea «id_mesa» en la tabla «factura_venta»
+DETAIL:  La llave (id)=(1) todavía es referida desde la tabla «factura_venta».
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\web\system\Database\Postgre\Connection.php(135): pg_query(Resource id #123, 'DELETE FROM "me...')
+#2 C:\xampp\htdocs\web\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "me...')
+#3 C:\xampp\htdocs\web\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "me...')
+#4 C:\xampp\htdocs\web\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM "me...', Array, false)
+#5 C:\xampp\htdocs\web\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 C:\xampp\htdocs\web\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 C:\xampp\htdocs\web\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(304): CodeIgniter\BaseModel->delete()
+#9 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#10 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#11 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-16 19:21:28 --> Undefined variable $numero_pedido_mesa_destino
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 309)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:22:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:23:33 --> Undefined variable $numero_pedido_mesa_destino
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(317): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 317)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:24:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:33:14 --> Undefined variable $numero_pedido_mesa_destino
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(326): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 326)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:34:29 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:35:53 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 273)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:37:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 273)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:40:50 --> Undefined variable $numero_pedido_mesa_destino
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(328): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 328)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:41:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:43:09 --> number_format(): Argument #1 ($num) must be of type float, array given
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(328): number_format(Array, 0, ',', '.')
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:45:13 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:45:45 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 274)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:46:09 --> Undefined variable $cantidad_de_producto
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 329)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:51:22 --> Undefined array key 0
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 331)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:51:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:53:06 --> Undefined array key "cantidad_producto"
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 331)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:53:38 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:48 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:48 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:49 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:50 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:51 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-16 19:55:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\web\app\Controllers\Mesa\mesaController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 189)
+#1 C:\xampp\htdocs\web\system\CodeIgniter.php(832): App\Controllers\Mesa\mesaController->intercambio_mesa()
+#2 C:\xampp\htdocs\web\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa\mesaController))
+#3 C:\xampp\htdocs\web\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\web\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

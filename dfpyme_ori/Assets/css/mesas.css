@@ -1,0 +1,25 @@
+/* Estilo para la lista horizontal en pantallas grandes */
+.horizontal-list {
+    list-style: none;
+    padding: 15px;
+    display: inline-flex;
+    /* Muestra los elementos en una línea horizontal */
+    display: flex;
+    max-height: 150px;
+    /* Altura máxima deseada */
+    overflow-x: auto;
+    /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+/* Estilo para los elementos de la lista horizontal */
+.horizontal-list li {
+    padding-right: 10px;
+    /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilo para la lista horizontal en pantallas pequeñas */
+@media (max-width: 767px) {
+    .horizontal-list {
+        overflow-y: hidden; /* Oculta la barra de desplazamiento vertical en pantallas pequeñas */
+    }
+}
