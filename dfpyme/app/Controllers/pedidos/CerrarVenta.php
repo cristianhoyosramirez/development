@@ -56,26 +56,31 @@ class CerrarVenta extends BaseController
 
 
 
-            /*      $id_mesa = 2;
-        $pedido = model('pedidoModel')->select('id')->where('fk_mesa', $id_mesa)->first();
-        $numero_pedido = $pedido['id'];
-        //$numero_pedido = 13;
-        $efectivo = 3000;
-        $transaccion = 0;
-        $valor_venta = 3000;
-        $nit_cliente = '222222222222';
-        $id_usuario = 6;
-        $estado = 1;
-        $propina = 0;
-        $descuento = 0;
-        $tipo_pago = 1; */
+            /*      $id_mesa = 2; */
+            $pedido = model('pedidoModel')->select('id')->where('fk_mesa', $id_mesa)->first();
+            $numero_pedido = $pedido['id'];
+            //$numero_pedido = 13;
+            /*    $efectivo = 3000;
+            $transaccion = 0;
+            $valor_venta = 3000;
+            $nit_cliente = '222222222222';
+            $id_usuario = 6;
+            $estado = 1;
+            $propina = 0;
+            $descuento = 0;
+            $tipo_pago = 1; */
 
             // var_dump($this->request->getPost()); exit();
 
 
-
-            $efectivo = $_POST['efectivo'];
-            $transaccion = $_POST['transaccion'];
+            if ($_POST['estado'] != 6) {
+                $efectivo = $_POST['efectivo'];
+                $transaccion = $_POST['transaccion'];
+            }
+            if ($_POST['estado'] == 6) {
+                $efectivo = 0;
+                $transaccion = 0;
+            }
             $valor_venta = $_POST['valor_venta'];
             $nit_cliente = $_POST['nit_cliente'];
             $id_usuario = $_POST['id_usuario'];
@@ -112,6 +117,15 @@ class CerrarVenta extends BaseController
                     $serie_remision  = $consectivo_remision['numeroconsecutivo'] + 1;
                     $incremento_remision = model('consecutivosModel')->actualizar_consecutivos($serie_remision);
                     $numeracion_factura = $consectivo_remision['numeroconsecutivo'];
+                }
+                if ($estado == 6) {
+
+                    $consectivo_cortesia = model('consecutivosModel')->select('numeroconsecutivo')->where('idconsecutivos', 103)->first();
+                    $serie_cortesia  = $consectivo_cortesia['numeroconsecutivo'] + 1;
+                    $incremento_cortesia = model('consecutivosModel')->actualizar_consecutivos($serie_cortesia);
+                    $numeracion_factura = "CORT-" . $consectivo_cortesia['numeroconsecutivo'];
+
+                    $updateConse=model('consecutivosModel')->set('numeroconsecutivo',$serie_cortesia)->where('idconsecutivos', 103)->update();
                 }
 
 
@@ -155,10 +169,10 @@ class CerrarVenta extends BaseController
                 $fk_usuario_mesero = model('pedidoModel')->select('fk_usuario')->where('fk_mesa', $id_mesa)->first();
 
                 $saldo = '';
-                if ($estado == 1 or $estado == 7) {
+                if ($estado == 1 or $estado == 7 or $estado == 6) {
                     $saldo = 0;
                 }
-                if ($estado == 2 or $estado == 6) {
+                if ($estado == 2 ) {
                     $saldo = $valor_total['valor_total'];
                 }
 
@@ -331,6 +345,15 @@ class CerrarVenta extends BaseController
                                 $recibido_efectivo = $efectivo;
                             }
                         }
+                    }
+
+                    if ($efectivo == 0 and $transaccion == 0) {
+
+                        $valor_pago_transferencia = 0;
+                        $valor_pago_efectivo = 0;
+                        $cambio = 0;
+                        $recibido_transaccion = 0;
+                        $recibido_efectivo = 0;
                     }
 
                     if ($estado == 2) {
@@ -541,13 +564,13 @@ class CerrarVenta extends BaseController
         $temp_propina = new Propina();
         $propina = $temp_propina->calcularPropina($id_mesa);
 
-    
+
         $returnData = array(
             "resultado" => 1,
             "propina" => number_format($propina['propina'], 0, ",", "."),
             "total_pedido" => number_format($propina['propina'] + $propina['valor_pedido'], 0, ",", "."),
             "valor_pedido" => $propina['valor_pedido'],
-            "val_pedido" => $propina['valor_pedido']+ $propina['propina'],
+            "val_pedido" => $propina['valor_pedido'] + $propina['propina'],
         );
         echo  json_encode($returnData);
     }

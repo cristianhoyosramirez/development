@@ -44,18 +44,7 @@ class pagosModel extends Model
     ");
         return $datos->getResultArray();
     }
-    /*   public function set_ventas_electronicas($id_apertura)
-    {
-        $datos = $this->db->query("
-    SELECT
-    SUM(total) as valor
-    FROM
-        kardex
-    WHERE
-        id_apertura = $id_apertura AND id_estado = 8
-    ");
-        return $datos->getResultArray();
-    } */
+ 
     public function set_ventas_electronicas($id_apertura)
     {
         $datos = $this->db->query("
@@ -207,18 +196,33 @@ class pagosModel extends Model
     {
 
         $datos = $this->db->query("
-        select min(id) as id from pagos where id_apertura=$id_apertura and id_estado =8
+        SELECT MIN(id) AS id 
+FROM documento_electronico 
+WHERE id_status = 2 
+  AND transaccion_id IS NOT NULL 
+  AND transaccion_id != '' AND id_apertura=$id_apertura;
  ");
         return $datos->getResultArray();
     }
+
     function get_max_id_electronico($id_apertura)
     {
 
         $datos = $this->db->query("
-        select max(id) as id from pagos where id_apertura=$id_apertura and id_estado =8
+  SELECT MAX(id) AS id 
+FROM 
+    documento_electronico
+WHERE 
+    id_status = 2
+    AND transaccion_id IS NOT NULL
+    AND transaccion_id != ''
+    AND id_apertura = $id_apertura;
+;
  ");
         return $datos->getResultArray();
     }
+
+ 
     function get_max_id($id_apertura)
     {
 
@@ -235,11 +239,18 @@ class pagosModel extends Model
  ");
         return $datos->getResultArray();
     }
-    function get_total_registros_electronicos($id_apertura)
+    function get_total_registros_electronicos($id_inicial,$id_final)
     {
 
         $datos = $this->db->query("
-        select count(id) as total_registros from pagos where id_apertura=$id_apertura and id_estado =8
+        SELECT count(id) AS id 
+FROM 
+    documento_electronico
+WHERE 
+    id_status = 2
+    AND transaccion_id IS NOT NULL
+    AND transaccion_id != ''
+    AND id BETWEEN $id_inicial AND $id_final 
  ");
         return $datos->getResultArray();
     }
@@ -293,12 +304,12 @@ class pagosModel extends Model
     }
 
 
-    public function fiscal_iva($id_apertura)
+    public function fiscal_iva($id_inicial , $id_final)
     {
         $datos = $this->db->query("
-        SELECT DISTINCT ( valor_iva )
+          SELECT DISTINCT ( valor_iva )
         FROM   kardex
-        WHERE  id_apertura=$id_apertura
+        WHERE  id_factura between $id_inicial and $id_final 
         AND aplica_ico = 'false' and id_estado = 8 
         ");
         return $datos->getResultArray();
@@ -399,11 +410,11 @@ class pagosModel extends Model
 
         $datos = $this->db->query("
         SELECT
-        *
+        recibido_transferencia
     FROM
         pagos
     WHERE
-        id_factura = $id_factura AND recibido_transferencia > 0
+        id = $id_factura AND recibido_transferencia > 0
                                  ");
         return $datos->getResultArray();
     }
@@ -534,7 +545,7 @@ class pagosModel extends Model
     {
         $datos = $this->db->query("
             
-            SELECT DISTINCT fecha FROM pagos where fecha between '$fecha_inicial' and '$fecha_final' order by fecha desc;
+            SELECT DISTINCT fecha FROM pagos where fecha between '$fecha_inicial' and '$fecha_final' order by fecha asc;
             
             ");
         return $datos->getResultArray();
@@ -553,6 +564,53 @@ class pagosModel extends Model
         $datos = $this->db->query("
             
             SELECT DISTINCT valor_iva FROM kardex where fecha between '$fecha_inicial' and '$fecha_final';
+            
+            ");
+        return $datos->getResultArray();
+    }
+    public function total_formas_pago ($apertura)
+    {
+        $datos = $this->db->query("
+            
+            SELECT 
+  distinct (medio_pago)
+FROM 
+    documento_electronico
+WHERE 
+    id_apertura = $apertura 
+
+            
+            ");
+        return $datos->getResultArray();
+    }
+    public function getDocumentosCosto ($fechaInicial , $fechaFinal)
+    {
+        $datos = $this->db->query("
+            
+                SELECT
+                    id,
+                    fecha,
+                    documento,
+                    valor as total_documento,
+                    id_factura,
+                    id_estado,
+                    nit_cliente,
+                    id_estado,
+                    id_factura
+                FROM
+                    pagos where fecha BETWEEN '$fechaInicial' and '$fechaFinal'
+            
+            ");
+        return $datos->getResultArray();
+    }
+    public function getTotalVenta ($fechaInicial , $fechaFinal)
+    {
+        $datos = $this->db->query("
+            
+                SELECT
+                   sum(valor) as total
+                FROM
+                    pagos where fecha BETWEEN '$fechaInicial' and '$fechaFinal'
             
             ");
         return $datos->getResultArray();

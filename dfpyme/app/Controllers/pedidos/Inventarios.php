@@ -584,15 +584,15 @@ class Inventarios extends BaseController
 
     function ingresar_entrada()
     {
-        $codigo_producto = $this->request->getPost('codigo');
+     /*    $codigo_producto = $this->request->getPost('codigo');
         $precio = $this->request->getPost('precio');
         $cantidad = $this->request->getPost('cantidad');
-        $id_usuario = $this->request->getPost('id_usuario');
+        $id_usuario = $this->request->getPost('id_usuario'); */
 
-        /*  $codigo_producto = '2';
+         $codigo_producto = '2';
         $precio = 10.000;
         $cantidad = 1;
-        $id_usuario = 6; */
+        $id_usuario = 6; 
 
         $datos = [
             'idfactura' => 1,
@@ -610,6 +610,7 @@ class Inventarios extends BaseController
 
 
         $insert = model('ComprasModel')->insertar($datos);
+        exit();
 
         if ($insert) {
 

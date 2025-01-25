@@ -70,6 +70,8 @@
                 <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
                 <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
                 <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
+                <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
+                <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
             </tr>
 
             <?php
@@ -82,15 +84,21 @@
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none ">CÓDIGO</td>
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none ">PRODUCTO</td>
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none ">CANTIDAD</td>
+                    <td style="text-align:left; font: oblique bold 80% cursive; border:none ">VALOR COSTO UNIDAD </td>
+                    <td style="text-align:left; font: oblique bold 80% cursive; border:none ">VALOR COSTO TOTAL</td>
+                    
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none ">VALOR UNIDAD</td>
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none ">TOTAL</td>
                 </tr>.
 
                 <?php foreach ($productos_categoria as $detalle_producto) { ?>
+                    <?php $costo = model('productoModel')->select('precio_costo')->where('codigointernoproducto',$detalle_producto['codigo_interno_producto'])->first(); ?>
                     <tr>
                         <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo $detalle_producto['codigo_interno_producto'] ?></td>
                         <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo $detalle_producto['nombre_producto'] ?></td>
                         <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo $detalle_producto['cantidad'] ?></td>
+                        <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo "$" . number_format($costo['precio_costo'], 0, ",", ".") ?></td>
+                        <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo "$" . number_format($costo['precio_costo']*$detalle_producto['cantidad'], 0, ",", ".") ?></td>
                         <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo  number_format($detalle_producto['precio_venta'], 0, ",", ".") ?></td>
                         <td style="text-align:left; font: oblique bold 80% cursive; border:none "><?php echo  number_format($detalle_producto['valor_total'], 0, ",", ".") ?></td>
                     </tr>
@@ -101,6 +109,10 @@
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
                     <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
+                    <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
+                    <td style="text-align:left; font: oblique bold 80% cursive; border:none "></td>
+                   
+                    
                     <td style="background-color: #FBB282; color: white;" style="text-align:left; font: oblique bold 80% cursive; border:none "> <!-- Rojo similar a Bootstrap -->
                         <p style="background-color: #FBB282; color: white;" class="h2 text-end">TOTAL: <?php echo  number_format($total_categoria[0]['valor_total'], 0, ",", ".") ?></p>
                     </td>

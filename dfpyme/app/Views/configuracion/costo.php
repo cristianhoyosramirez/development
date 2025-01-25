@@ -50,20 +50,26 @@ Reporte de costos
 
 
     <input type="hidden" id="url" value="<?php echo base_url() ?>">
-    <div class="row">
-        <div class="col-2">
-            <label for="" class="form-label">Fecha inicial </label>
-            <input type="texr" class="form-control" value="<?php echo date('Y-m-d') ?>" id="fecha_inicial">
+    <form action="<?php echo base_url() ?>/caja_general/exportCostoExcel" method="POST">
+        <div class="row">
+            <div class="col-2">
+                <label for="" class="form-label">Fecha inicial </label>
+                <input type="texr" class="form-control" value="<?php echo date('Y-m-d') ?>" id="fecha_inicial" name="fecha_inicial">
+            </div>
+            <div class="col-2">
+                <label for="" class="form-label">Fecha final </label>
+                <input type="text" class="form-control" value="<?php echo date('Y-m-d') ?>" id="fecha_final" name="fecha_final">
+            </div>
+            <div class="col-2">
+                <label for="" class="form-label text-light">Fech </label>
+                <a href="#" class="btn btn-outline-success w-100">Buscar</a>
+            </div>
+            <div class="col-2">
+                <label for="" class="form-label text-light">Fech </label>
+                <button type="submit" class="btn btn-outline-success "> Excel </button>
+            </div>
         </div>
-        <div class="col-2">
-            <label for="" class="form-label">Fecha final </label>
-            <input type="text" class="form-control" value="<?php echo date('Y-m-d') ?>" id="fecha_final">
-        </div>
-        <div class="col-2">
-            <label for="" class="form-label text-light">Fech </label>
-            <a href="#" class="btn btn-outline-success w-100">Buscar</a>
-        </div>
-    </div>
+    </form>
 
 
     <div id="processing-bar" style="display: none;">
@@ -81,12 +87,13 @@ Reporte de costos
                 <td>Nit cliente</th>
                 <td>Cliente</th>
                 <td>Documento</th>
-                <td>Valor</th>
+                
                 <td>Tipo documento</th>
                 <td>Costo</th>
                 <td>Base </th>
                 <td>IVA</th>
                 <td>INC</th>
+                <td>Valor</th>
 
             </tr>
         </thead>
@@ -151,71 +158,6 @@ Reporte de costos
     }
 </script>
 
-
-
-
-<!-- <script>
-    $(document).ready(function() {
-        var fecha_inicial = document.getElementById("fecha_inicial").value;
-        var fecha_final = document.getElementById("fecha_final").value;
-        var dataTable = $('#consulta_costo').DataTable({
-            serverSide: true,
-            processing: true,
-            searching: false,
-            dom: 'Bfrtip',
-            buttons: [
-                'excelHtml5' // Agregar el botón de exportar a Excel
-            ],
-            order: [
-                [0, 'desc']
-            ],
-            language: {
-                decimal: "",
-                emptyTable: "No hay datos",
-                info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
-                infoEmpty: "Mostrando 0 a 0 de 0 registros",
-                infoFiltered: "(Filtro de _MAX_ total registros)",
-                infoPostFix: "",
-                thousands: ",",
-                lengthMenu: "Mostrar _MENU_ registros",
-                loadingRecords: "Cargando...",
-                processing: "Procesando...",
-                search: "Buscar",
-                zeroRecords: "No se encontraron coincidencias",
-                paginate: {
-                    first: "Primero",
-                    last: "Ultimo",
-                    next: "Próximo",
-                    previous: "Anterior"
-                },
-                aria: {
-                    sortAscending: ": Activar orden de columna ascendente",
-                    sortDescending: ": Activar orden de columna desendente"
-                }
-            },
-            ajax: {
-                url: '<?php echo base_url() ?>' + "/reportes/data_table_reporte_costo",
-                data: function(d) {
-                    return $.extend({}, d, {
-                        // documento: documento,
-                        fecha_inicial: fecha_inicial,
-                        fecha_final: fecha_final
-                    });
-                },
-                dataSrc: function(json) {
-                   
-                    $('#valor_venta').html(json.total_venta);
-                  
-                    return json.data;
-                },
-            },
-            columnDefs: [{
-                targets: [4],
-                orderable: false
-            }]
-        });
-    });
-</script> -->
 
 <script>
     $(document).ready(function() {

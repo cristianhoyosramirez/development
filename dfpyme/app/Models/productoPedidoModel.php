@@ -9,7 +9,7 @@ class productoPedidoModel extends Model
     protected $table      = 'producto_pedido';
     // Uncomment below if you want add primary key
     // protected $primaryKey = 'id';
-    protected $allowedFields = ['numero_de_pedido', 'cantidad_producto', 'nota_producto', 'valor_unitario', 'impresion_en_comanda', 'cantidad_entregada', 'valor_total', 'se_imprime_en_comanda',  'codigo_categoria', 'codigointernoproducto', 'numero_productos_impresos_en_comanda'];
+    protected $allowedFields = ['numero_de_pedido', 'cantidad_producto', 'nota_producto', 'valor_unitario', 'impresion_en_comanda', 'cantidad_entregada', 'valor_total', 'se_imprime_en_comanda',  'codigo_categoria', 'codigointernoproducto', 'numero_productos_impresos_en_comanda', 'id_impresora'];
 
     public function producto_pedido($numero_pedido)
     {
@@ -528,17 +528,80 @@ class productoPedidoModel extends Model
     function actualizacion_cantidad_producto($id, $datos)
     {
 
-        //$this->db->query->where();
-        // $this->db->query->update('usuarios', $datos);
-        // return $this->db->query->getResultArray();
-
-
-
         $productos = $this->db->table('producto_pedido');
         $productos->set('valor_total', $datos['valor_total']);
         $productos->set('cantidad_producto', $datos['cantidad_producto']);
         $productos->where('id', $id);
         $productos->update();
         return $productos;
+    }
+
+    public function getCategorias($pedido)
+    {
+        $datos = $this->db->query("
+            SELECT DISTINCT codigo_categoria from producto_pedido WHERE numero_de_pedido=$pedido
+        ");
+        return $datos->getResultArray();
+    }
+
+    public function productos_impresora($id_impresora)
+    {
+        $datos = $this->db->query("
+        SELECT
+             producto_pedido.id as id,
+             producto.nombreproducto,
+             producto.valorventaproducto,
+             valor_total,
+             cantidad_producto,
+             nota_producto,
+             valor_unitario,
+             producto_pedido.codigointernoproducto,
+             numero_productos_impresos_en_comanda
+        FROM
+             producto_pedido
+        INNER JOIN producto ON producto_pedido.codigointernoproducto = producto.codigointernoproducto
+        where id_impresora=$id_impresora  and se_imprime_en_comanda='true' and  numero_productos_impresos_en_comanda < cantidad_producto  order by id asc;
+        ");
+        return $datos->getResultArray();
+    }
+    public function GetProductosimpresora($id_impresora)
+    {
+        $datos = $this->db->query("
+        SELECT
+             producto_pedido.id as id,
+             producto.nombreproducto,
+             producto.valorventaproducto,
+             valor_total,
+             cantidad_producto,
+             nota_producto,
+             valor_unitario,
+             producto_pedido.codigointernoproducto,
+             numero_productos_impresos_en_comanda
+        FROM
+             producto_pedido
+        INNER JOIN producto ON producto_pedido.codigointernoproducto = producto.codigointernoproducto
+        where id_impresora=$id_impresora  and se_imprime_en_comanda='true' and  numero_productos_impresos_en_comanda < cantidad_producto  order by id desc;
+        ");
+        return $datos->getResultArray();
+    }
+    public function productosReImpresion($id_impresora, $pedido)
+    {
+        $datos = $this->db->query("
+        SELECT
+             producto_pedido.id as id,
+             producto.nombreproducto,
+             producto.valorventaproducto,
+             valor_total,
+             cantidad_producto,
+             nota_producto,
+             valor_unitario,
+             producto_pedido.codigointernoproducto,
+             numero_productos_impresos_en_comanda
+        FROM
+             producto_pedido
+        INNER JOIN producto ON producto_pedido.codigointernoproducto = producto.codigointernoproducto
+        where id_impresora=$id_impresora  and se_imprime_en_comanda='true' and numero_de_pedido = $pedido order by id desc;
+        ");
+        return $datos->getResultArray();
     }
 }

@@ -100,21 +100,8 @@ Ventas
                         <option value="<?php echo $detalle['idestado'] ?>" <?php if ($detalle['idestado'] == 5) : ?>selected <?php endif; ?>><?php echo $detalle['descripcionestado'] ?> </option>
                     <?php endforeach ?>
                 </select>
-
                 <span id="error_tipo_documento" class="text-danger"></span>
-
-
             </div>
-
-            <!--  <div class="col" id="estado_dian" style="display:none">
-                <label for="" class="form-label">Estado Dian </label>
-                <select name="" id="" class="form-select" onchange="estado_dian(this.value)">
-                    <option value="1">DIAN NO ENVIADO </option>
-                    <option value="2">DIAN ACEPTADO </option>
-                    <option value="3">DIAN RECHAZADO</option>
-                    <option value="4">DIAN ERROR </option>
-                </select>
-            </div> -->
 
 
             <div class="col" id="numero" style="display:none">
@@ -187,24 +174,7 @@ Ventas
         </div><br>
         <div class="row">
             <div class="col">
-                <!--  <div class="card card-sm">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="chart-sparkline chart-sparkline-square" id="sparkline-orders"></div>
-                            </div>
-                            <div class="col">
-                                <div class="font-weight-medium text-center">
-                                    DIAN ACEPTADO
-                                </div>
-                                <div class="text-muted text-center">
-                                    <span id="dian_aceptado"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
+         
                 <a class="card card-link cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Documentos acetados por la DIAN " onclick="estado_dian(2)">
                     <div class="card-body">
                         <div class="row">
@@ -227,23 +197,7 @@ Ventas
                 </a>
             </div>
             <div class="col-3">
-                <!--  <div class="card card-sm">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="chart-sparkline chart-sparkline-square" id="sparkline-orders"></div>
-                            </div>
-                            <div class="col">
-                                <div class="font-weight-medium text-center">
-                                    DIAN NO ENVIADO
-                                </div>
-                                <div class="text-muted text-center">
-                                    <span id="dian_no_enviado"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                
 
                 <a class="card card-link cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Documentos no enviados a la DIAN " onclick="estado_dian(1)">
                     <div class="card-body">
@@ -273,24 +227,7 @@ Ventas
 
 
             <div class="col">
-                <!--  <div class="card card-sm">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="chart-sparkline chart-sparkline-square" id="sparkline-orders"></div>
-                            </div>
-                            <div class="col">
-                                <div class="font-weight-medium text-center">
-                                    DIAN RECHAZADO
-                                </div>
-                                <div class="text-muted text-center">
-                                    <span id="dian_rechazado"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
+      
 
 
                 <a class="card card-link cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Documentos rechazados por la  DIAN " onclick="estado_dian(3)">
@@ -315,24 +252,7 @@ Ventas
 
             </div>
             <div class="col">
-                <!--  <div class="card card-sm">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <div class="chart-sparkline chart-sparkline-square" id="sparkline-orders"></div>
-                            </div>
-                            <div class="col">
-                                <div class="font-weight-medium text-center">
-                                    DIAN ERROR
-                                </div>
-                                <div class="text-muted text-center">
-                                    <span id="dian_error"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
+               
                 <a class="card card-link cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Documentos con error " onclick="estado_dian(4)">
                     <div class="card-body">
                         <div class="row">
@@ -483,7 +403,7 @@ Ventas
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-success" onclick="eliminacion_fac_ele()">Aceptar</button>
-                <button type="button" class="btn btn-outline-danger">Cancelar</button>
+                <button type="button" class="btn btn-outline-danger" onclick="cerrar_modal()"  data-bs-dismiss="modal">Cancelar</button>
             </div>
         </div>
     </div>
@@ -521,9 +441,18 @@ Ventas
 
 <script src="<?= base_url() ?>/Assets/script_js/nuevo_desarrollo/f_e.js"></script>
 <script src="<?= base_url() ?>/Assets/script_js/nuevo_desarrollo/imprimir_electronica.js"></script>
-<script src="<?= base_url() ?>/Assets/script_js/nuevo_desarrollo/impresion_factura_electronica.js"></script>
+<script src="<?= base_url() ?>/Assets/script_js/nuevo_desarrollo/impreasion_factura_electronica.js"></script>
 
 
+<script>
+    function cerrar_modal(){
+
+        document.getElementById("password").value = '';
+      
+
+
+    }
+</script>
 
 
 

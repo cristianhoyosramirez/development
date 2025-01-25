@@ -221,4 +221,42 @@ class impresionFacturaController extends BaseController
             echo  json_encode($returnData);
         }
     }
+
+    function inventario()
+    {
+
+        $categorias = model('categoriasModel')->findAll();
+        return view('ventas/inventario',[
+            'categorias'=>$categorias
+        ]);
+    }
+
+    function ProductosInventario()
+    {
+
+        $productos = model('productoModel')->getInventario();
+
+        if (!empty($productos)) {
+
+            $costoTotal = model('productoModel')->TotalInv();
+            $unidades = model('inventarioModel')
+                ->selectSum('cantidad_inventario')
+                ->where('cantidad_inventario >', 0)
+                ->findAll();
+
+
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => $productos,
+                'costo_total' => "$ " . number_format($costoTotal[0]['costo_total'], 0, ",", "."),
+                'unidades'=> number_format($unidades[0]['cantidad_inventario'], 0, ",", ".")
+            ]);
+        }
+        if (empty($productos)) {
+
+            return $this->response->setJSON([
+                'success' => false,
+            ]);
+        }
+    }
 }

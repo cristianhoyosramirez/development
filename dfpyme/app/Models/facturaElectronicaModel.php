@@ -115,7 +115,7 @@ class facturaElectronicaModel extends Model
         return $datos->getResultArray();
     }
 
-     public function  inicial_final($id_inicial , $id_final )
+    public function  inicial_final($id_inicial, $id_final)
     {
         $datos = $this->db->query("
      SELECT 
@@ -135,8 +135,8 @@ class facturaElectronicaModel extends Model
 
     ");
         return $datos->getResultArray();
-    } 
-     public function  id_inicial_final($fecha_inicial , $fecha_final )
+    }
+    public function  id_inicial_final($fecha_inicial, $fecha_final)
     {
         $datos = $this->db->query("
         SELECT MIN(id) AS id_minimo, MAX(id) AS id_maximo
@@ -144,12 +144,24 @@ class facturaElectronicaModel extends Model
             WHERE fecha BETWEEN '$fecha_inicial' AND '$fecha_final';
     ");
         return $datos->getResultArray();
-    } 
-     public function  total_venta($fecha_inicial , $fecha_final )
+    }
+    public function  total_venta($fecha_inicial, $fecha_final)
     {
         $datos = $this->db->query("
         select sum (neto) as total_venta from documento_electronico where fecha between '$fecha_inicial' and '$fecha_final';
     ");
         return $datos->getResultArray();
-    } 
+    }
+    public function  getFacturasTrasmitidas($id_inicial, $id_final)
+    {
+        $datos = $this->db->query("
+        SELECT id 
+        FROM documento_electronico 
+        WHERE id_status = 2 
+        AND transaccion_id IS NOT NULL 
+        AND transaccion_id != ''
+        AND id BETWEEN $id_inicial AND $id_final order by id asc;
+    ");
+        return $datos->getResultArray();
+    }
 }

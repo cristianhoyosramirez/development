@@ -30,14 +30,14 @@ class Inventario
         } elseif ($id_tipo_inventario == 3) {
 
 
-            $data = [
+            /*   $data = [
                 'cantidad_inventario' => $inventario_final,
 
             ];
             $model = model('inventarioModel');
             $actualizar = $model->set($data);
             $actualizar = $model->where('codigointernoproducto', $codigointerno);
-            $actualizar = $model->update();
+            $actualizar = $model->update(); */
 
 
             $producto_fabricado = model('productoFabricadoModel')->select('*')->where('prod_fabricado', $codigointerno)->find();
@@ -58,7 +58,7 @@ class Inventario
                     'inventario_actual' => $cantidad_inventario['cantidad_inventario'] - $descontar_de_inventario,
                     'id_doc' => $id_doc,
                     'tipo_doc' => $documento,
-                    'id_pro_prin'=> $id_pro['id']
+                    'id_pro_prin' => $id_pro['id']
                 ];
 
                 $insertar = model('MovimientoInsumosModel')->insert($movimiento);

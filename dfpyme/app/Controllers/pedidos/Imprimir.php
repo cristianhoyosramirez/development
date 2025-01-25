@@ -10,6 +10,8 @@ use Mike42\Escpos\Printer;
 use Mike42\Escpos\EscposImage;
 use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
 use App\Libraries\impresion;
+use \DateTime;
+use \DateTimeZone;
 
 
 
@@ -36,12 +38,19 @@ class Imprimir extends BaseController
 
         $configuracion_comanda = model('configuracionPedidoModel')->select('partir_comanda')->first();
 
-        $impresion_comanda = model('configuracionPedidoModel')->select('comanda')->first();
+        $impresion_comanda = model('configuracionPedidoModel')->select('comanda')->first();  //Reimpresion
+
         $productos = array();
+
+        /**
+         * Pasos para la impresion de la comanda 
+         * 1. Validacion de que la me sa tenga pedido
+         * 2. Validacion de que productos falta por imprimir   ( $productos_pedido)
+         */
+
 
         if (!empty($pedido)) {
             $codigo_categoria = model('productoPedidoModel')->id_categoria($pedido['id']);
-
             $productos_pedido = $items = model('productoPedidoModel')->productos_pedido($pedido['id']);
 
             if (!empty($productos_pedido)) {
@@ -68,32 +77,45 @@ class Imprimir extends BaseController
                                 array_push($productos, $data);
                             }
                             //$this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $codigo_categoria[0]['codigo_categoria']);
-                            $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $valor['codigo_categoria']);
+                            $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $valor['codigo_categoria'], 'Comanda');
                             $productos = array();
                         }
                     }
                 }
+
                 if ($configuracion_comanda['partir_comanda'] == 'f') {
 
-                    $items = model('productoPedidoModel')->productos_pedido_comanda_todos($pedido['id']);
-                    //$items = model('tempProductoPedidoModel')->productos_pedido($pedido['id'], $valor['codigo_categoria']);
 
-                    if (!empty($items)) {
-                        foreach ($items as $detalle) {
-                            $data['id'] = $detalle['id'];
-                            $data['nombreproducto'] = $detalle['nombreproducto'];
-                            $data['valor_venta'] = $detalle['valorventaproducto'];
-                            $data['valor_total'] = $detalle['valor_total'];
-                            $data['cantidad'] = $detalle['cantidad_producto'];
-                            $data['nota_producto'] = $detalle['nota_producto'];
-                            $data['valor_unitario'] = $detalle['valor_unitario'];
-                            $data['codigo_interno'] = $detalle['codigointernoproducto'];
-                            $data['impresos'] = $detalle['numero_productos_impresos_en_comanda'];
-                            array_push($productos, $data);
+                    $categoria = model('productoPedidoModel')->getCategorias($pedido['id']);
+                    foreach ($categoria as $keyCategoria) {
+                        $id_impresora = model('categoriasModel')->select('impresora')->where('codigocategoria', $keyCategoria['codigo_categoria'])->first();
+
+                        $model = model('productoPedidoModel');
+
+                        $model->set('id_impresora', $id_impresora['impresora'])
+                            ->where('codigo_categoria', $keyCategoria['codigo_categoria'])
+                            ->where('numero_de_pedido', $pedido['id'])
+                            ->update();
+
+                       /*  if ($tipo_usuario['idtipo'] == 2 || $tipo_usuario['idtipo'] == 3) {
+                            $productos = model('productoPedidoModel')->productos_impresora($id_impresora['impresora']);
                         }
-                        //$this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $codigo_categoria[0]['codigo_categoria']);
-                        $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], '1');
-                        $productos = array();
+                        if ($tipo_usuario['idtipo'] == 1 || $tipo_usuario['idtipo'] == 0) {
+                            $productos = model('productoPedidoModel')->GetProductosimpresora($id_impresora['impresora'],$pedido['id']);
+                        } */
+                    }
+
+                    //$this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $keyCategoria['codigo_categoria'], 'Comanda');
+                    $impresoras = model('impresorasModel')->findAll();
+
+
+
+                    foreach ($impresoras as $keyImpresoras) {
+
+                        $productos = model('productoPedidoModel')->productos_impresora($keyImpresoras['id']);
+                        if (!empty($productos)) {
+                        $this->generar_comanda_sin_partir($productos, $pedido['id'], $nombre_mesa['nombre'], $keyImpresoras['id']);
+                        }
                     }
                 }
                 $returnData = array(
@@ -104,24 +126,81 @@ class Imprimir extends BaseController
 
             if (empty($productos_pedido)) {
 
-                //echo $comanda['comanda']; 
 
 
-                /*       if ($impresion_comanda['comanda']==="f"){
-                echo "Es falso ";
-               }
-               if ($impresion_comanda['comanda']==="t"){
-                echo "Es verdadero";
-               }
-                 exit(); */
+                if ($impresion_comanda['comanda'] === "t") { // Todo debe imprimirse en la misma impresora 
 
 
-                if ($impresion_comanda['comanda'] === "t") {
 
                     if ($tipo_usuario['idtipo'] == 1 || $tipo_usuario['idtipo'] == 0) {
 
                         if ($configuracion_comanda['partir_comanda'] == 't') {
+
                             foreach ($codigo_categoria as $valor) {
+
+
+                                $items = model('productoPedidoModel')->reimprimir_comanda($pedido['id'], $valor['codigo_categoria']);
+
+                                foreach ($items as $detalle) {
+                                    $data['id'] = $detalle['id'];
+                                    $data['nombreproducto'] = $detalle['nombreproducto'];
+                                    $data['valor_venta'] = $detalle['valorventaproducto'];
+                                    $data['valor_total'] = $detalle['valor_total'];
+                                    $data['cantidad'] = $detalle['cantidad_producto'];
+                                    $data['nota_producto'] = $detalle['nota_producto'];
+                                    $data['valor_unitario'] = $detalle['valor_unitario'];
+                                    $data['codigo_interno'] = $detalle['codigointernoproducto'];
+                                    $data['impresos'] = $detalle['numero_productos_impresos_en_comanda'];
+                                    array_push($productos, $data);
+                                }
+                                $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $valor['codigo_categoria'], 'Comanda');
+                                $productos = array();
+                            }
+                        }
+                        if ($configuracion_comanda['partir_comanda'] == 'f') {
+
+
+                            /*   $items = model('productoPedidoModel')->reimprimir_comanda_todo($pedido['id']);
+
+                            foreach ($items as $detalle) {
+                                $data['id'] = $detalle['id'];
+                                $data['nombreproducto'] = $detalle['nombreproducto'];
+                                $data['valor_venta'] = $detalle['valorventaproducto'];
+                                $data['valor_total'] = $detalle['valor_total'];
+                                $data['cantidad'] = $detalle['cantidad_producto'];
+                                $data['nota_producto'] = $detalle['nota_producto'];
+                                $data['valor_unitario'] = $detalle['valor_unitario'];
+                                $data['codigo_interno'] = $detalle['codigointernoproducto'];
+                                $data['impresos'] = $detalle['numero_productos_impresos_en_comanda'];
+                                array_push($productos, $data);
+                            }
+                            $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], '1');
+                            $productos = array(); */
+
+                            /*   $impresoras = model('impresorasModel')->findAll();
+
+
+                            foreach ($impresoras as $keyImpresoras) {
+
+                                $productos = model('productoPedidoModel')->productos_impresora($keyImpresoras['id']);
+
+                                if (!empty($productos)) {
+                                    //$this->generar_comanda_sin_partir($productos, $pedido['id'], $nombre_mesa['nombre'], $keyImpresoras['id']);
+                                }
+                            } */
+                            /*  $impresoras = model('impresorasModel')->findAll();
+
+
+
+                            foreach ($impresoras as $keyImpresoras) {
+
+                                $productos = model('productoPedidoModel')->productosReImpresion($keyImpresoras['id']);
+
+                                if (!empty($productos)) {
+                                    $this->generar_comanda_sin_partir($productos, $pedido['id'], $nombre_mesa['nombre'], $keyImpresoras['id']);
+                                }
+                            } */
+                            /*   foreach ($codigo_categoria as $valor) {
 
 
                                 $items = model('productoPedidoModel')->reimprimir_comanda($pedido['id'], $valor['codigo_categoria']);
@@ -140,27 +219,32 @@ class Imprimir extends BaseController
                                 }
                                 $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $valor['codigo_categoria']);
                                 $productos = array();
-                            }
+                            } */
                         }
-                        if ($configuracion_comanda['partir_comanda'] == 'f') {
 
-                            $items = model('productoPedidoModel')->reimprimir_comanda_todo($pedido['id']);
+                        $categoria = model('productoPedidoModel')->getCategorias($pedido['id']);
 
-                            foreach ($items as $detalle) {
-                                $data['id'] = $detalle['id'];
-                                $data['nombreproducto'] = $detalle['nombreproducto'];
-                                $data['valor_venta'] = $detalle['valorventaproducto'];
-                                $data['valor_total'] = $detalle['valor_total'];
-                                $data['cantidad'] = $detalle['cantidad_producto'];
-                                $data['nota_producto'] = $detalle['nota_producto'];
-                                $data['valor_unitario'] = $detalle['valor_unitario'];
-                                $data['codigo_interno'] = $detalle['codigointernoproducto'];
-                                $data['impresos'] = $detalle['numero_productos_impresos_en_comanda'];
-                                array_push($productos, $data);
-                            }
-                            $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], '1');
-                            $productos = array();
+
+                        foreach ($categoria as $keyCategoria) {
+                            $id_impresora = model('categoriasModel')->select('impresora')->where('codigocategoria', $keyCategoria['codigo_categoria'])->first();
+
+                            $model = model('productoPedidoModel');
+
+                            $model->set('id_impresora', $id_impresora['impresora'])
+                                ->where('codigo_categoria', $keyCategoria['codigo_categoria'])
+                                ->where('numero_de_pedido', $pedido['id'])
+                                ->update();
+
+
+                            $productos = model('productoPedidoModel')->productosReImpresion($id_impresora['impresora'],$pedido['id']);
                         }
+                        $this->generar_comanda($productos, $pedido['id'], $nombre_mesa['nombre'], $keyCategoria['codigo_categoria'], 'Reimpresion comanda');
+                        //$impresoras = model('impresorasModel')->findAll();
+
+
+
+
+
                         $returnData = array(
                             "resultado" => 1
                         );
@@ -174,24 +258,20 @@ class Imprimir extends BaseController
                 }
 
 
-                /*  if (!empty($items)) {
-                $returnData = array(
-                    "resultado" => 1
-                );
-                echo  json_encode($returnData);
-            } */
-            }
-            if ($impresion_comanda['comanda'] === "f") {
-                $returnData = array(
-                    "resultado" => 0
-                );
-                echo  json_encode($returnData);
+
+
+                if ($impresion_comanda['comanda'] === "f") {
+                    $returnData = array(
+                        "resultado" => 0
+                    );
+                    echo  json_encode($returnData);
+                }
             }
         }
     }
 
 
-    function generar_comanda($productos, $numero_pedido, $nombre_mesa, $codigo_categoria)
+    function generar_comanda($productos, $numero_pedido, $nombre_mesa, $codigo_categoria, $tipoImpresion)
 
     {
 
@@ -209,7 +289,107 @@ class Imprimir extends BaseController
 
         $printer->setJustification(Printer::JUSTIFY_CENTER);
         $printer->setTextSize(1, 1);
+        $printer->text("**" .  $tipoImpresion . "**" . "\n\n");
         $printer->text("**" .  $nombre_categoria['nombrecategoria'] . "**" . "\n\n");
+
+
+
+        $printer->setJustification(Printer::JUSTIFY_LEFT);
+        $printer->setTextSize(1, 2);
+        $printer->text("Pedido: " . $numero_pedido . "       Mesa: " . $nombre_mesa . "\n\n");
+        $printer->setTextSize(1, 1);
+        $printer->text("Mesero: " . $nombre_usuario['nombresusuario_sistema'] . "\n");
+
+        $printer->text("Fecha :" . "   " . date('d/m/Y ') . "Hora  :" . "   " . date('h:i:s a', time()) . "\n\n");
+
+        $printer->setJustification(Printer::JUSTIFY_LEFT);
+
+        foreach ($productos as $productos) {
+
+
+            $cantidad_productos_impresos = model('productoPedidoModel')->select('numero_productos_impresos_en_comanda')->where('id', $productos['id'])->first();
+            $cantidad_productos = model('productoPedidoModel')->select('cantidad_producto')->where('id', $productos['id'])->first();
+
+
+
+            $data = [
+                'numero_productos_impresos_en_comanda' => $cantidad_productos_impresos['numero_productos_impresos_en_comanda'] + ($cantidad_productos['cantidad_producto'] - $cantidad_productos_impresos['numero_productos_impresos_en_comanda']),
+            ];
+
+            $actualizar = model('productoPedidoModel')->set($data);
+            $actualizar = model('productoPedidoModel')->where('id', $productos['id']);
+            $actualizar = model('productoPedidoModel')->update();
+            $printer->setJustification(Printer::JUSTIFY_LEFT);
+            $printer->setTextSize(2, 1);
+            $printer->text($productos['nombreproducto'] . "\n");
+
+
+            if (($cantidad_productos['cantidad_producto'] - $cantidad_productos_impresos['numero_productos_impresos_en_comanda']) > 0) {
+                $printer->text("Cant. " . $cantidad_productos['cantidad_producto'] - $cantidad_productos_impresos['numero_productos_impresos_en_comanda'] . "\n");
+            }
+            if (($cantidad_productos['cantidad_producto'] == $cantidad_productos_impresos['numero_productos_impresos_en_comanda'])) {
+                $printer->text("Cant. " . $cantidad_productos['cantidad_producto'] . "\n");
+            }
+            if (!empty($productos['nota_producto'])) {
+                $printer->setJustification(Printer::JUSTIFY_LEFT);
+                $printer->text("NOTAS:\n");
+                $printer->setJustification(Printer::JUSTIFY_LEFT);
+                $printer->text($productos['nota_producto'] . "\n");
+            }
+            $printer->text("-----------------------\n");
+            $printer->text("\n");
+        }
+        $observaciones_genereles = model('pedidoModel')->select('nota_pedido')->where('id', $numero_pedido)->first();
+        if (!empty($observaciones_genereles['nota_pedido'])) {
+            $printer->setJustification(Printer::JUSTIFY_CENTER);
+            $printer->setTextSize(2, 1);
+            $printer->text("OBSERVACIONES GENERALES \n");
+            $printer->text("\n");
+            $printer->setJustification(Printer::JUSTIFY_LEFT);
+            $printer->setTextSize(2, 1);
+            $printer->text($observaciones_genereles['nota_pedido'] . "\n");
+            /*
+            Cortamos el papel. Si nuestra impresora
+            no tiene soporte para ello, no generará
+            ningún error
+            */
+            //$printer->cut();
+
+            /*
+            Por medio de la impresora mandamos un pulso.
+            Esto es útil cuando la tenemos conectada
+            por ejemplo a un cajón
+            */
+            //$printer->pulse();
+            //$printer->close();
+            # $printer = new Printer($connector);
+
+            //$milibreria = new Ejemplolibreria();
+            //$data = $milibreria->getRegistros();
+        }
+        $printer->cut();
+
+        $printer->close();
+    }
+    function generar_comanda_sin_partir($productos, $numero_pedido, $nombre_mesa, $id_impresora)
+
+    {
+
+
+
+        // $impresora = model('categoriasModel')->select('impresora')->where('codigocategoria', $codigo_categoria)->first();
+
+        $nombre_impresora = model('impresorasModel')->select('nombre')->where('id', $id_impresora)->first();
+        $id_usuario = model('pedidoModel')->select('fk_usuario')->where('id', $numero_pedido)->first();
+        $nombre_usuario = model('usuariosModel')->select('nombresusuario_sistema')->where('idusuario_sistema', $id_usuario['fk_usuario'])->first();
+
+        $connector = new WindowsPrintConnector($nombre_impresora['nombre']);
+        $printer = new Printer($connector);
+
+
+        $printer->setJustification(Printer::JUSTIFY_CENTER);
+        $printer->setTextSize(1, 1);
+
 
 
 
@@ -610,15 +790,16 @@ class Imprimir extends BaseController
 
     function reporte_ventas()
     {
+        //var_dump($this->request->getPost()); exit();
         $id_apertura = $this->request->getPost('id_apertura');
         //$id_apertura = 12;
         $id_cierre = $this->request->getPost('id_cierre');
 
-        $imp = new impresion();
-        $impresion = $imp->imp_reporte_ventas($id_apertura);
+        /*  $imp = new impresion();
+        $impresion = $imp->imp_reporte_ventas($id_cierre); */
 
 
-        /*   if (!empty($id_apertura)) {
+        if (!empty($id_apertura)) {
             $imp = new impresion();
             $impresion = $imp->imp_reporte_ventas($id_apertura);
         }
@@ -626,29 +807,48 @@ class Imprimir extends BaseController
             $apertura = model('cierreModel')->select('idapertura')->where('id', $id_cierre)->first();
             $imp = new impresion();
             $impresion = $imp->imp_reporte_ventas($apertura['idapertura']);
-        } */
+        }
     }
+
+
 
     function imprimir_fiscal()
     {
 
         $id_apertura = $this->request->getPost('id_apertura');
-
-        $id_apertura = $this->request->getPost('id_apertura');
+        //$id_apertura = 38;
 
         $id_impresora = model('impresionFacturaModel')->select('id_impresora')->first();
         $datos_empresa = model('empresaModel')->datosEmpresa();
 
         $nombre_impresora = model('impresorasModel')->select('nombre')->where('id', $id_impresora['id_impresora'])->first();
 
+
+
         $connector = new WindowsPrintConnector($nombre_impresora['nombre']);
         $printer = new Printer($connector);
+
+
 
 
 
         $fecha_y_hora_cierre = "";
         $ventas_credito = "";
 
+        /**
+         * Datos empresa 
+         */
+
+        $datos_empresa = model('empresaModel')->find();
+        $id_regimen = $datos_empresa[0]['idregimen'];
+        $regimen = model('regimenModel')->select('descripcion')->where('idregimen', $id_regimen)->first();
+        $nombre_ciudad = model('ciudadModel')->select('nombreciudad')->where('idciudad', $datos_empresa[0]['idciudad'])->first();
+        $nombre_departamento = model('departamentoModel')->select('nombredepartamento')->where('iddepartamento', $datos_empresa[0]['iddepartamento'])->first();
+
+        /**
+         * Datos de hora y aperura de la caja que se esta consultando 
+         * 1. Si la caja no esta cerrada se le asigna la fecha y hora actual  
+         */
         $fecha_y_hora_apertura = model('aperturaModel')->select('fecha_y_hora_apertura')->where('id', $id_apertura)->first();
         $fecha_cierre = model('cierreModel')->select('fecha_y_hora_cierre')->where('idapertura', $id_apertura)->first();
 
@@ -662,263 +862,284 @@ class Imprimir extends BaseController
          * Registro final es la primer factura que se realiza de esa aperturta  
          */
 
-
-        // $registro_inicial = model('pagosModel')->get_min_id($id_apertura);
         $id_inicial = model('pagosModel')->get_min_id_electronico($id_apertura);
-        // $registro_final = model('pagosModel')->get_max_id($id_apertura);
         $id_final = model('pagosModel')->get_max_id_electronico($id_apertura);
-        $total_registros = model('pagosModel')->get_total_registros_electronicos($id_apertura);
+
+        if (!empty($id_inicial[0]['id']) and !empty($id_final[0]['id'])) {
+            //$total_registros = model('pagosModel')->get_total_registros_electronicos($id_apertura);
+            $total_registros = model('pagosModel')->get_total_registros_electronicos($id_inicial[0]['id'], $id_final[0]['id']);
+            $reg_inicial = model('facturaElectronicaModel')->select('numero')->where('id', $id_inicial[0]['id'])->first();
+            $fecha_hora_inicial = model('facturaElectronicaModel')->select('fecha,hora')->where('id', $id_inicial[0]['id'])->first();
 
 
-        $id_factura_min = model('pagosModel')->select('id_factura')->where('id', $id_inicial[0]['id'])->first();
-        $id_factura_max = model('pagosModel')->select('id_factura')->where('id', $id_final[0]['id'])->first();
+            $reg_final = model('facturaElectronicaModel')->select('numero')->where('id', $id_final[0]['id'])->first();
+            $fecha_hora_final = model('facturaElectronicaModel')->select('fecha,hora')->where('id', $id_final[0]['id'])->first();
 
+            /**
+             * Discriminación de las bases tributarias tanto iva como impuesto al consumo 
+             */
 
+            $iva = model('pagosModel')->fiscal_iva($id_inicial[0]['id'], $id_final[0]['id']);
+            $array_iva = array();
 
+            $facturas = model('facturaElectronicaModel')->getFacturasTrasmitidas($id_inicial[0]['id'], $id_final[0]['id']);
+            $array_iva = []; // Arreglo para almacenar los resultados finales.
 
-        //$reg_inicial = model('facturaElectronicaModel')->select('numero')->where('id', $id_factura_min['id_factura'])->first();
-        // $reg_final = model('pagosModel')->select('documento')->where('id', $id_final[0]['id'])->first();
-        //$reg_final = model('facturaElectronicaModel')->select('numero')->where('id', $id_factura_max['id_factura'])->first();
+            if (!empty($iva)) {  //Tarifas de IVA 
 
+                foreach ($iva as $detalle) { // Inicializar acumuladores para cada tarifa de IVA.
 
+                    $tarifa_iva = $detalle['valor_iva'];
+                    $total_base = 0;
+                    $total_iva = 0;
+                    $total_venta = 0;
 
+                    foreach ($facturas as $keyFacturas) {  //Recorrrer los ID's de las facturas y que han sido trasmitidas 
+                        // Obtener los datos de IVA por factura y tarifa.
+                        $iva_factura = model('kardexModel')->get_iva_electronico($keyFacturas['id'], $tarifa_iva);   //Obtengo el IVA de la factura 
+                        $total_factura = model('kardexModel')->total_iva_electronico($keyFacturas['id'], $tarifa_iva); //Obtengo el total de la factura 
 
+                        if (!empty($iva_factura) && !empty($total_factura)) {
+                            // Acumular valores por tarifa.
+                            $total_base += $total_factura[0]['total'] - $iva_factura[0]['iva'];
+                            $total_iva += $iva_factura[0]['iva'];
+                            $total_venta += $total_factura[0]['total'];
+                        }
+                    }
 
-        /*   if (empty($reg_inicial)) {
-            $registro_inicial = "";
-        }
-        if (!empty($reg_inicial)) {
-            $registro_inicial = $reg_inicial['numero'];
-        }
-        if (empty($reg_final)) {
-            $registro_final = "";
-        }
-        if (!empty($reg_final)) {
-            $registro_final = $reg_final['numero'];
-        } */
-
-        $registro_ini_final = model('facturaElectronicaModel')->inicial_final($id_factura_min['id_factura'], $id_factura_max['id_factura']);
-
-        //echo  $registro_ini_final[0]['primer_registro'];
-
-        //dd($registro_ini_final);
-
-
-
-        if (empty($registro_ini_final[0]['primer_registro'])) {
-            $registro_inicial = "";
-        }
-        if (!empty($registro_ini_final[0]['primer_registro'])) {
-            //$registro_inicial = $reg_inicial['numero'];
-            $registro_inicial = $registro_ini_final[0]['primer_registro'];
-        }
-        if (empty($registro_ini_final[0]['ultimo_registro'])) {
-            $registro_final = "";
-        }
-        if (!empty($registro_ini_final[0]['ultimo_registro'])) {
-            //$registro_final = $reg_final['numero'];
-            $registro_final = $registro_ini_final[0]['ultimo_registro'];
-        }
-
-        $iva = model('pagosModel')->fiscal_iva($id_apertura);
-        $array_iva = array();
-
-
-
-        if (!empty($iva)) {
-            foreach ($iva as $detalle) {
-
-                //$iva = model('kardexModel')->selectSum('iva')->where('id_apertura', $id_apertura)->find();
-                // $iva = model('kardexModel')->selectSum('iva')->where('id_estado', 1)->find();
-                //$iva = model('kardexModel')->selectSum('iva')->where('valor_iva', $detalle['valor_iva'])->find();
-
-                $iva = model('kardexModel')->get_iva_electronico($id_apertura, $detalle['valor_iva']);
-
-                $total = model('kardexModel')->total_iva_electronico($id_apertura, $detalle['valor_iva']);
-
-
-
-                $data_iva['tarifa_iva'] =  $detalle['valor_iva'];
-                $data_iva['base'] = $total[0]['total'] - $iva[0]['iva'];
-                $data_iva['total_iva'] = $iva[0]['iva'];
-                $data_iva['valor_venta'] = $total[0]['total'];
+                    // Guardar los resultados en el arreglo final.
+                    $data_iva = [
+                        'tarifa_iva' => $tarifa_iva,
+                        'base' => $total_base,
+                        'total_iva' => $total_iva,
+                        'valor_venta' => $total_venta,
+                    ];
+                    array_push($array_iva, $data_iva);
+                }
+            } else {
+                $data_iva['tarifa_iva'] =  0;
+                $data_iva['base'] = 0;
+                $data_iva['total_iva'] = 0;
+                $data_iva['valor_venta'] = 0;
                 array_push($array_iva, $data_iva);
             }
-        } else {
-            $data_iva['tarifa_iva'] =  0;
-            $data_iva['base'] = 0;
-            $data_iva['total_iva'] = 0;
-            $data_iva['valor_venta'] = 0;
-            array_push($array_iva, $data_iva);
-        }
 
+            $ico = model('kardexModel')->fiscal_ico($id_inicial[0]['id'], $id_final[0]['id']);
+            //  $array_ico = array();
 
+            $facturas_inc = model('facturaElectronicaModel')->getFacturasTrasmitidas($id_inicial[0]['id'], $id_final[0]['id']);
+            $array_ico = [];
 
-        $ico = model('kardexModel')->fiscal_ico($id_apertura);
-        $array_ico = array();
+            if (!empty($ico)) {
+                foreach ($ico as $detalle) {
 
-        if (!empty($ico)) {
+                    $tarifa_inc = $detalle['valor_ico'];
+                    $total_base_inc = 0;
+                    $total_inc = 0;
+                    $total_venta_inc = 0;
 
+                    foreach ($facturas as $keyFacturas) {  //Recorrrer los ID's de las facturas y que han sido trasmitidas 
+                        // Obtener los datos de IVA por factura y tarifa.
+                        $inc_factura = model('kardexModel')->get_inc_electronico($keyFacturas['id'], $tarifa_inc);   //Obtengo el IVA de la factura 
+                        $total_factura_inc = model('kardexModel')->total_inc_electronico($keyFacturas['id'], $tarifa_inc); //Obtengo el total de la factura 
 
-            foreach ($ico as $detalle) {
-                $inc = model('kardexModel')->get_inc_electronico($id_apertura);
-
-                $total = model('kardexModel')->total_inc_electronico($id_apertura);
-
-                $data_ico['tarifa_ico'] =  $detalle['valor_ico'];          //ok
-                $data_ico['base'] = $total[0]['total'] - $inc[0]['total'];
-                $data_ico['total_ico'] = $inc[0]['total'];
-                $data_ico['valor_venta'] = $total[0]['total'];
+                        if (!empty($inc_factura) && !empty($total_factura_inc)) {
+                            // Acumular valores por tarifa.
+                            $total_base_inc += $total_factura_inc[0]['total'] - $inc_factura[0]['total'];
+                            $total_inc += $inc_factura[0]['total'];
+                            $total_venta_inc += $total_factura_inc[0]['total'];
+                        }
+                    }
+                    // Guardar los resultados en el arreglo final.
+                    $data_ico = [
+                        'tarifa_ico' => $tarifa_inc,
+                        'base' => $total_base_inc,
+                        'total_ico' => $total_inc,
+                        'valor_venta' => $total_venta_inc,
+                    ];
+                    array_push($array_ico, $data_ico);
+                }
+            } else {
+                $data_ico['tarifa_ico'] =  0;
+                $data_ico['base'] = 0;
+                $data_ico['total_ico'] = 0;
+                $data_ico['valor_venta'] = 0;
                 array_push($array_ico, $data_ico);
             }
-        } else {
-            $data_ico['tarifa_ico'] =  0;
-            $data_ico['base'] = 0;
-            $data_ico['total_ico'] = 0;
-            $data_ico['valor_venta'] = 0;
-            array_push($array_ico, $data_ico);
-        }
 
 
-        /**
-         * Total de ventas crédito y de contado 
-         */
+            /**
+             * Total de ventas crédito y de contado 
+             */
 
-        //$vantas_contado = model('facturaVentaModel')->venta_contado($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
-        // $vantas_contado = model('productoFacturaVentaModel')->get_total_venta($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
-        $vantas_contado = model('facturaVentaModel')->ventas_contado_electronicas($id_factura_min['id_factura'], $id_factura_max['id_factura']);
+            $vantas_contado = model('kardexModel')->ventas_contado_electronicas($id_inicial[0]['id'], $id_final[0]['id']);
+            $venta_credito = model('facturaVentaModel')->venta_credito($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
 
+            if (empty($venta_credito[0]['total_ventas_credito'])) {
+                $ventas_credito = 0;
+            } else if (!empty($venta_credito[0]['total_ventas_credito'])) {
+                $ventas_credito = $venta_credito[0]['total_ventas_credito'];
+            }
 
+            /**
+             *Devoluciones 
+             */
+            //$iva_devolucion = model('devolucionModel')->tarifa_iva($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
 
+            $iva_devolucion = model('devolucionModel')->tarifa_iva($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
 
-        $venta_credito = model('facturaVentaModel')->venta_credito($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
-
-        if (empty($venta_credito[0]['total_ventas_credito'])) {
-            $ventas_credito = 0;
-        } else if (!empty($venta_credito[0]['total_ventas_credito'])) {
-            $ventas_credito = $venta_credito[0]['total_ventas_credito'];
-        }
-
-        /**
-         *Devoluciones 
-         */
-        $iva_devolucion = model('devolucionModel')->tarifa_iva($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
-
-        $array_devoluciones_iva = array();
-        if (!empty($iva_devolucion)) {
+            $array_devoluciones_iva = array();
+            // if (!empty($iva_devolucion)) {
 
             foreach ($iva_devolucion as $detalle) {
 
-                $iva_devolucion = model('devolucionModel')->devolucion_iva($detalle['iva'], $fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
+                $aplica_ico = model('productoModel')->select('aplica_ico')->where('codigointernoproducto', $detalle['codigo'])->first();
 
-                $temp_porcentaje = $detalle['iva'] / 100;
-                $sub_total = $iva_devolucion[0]['base'] * $temp_porcentaje;
-                $total = $iva_devolucion[0]['base'] + $sub_total;
-                $impuesto = $total - $iva_devolucion[0]['base'];
+                if ($aplica_ico['aplica_ico'] == 't') {
+                    $iva_devolucion = model('devolucionModel')->devolucion_iva($detalle['iva'], $fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre, $detalle['codigo']);
 
-                $data_devo_iva['tarifa'] = $detalle['iva'];
-                $data_devo_iva['base'] =  $iva_devolucion[0]['base'];
-                $data_devo_iva['impuesto'] = $impuesto;
-                $data_devo_iva['total'] = $total;
-                array_push($array_devoluciones_iva, $data_devo_iva);
+                    $temp_porcentaje = $detalle['iva'] / 100;
+                    $sub_total = $iva_devolucion[0]['base'] * $temp_porcentaje;
+                    $total = $iva_devolucion[0]['base'] + $sub_total;
+                    $impuesto = $total - $iva_devolucion[0]['base'];
+
+                    $data_devo_iva['tarifa'] = $detalle['iva'];
+                    $data_devo_iva['base'] =  $iva_devolucion[0]['base'];
+                    $data_devo_iva['impuesto'] = $impuesto;
+                    $data_devo_iva['total'] = $total;
+                    array_push($array_devoluciones_iva, $data_devo_iva);
+                }
             }
-        } else if (empty($iva_devolucion)) {
 
-            $data_devo_iva['base'] =  0;
-            $data_devo_iva['tarifa'] = 0;
-            $data_devo_iva['impuesto'] = 0;
-            $data_devo_iva['total'] = 0;
-            array_push($array_devoluciones_iva, $data_devo_iva);
-        }
 
-        $ico_devolucion = model('devolucionModel')->tarifa_ico($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
+            $ico_devolucion = model('devolucionModel')->tarifa_ico($fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
 
-        $array_devoluciones_ico = array();
-        if (!empty($ico_devolucion)) {
+            $array_devoluciones_ico = array();
+            if (!empty($ico_devolucion)) {
 
-            foreach ($ico_devolucion as $detalle) {
+                foreach ($ico_devolucion as $detalle) {
 
-                $ico_devolucion = model('devolucionModel')->devolucion_ico($detalle['ico'], $fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
+                    $ico_devolucion = model('devolucionModel')->devolucion_ico($detalle['ico'], $fecha_y_hora_apertura['fecha_y_hora_apertura'], $fecha_y_hora_cierre);
+                    $temp_porcentaje = $detalle['ico'] / 100;
+                    $sub_total = $ico_devolucion[0]['base'] * $temp_porcentaje;
+                    $total = $ico_devolucion[0]['base'] + $sub_total;
+                    $impuesto = $total - $ico_devolucion[0]['base'];
 
-                $temp_porcentaje = $detalle['ico'] / 100;
-                $sub_total = $ico_devolucion[0]['base'] * $temp_porcentaje;
-                $total = $ico_devolucion[0]['base'] + $sub_total;
-                $impuesto = $total - $ico_devolucion[0]['base'];
+                    $data_devo_ico['tarifa'] = $detalle['ico'];
+                    $data_devo_ico['base'] =  $ico_devolucion[0]['base'];
+                    $data_devo_ico['impuesto'] = $impuesto;
+                    $data_devo_ico['total'] = $total;
+                    array_push($array_devoluciones_ico, $data_devo_ico);
+                }
+            } else if (empty($ico_devolucion)) {
 
-                $data_devo_ico['tarifa'] = $detalle['ico'];
-                $data_devo_ico['base'] =  $ico_devolucion[0]['base'];
-                $data_devo_ico['impuesto'] = $impuesto;
-                $data_devo_ico['total'] = $total;
+                $data_devo_ico['base'] =  0;
+                $data_devo_ico['tarifa'] = 0;
+                $data_devo_ico['impuesto'] = 0;
+                $data_devo_ico['total'] = 0;
                 array_push($array_devoluciones_ico, $data_devo_ico);
             }
-        } else if (empty($ico_devolucion)) {
 
-            $data_devo_ico['base'] =  0;
-            $data_devo_ico['tarifa'] = 0;
-            $data_devo_ico['impuesto'] = 0;
-            $data_devo_ico['total'] = 0;
-            array_push($array_devoluciones_ico, $data_devo_ico);
+
+            $fecha_apertura = model('aperturaModel')->select('fecha')->where('id', $id_apertura)->first();
+            $consecutivo_fiscal = model('consecutivoInformeModel')->select('numero')->where('id_apertura', $id_apertura)->first();
+
+            $printer->setJustification(Printer::JUSTIFY_CENTER);
+            $printer->setTextSize(1, 1);
+
+            $printer->text($datos_empresa[0]['nombrejuridicoempresa'] . "\n");
+            $printer->text("NIT :" . $datos_empresa[0]['nitempresa'] . "\n");
+            $printer->text($datos_empresa[0]['direccionempresa'] . "  " . $nombre_ciudad['nombreciudad'] . " " . $nombre_departamento['nombredepartamento'] . "\n");
+            $printer->text($regimen['descripcion'] . "\n");
+            $printer->text("\n");
+
+
+            $hora_inicial = DateTime::createFromFormat('H:i:s', $fecha_hora_inicial['hora'])->format('g:i A');
+            $hora_final = DateTime::createFromFormat('H:i:s', $fecha_hora_final['hora'])->format('g:i A');
+
+
+            $printer->text("***INFORME FISCAL DE VENTAS ***\n\n");
+            $printer->setJustification(Printer::JUSTIFY_LEFT);
+            $printer->text("Informe N°       : " . $consecutivo_fiscal['numero']  . "\n");
+            $printer->text("Fecha            : " . $fecha_apertura['fecha'] . "\n");
+            $printer->text("Registro inicial : " . $reg_inicial['numero'] . " "  . $fecha_hora_inicial['fecha'] . " " . $hora_inicial . "\n");
+            $printer->text("Registro final   : " . $reg_final['numero'] . " " . $fecha_hora_final['fecha'] . " " . $hora_final . "\n");
+            $printer->text("Total registros  : " . $total_registros[0]['id'] . "\n");
+            $printer->text("Fecha generacion : " . date('Y-m-d H:i:s') . "\n\n");
+
+            // Título de la tabla
+            $printer->setEmphasis(true);
+            $printer->text("-----------------------------------------------\n");
+            $printer->text("Tarifa    Base grabable   Valor IVA   Val total\n");
+            $printer->text("-----------------------------------------------\n");
+            $printer->setEmphasis(false);
+
+            // Añadir los datos de la tabla
+            foreach ($array_iva as $detalle) {
+                //$printer->text($detalle['tarifa_iva']%  "   "  .$detalle['total_iva']."  ".$detalle['valor_venta'] );
+                $printer->text(
+                    $detalle['tarifa_iva'] . "%         " .
+                        "$" . number_format($detalle['total_iva'], 0, ",", ".") . "            " .
+                        0 . "          " .
+                        "$" . number_format($detalle['valor_venta'], 0, ",", ".") . "\n"
+                );
+            }
+
+
+            $printer->text("\n");
+            $printer->text("-----------------------------------------------\n");
+            $printer->text("Tarifa    Base grabable   Val INC   Val total\n");
+            $printer->text("-----------------------------------------------\n");
+            foreach ($array_ico as $detalle) {
+                //$printer->text($detalle['tarifa_iva']%  "   "  .$detalle['total_iva']."  ".$detalle['valor_venta'] );
+                $printer->text($detalle['tarifa_ico'] . "%        " . number_format($detalle['base'], 0, ",", ".") . "     " . number_format($detalle['total_ico'], 0, ",", ".") . "       " . number_format($detalle['valor_venta'], 0, ",", ".") . "\n");
+            }
+
+            $pago = model('pagosModel')->total_formas_pago($id_apertura);
+            $printer->text("\n");
+            $printer->setJustification(Printer::JUSTIFY_CENTER);
+            $printer->text("-----------------------------------------------\n");
+            $printer->text("\n");
+            $printer->text("**FORMAS DE PAGO** \n\n");
+            $printer->setJustification(Printer::JUSTIFY_LEFT);
+
+            foreach ($pago as $keyPago) {
+                $nombre_comercial = model('medioPagoModel')->getNombre($keyPago['medio_pago']);
+                $total = model('medioPagoModel')->getTotal($keyPago['medio_pago'], $id_apertura);
+
+                // Define el ancho máximo para las columnas
+                $columna_nombre = 35; // Ancho para el nombre
+                $columna_total = 10;  // Ancho para el total (para valores numéricos)
+
+                // Limita y ajusta el texto del nombre
+                $nombre = str_pad(substr($nombre_comercial[0]['nombre_comercial'], 0, $columna_nombre), $columna_nombre);
+
+                // Formatea el monto para alinearlo a la derecha
+                $monto = str_pad(number_format($total[0]['total'], 0, ",", "."), $columna_total, " ", STR_PAD_LEFT);
+
+                // Escribe en la impresora
+                $printer->text($nombre . $monto . "\n");
+            }
+
+            $totalFormasPago = model('medioPagoModel')->getTotalFormas($id_apertura);
+            $printer->text("TOTAL FORMAS DE PAGO              " . "$ " . number_format($totalFormasPago[0]['total'], 0, ",", ".") . "\n");
+
+
+            $printer->feed(1);
+            $printer->cut();
+
+            $printer->close();
+
+            $returnData = array(
+                "resultado" => 1
+            );
+            echo  json_encode($returnData);
         }
-
-        //$consecutivo_caja = model('cajaModel')->select('consecutivo')->where('numerocaja', 1)->first();
-        $fecha_apertura = model('aperturaModel')->select('fecha')->where('id', $id_apertura)->first();
-        //$existe_fecha_informe = model('consecutivoInformeModel')->select('fecha')->where('fecha', $fecha_apertura['fecha'])->first();
-
-        $consecutivo_fiscal = model('consecutivoInformeModel')->select('numero')->where('id_apertura', $id_apertura)->first();
-
-
-        $printer->setJustification(Printer::JUSTIFY_CENTER);
-        $printer->setTextSize(1, 1);
-        $printer->text($datos_empresa[0]['nombrecomercialempresa'] . "\n");
-        $printer->text($datos_empresa[0]['nombrejuridicoempresa'] . "\n");
-        $printer->text("NIT :" . $datos_empresa[0]['nitempresa'] . "\n");
-        $printer->text($datos_empresa[0]['direccionempresa'] . "  " . $datos_empresa[0]['nombreciudad'] . " " . $datos_empresa[0]['nombredepartamento'] . "\n");
-        $printer->text("TELEFONO:" . $datos_empresa[0]['telefonoempresa'] . "\n");
-        $printer->text($datos_empresa[0]['nombreregimen'] . "\n");
-        $printer->text("\n");
-
-
-        $printer->text("***INFORME FISCAL DE VENTAS ***\n\n");
-        $printer->setJustification(Printer::JUSTIFY_LEFT);
-        $printer->text("Informe N°       : " . $consecutivo_fiscal['numero']  . "\n");
-        $printer->text("Fecha            : " . $fecha_apertura['fecha'] . "\n");
-        $printer->text("Registro inicial : " . $registro_inicial . "\n");
-        $printer->text("Registro final   : " . $registro_final . "\n");
-        $printer->text("Total registros  : " . $total_registros[0]['total_registros'] . "\n\n");
-        // Título de la tabla
-        $printer->setEmphasis(true);
-        $printer->text("-----------------------------------------------\n");
-        $printer->text("Tarifa    Base grabable   Valor IVA   Val total\n");
-        $printer->text("-----------------------------------------------\n");
-        $printer->setEmphasis(false);
-
-        // Añadir los datos de la tabla
-        foreach ($array_iva as $detalle) {
-            //$printer->text($detalle['tarifa_iva']%  "   "  .$detalle['total_iva']."  ".$detalle['valor_venta'] );
-            $printer->text($detalle['tarifa_iva'] . "%         " . $detalle['total_iva'] . "                " . $detalle['valor_venta'] . "          0" . "\n");
-        }
-
-
-        $printer->text("\n");
-        $printer->text("-----------------------------------------------\n");
-        $printer->text("Tarifa    Base grabable   Val INC   Val total\n");
-        $printer->text("-----------------------------------------------\n");
-        foreach ($array_ico as $detalle) {
-            //$printer->text($detalle['tarifa_iva']%  "   "  .$detalle['total_iva']."  ".$detalle['valor_venta'] );
-            $printer->text($detalle['tarifa_ico'] . "%        " . number_format($detalle['base'], 0, ",", ".") . "     " . number_format($detalle['total_ico'], 0, ",", ".") . "       " . number_format($detalle['valor_venta'], 0, ",", ".") . "\n");
-        }
-
-
-        $printer->feed(1);
-        $printer->cut();
-
-        $printer->close();
-
-        $returnData = array(
-            "resultado" => 1
-        );
-        echo  json_encode($returnData);
     }
+
+
+
+
     function imprimir_inventario()
     {
 

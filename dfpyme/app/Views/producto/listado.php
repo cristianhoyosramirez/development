@@ -7,44 +7,7 @@ LISTADO DE PRODUCTOS
 
 
 <br>
-<!--Sart row-->
-<!-- <div class="container">
-    <div class="row text-center align-items-center flex-row-reverse">
-        <div class="col-lg-auto ms-lg-auto">
-            <div class="row">
-                <div class="col">
 
-                    <a class="btn  btn-outline-success btn-icon  " title="Exportar a Excel " data-bs-toggle="tooltip" type="submit">Productos Borrados </a>
-                </div>
-                <div class="col">
-                    <form action="<?php echo base_url() ?>/inventario/exportar_excel" method="get">
-                        <button class="btn  btn-outline-success btn-icon w-100 " title="Exportar a Excel " data-bs-toggle="tooltip" type="submit">Excel</button>
-                    </form>
-                </div>
-                <div class="col">
-                    <form action="<?php echo base_url() ?>/inventario/exportar" method="get">
-                        <button class="btn  btn-outline-red btn-icon w-100 " title="Exportar a PDF" data-bs-toggle="tooltip" type="submit">Pdf</button>
-                    </form>
-                </div>
-                <div class="col">
-                    <a onclick="agregar_producto()" class="btn btn-outline-warning btn-icon" title="Agregar producto " data-bs-toggle="tooltip">Agregar producto</a>
-                </div>
-                <div class="col">
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-auto ms-lg-auto">
-            <p class="text-primary h3">LISTA GENERAL DE PRODUCTOS </p>
-        </div>
-        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-            <a class="nav-link"><img style="cursor:pointer;" src="<?php echo base_url(); ?>/Assets/img/atras.png" width="20" height="20" onClick="history.go(-1);" title="Sección anterior"></a>
-        </div>
-    </div>
-</div> -->
 
 <div class="container">
     <div class="row">
@@ -148,17 +111,6 @@ LISTADO DE PRODUCTOS
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="row row-cards">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Card title</h3>
-                            </div>
-                            <div class="card-body">Simple card</div>
-                        </div>
-                    </div>
-                </div> -->
 
             </div>
         </div>

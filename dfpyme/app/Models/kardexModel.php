@@ -64,7 +64,20 @@ class kardexModel extends Model
         ");
         return $datos->getResultArray();
     }
-    public function get_iva_electronico($id_apertura, $valor_iva)
+    public function get_iva_electronico($id_factura, $valor_iva)
+    {
+        $datos = $this->db->query("
+        SELECT
+        SUM(iva) as iva
+        FROM
+        kardex
+        WHERE
+        id_factura = $id_factura AND valor_iva = $valor_iva AND id_estado = 8
+        
+        ");
+        return $datos->getResultArray();
+    }
+  /*   public function get_iva_electronico($id_apertura, $valor_iva)
     {
         $datos = $this->db->query("
         SELECT
@@ -76,7 +89,7 @@ class kardexModel extends Model
         
         ");
         return $datos->getResultArray();
-    }
+    } */
     public function get_total($id_apertura, $valor_unitario, $codigo)
     {
         $datos = $this->db->query("
@@ -148,10 +161,10 @@ class kardexModel extends Model
         ");
         return $datos->getResultArray();
     }
-    public function get_inc_electronico($id_apertura)
+    public function get_inc_electronico($id_factura,$valor_inc)
     {
         $datos = $this->db->query("
-        select sum(ico) as total  from kardex where id_apertura=$id_apertura and id_estado=8
+        select sum(ico) as total  from kardex where id_factura=$id_factura and valor_ico=$valor_inc and id_estado=8
         ");
         return $datos->getResultArray();
     }
@@ -162,27 +175,27 @@ class kardexModel extends Model
         ");
         return $datos->getResultArray();
     }
-    public function total_inc_electronico($id_apertura)
+    public function total_inc_electronico($id_factura,$valor_inc)
     {
         $datos = $this->db->query("
-        select sum(total) as total  from kardex where id_apertura=$id_apertura and id_estado=8 and aplica_ico=true
+        select sum(total) as total  from kardex where id_factura=$id_factura and id_estado=8 and valor_ico=$valor_inc and aplica_ico=true
         ");
         return $datos->getResultArray();
     }
-    /*   public function ventas_contado_electronicas($id_apertura)
+
+    public function ventas_contado_electronicas($id_inicial , $id_final)
     {
         $datos = $this->db->query("
-        select sum(total) as total  from kardex where id_apertura=$id_apertura and id_estado=8
-        ");
-        return $datos->getResultArray();
-    } */
-    public function ventas_contado_electronicas($id_apertura)
-    {
-        $datos = $this->db->query("
-        SELECT sum(total_documento) AS total
-        FROM pagos
-        WHERE id_apertura=$id_apertura
-        AND id_estado=8
+        SELECT 
+        SUM(neto) AS total_ventas
+        FROM 
+            documento_electronico
+        WHERE 
+            id_status = 2 
+            AND transaccion_id IS NOT NULL 
+            AND transaccion_id != ''
+            AND id BETWEEN $id_inicial  AND $id_final ;
+
         ");
         return $datos->getResultArray();
     }
@@ -201,13 +214,14 @@ class kardexModel extends Model
         ");
         return $datos->getResultArray();
     }
-    public function total_iva_electronico($id_apertura, $valor_iva)
+    public function total_iva_electronico($id_factura, $valor_iva)
     {
         $datos = $this->db->query("
-            select sum(total) as total from kardex where id_apertura = $id_apertura and id_estado = 8 and valor_iva = $valor_iva 
+            select sum(total) as total from kardex where id_factura = $id_factura and id_estado = 8 and valor_iva = $valor_iva 
         ");
         return $datos->getResultArray();
     }
+    
     public function get_inc_calc($id_factura)
     {
         $datos = $this->db->query("
@@ -286,16 +300,17 @@ class kardexModel extends Model
     }
 
 
-    public function fiscal_ico($id_apertura)
+    public function fiscal_ico($id_inicial, $id_final)
     {
         $datos = $this->db->query("
         SELECT DISTINCT ( valor_ico )
         FROM   kardex
-        WHERE  id_apertura=$id_apertura
-        AND aplica_ico = 'true'  and id_estado = 8 
+        WHERE  id_factura between $id_inicial and $id_final 
+        AND aplica_ico = 'true' and id_estado = 8 
         ");
         return $datos->getResultArray();
     }
+
 
     public function temp_categoria($id_apertura)
     {
@@ -721,6 +736,32 @@ WHERE
         ");
         return $datos->getResultArray();
     }
+
+    public function get_total_inc_fecha($fecha)
+    {
+        $datos = $this->db->query("
+          select sum (ico) as inc from kardex where fecha ='$fecha' and aplica_ico='true';
+        ");
+        return $datos->getResultArray();
+    }
+
+    public function get_total_iva_fecha($fecha)
+    {
+        $datos = $this->db->query("
+          select sum (iva) as iva from kardex where fecha ='$fecha' and aplica_ico='false';
+        ");
+        return $datos->getResultArray();
+    }
+
+    public function get_total_fecha($fecha)
+    {
+        $datos = $this->db->query("
+          select sum (total) as total from kardex where fecha ='$fecha';
+        ");
+        return $datos->getResultArray();
+    }
+
+
     public function get_base_inc($fecha_inicial,$tarifa)
     {
         $datos = $this->db->query("
@@ -740,6 +781,61 @@ WHERE
     {
         $datos = $this->db->query("
           select sum (total) as total_iva from kardex where fecha = '$fecha_inicial' and valor_iva = $tarifa and aplica_ico='false';
+        ");
+        return $datos->getResultArray();
+    }
+
+    public function get_iva_reporte($fecha_inicial, $fecha_final)
+    {
+        $datos = $this->db->query("
+            select sum (iva) as iva from kardex where fecha BETWEEN '$fecha_inicial' and '$fecha_final' and aplica_ico='false'
+        ");
+        return $datos->getResultArray();
+    }
+    public function get_ico_reporte($fecha_inicial, $fecha_final)
+    {
+        $datos = $this->db->query("
+            select sum (ico) as ico from kardex where fecha BETWEEN '$fecha_inicial' and '$fecha_final' and aplica_ico='true'
+        ");
+        return $datos->getResultArray();
+    }
+
+    public function getCosto($id_factura, $id_estado)
+    {
+        $datos = $this->db->query("
+           SELECT
+    SUM(costo) AS costo
+FROM
+    kardex
+WHERE
+    id_factura = $id_factura AND id_estado = $id_estado;
+
+        ");
+        return $datos->getResultArray();
+    }
+    public function getIva($id_factura, $id_estado)
+    {
+        $datos = $this->db->query("
+           SELECT
+    SUM(iva) AS iva
+FROM
+    kardex
+WHERE
+    id_factura = $id_factura AND id_estado = $id_estado;
+
+        ");
+        return $datos->getResultArray();
+    }
+    public function getInc($id_factura, $id_estado)
+    {
+        $datos = $this->db->query("
+           SELECT
+    SUM(ico) AS ico
+FROM
+    kardex
+WHERE
+    id_factura = $id_factura AND id_estado = $id_estado;
+
         ");
         return $datos->getResultArray();
     }

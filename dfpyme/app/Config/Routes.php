@@ -41,7 +41,7 @@ $routes->group('salones', ['namespace' => 'App\Controllers\Salones', 'filter' =>
     $routes->post('save', 'salonesController::save');
     $routes->post('edit', 'salonesController::editar');
     $routes->post('update', 'salonesController::actualizar');
-    $routes->post('consultar_mesa', 'salonesController::consultar_mesa');
+    $routes->get('consultar_mesa', 'salonesController::consultar_mesa');
 });
 
 $routes->group('login', ['namespace' => 'App\Controllers\login'], function ($routes) {
@@ -151,6 +151,11 @@ $routes->group('categoria', ['namespace' => 'App\Controllers\categoria', 'filter
     $routes->post('sub_categoria', 'categoriaController::sub_categoria');
     $routes->post('actualizar_sub_categoria', 'categoriaController::actualizar_sub_categoria');
     $routes->post('consulta_sub_categoria', 'categoriaController::consulta_sub_categoria');
+    $routes->get('productos_categoria', 'categoriaController::productos_categoria');
+    $routes->post('actualizar_productos', 'categoriaController::actualizar_productos');
+    $routes->post('actualizacion_productos', 'categoriaController::actualizacion_productos');
+    $routes->post('componentes_producto', 'categoriaController::componentes_producto');
+    $routes->get('verRecetas', 'categoriaController::verRecetas');
 });
 
 $routes->group('pedido', ['namespace' => 'App\Controllers\pedido', 'filter' => \App\Filters\Auth::class], function ($routes) {
@@ -216,6 +221,13 @@ $routes->group('pre_factura', ['namespace' => 'App\Controllers\pre_factura', 'fi
     $routes->get('impresora', 'prefacturaController::impresora');
     $routes->post('asignar_impresora', 'prefacturaController::asignar_impresora');
     $routes->post('buscar_por_codigo', 'prefacturaController::buscar_por_codigo');
+    $routes->post('cruzarInventario', 'prefacturaController::cruzarInventario');
+    $routes->get('productosIva', 'prefacturaController::productosIva');
+    $routes->get('productosInc', 'prefacturaController::productosInc');
+    $routes->post('ingresarInv', 'prefacturaController::ingresarInv');
+    $routes->post('buscarProducto', 'prefacturaController::buscarProducto');
+    $routes->post('busqueda', 'prefacturaController::busqueda');
+    $routes->post('busquedaCategoria', 'prefacturaController::busquedaCategoria');
 });
 
 $routes->group('clientes', ['namespace' => 'App\Controllers\clientes', 'filter' => \App\Filters\Auth::class], function ($routes) {
@@ -248,6 +260,8 @@ $routes->group('administracion_impresora', ['namespace' => 'App\Controllers\admi
     $routes->post('crear_proveedor', 'impresionFacturaController::crear_proveedor');
     $routes->post('editar_proveedor', 'impresionFacturaController::editar_proveedor');
     $routes->post('actualizar_proveedor', 'impresionFacturaController::actualizar_proveedor');
+    $routes->get('inventario', 'impresionFacturaController::inventario');
+    $routes->get('ProductosInventario', 'impresionFacturaController::ProductosInventario');
 });
 
 
@@ -353,7 +367,14 @@ $routes->group('consultas_y_reportes', ['namespace' => 'App\Controllers\consulta
     $routes->post('reporte_de_ventas_excel', 'informeFiscalVentasController::reporte_de_ventas_excel');
     $routes->get('excel_mov', 'AbonosController::excel_mov');
     $routes->get('impuestos', 'AbonosController::impuestos');
-    $routes->post('reporte_impuestos', 'AbonosController::reporte_impuestos');
+    $routes->get('reporte_impuestos', 'AbonosController::reporte_impuestos');
+    $routes->get('cruce_inventario', 'AbonosController::cruce_inventario');
+    $routes->get('reporte_cruce_inventarios', 'AbonosController::reporte_cruce_inventarios');
+    $routes->get('reporte_sobrantes', 'AbonosController::reporte_sobrantes');
+    $routes->get('reporte_faltantes', 'AbonosController::reporte_faltantes');
+    $routes->get('productos_inventario', 'AbonosController::productos_inventario');
+    $routes->post('Inventario', 'AbonosController::Inventario');
+    $routes->get('closeModal', 'AbonosController::closeModal');
 });
 
 $routes->group('devolucion', ['namespace' => 'App\Controllers\devolucion', 'filter' => \App\Filters\Auth::class], function ($routes) {
@@ -428,6 +449,9 @@ $routes->group('caja_general', ['namespace' => 'App\Controllers\caja_general', '
     $routes->post('validar_cierre', 'cajaGeneralController::validar_cierre');
     $routes->get('todos_los_cierres_caja_general', 'cajaGeneralController::todos_los_cierres_caja_general');
     $routes->post('consultar_movimiento', 'cajaGeneralController::consultar_movimiento');
+    $routes->post('exportCostoExcel', 'cajaGeneralController::exportCostoExcel');
+    $routes->post('exportVentas', 'cajaGeneralController::exportVentas');
+    
 });
 
 /**
@@ -471,7 +495,7 @@ $routes->group('pedidos', ['namespace' => 'App\Controllers\pedidos', 'filter' =>
     $routes->get('gestion_pedidos', 'TomaPedidosController::index');
     $routes->post('buscar_mesero', 'Mesas::buscar_mesero');
     $routes->get('lista_electronicas', 'Imprimir::lista_electronicas');
-    $routes->get('imprimir_factura_electronica', 'Imprimir::imprimir_factura_electronica');
+    $routes->post('imprimir_factura_electronica', 'Imprimir::imprimir_factura_electronica');
     $routes->post('impresion_factura_electronica', 'Imprimir::impresion_factura_electronica');
     $routes->post('detalle_f_e', 'Imprimir::detalle_f_e');
     $routes->post('reporte_ventas', 'Imprimir::reporte_ventas');
@@ -499,7 +523,7 @@ $routes->group('inventario', ['namespace' => 'App\Controllers\pedidos', 'filter'
     $routes->post('reporte_ventas', 'Inventarios::reporte_ventas');
     $routes->post('export_pdf', 'Inventarios::export_pdf');
     $routes->post('producto_entrada', 'Inventarios::producto_entrada');
-    $routes->post('ingresar_entrada', 'Inventarios::ingresar_entrada');
+    $routes->get('ingresar_entrada', 'Inventarios::ingresar_entrada');
     $routes->post('eliminar_producto_compra', 'Inventarios::eliminar_producto_compra');
     $routes->post('actualizar_producto_compra', 'Inventarios::actualizar_producto_compra');
     $routes->post('usuario_producto_compra', 'Inventarios::usuario_producto_compra');
@@ -638,6 +662,7 @@ $routes->group('configuracion', ['namespace' => 'App\Controllers\configuracion',
     $routes->get('sincronizar', 'Configuracion::sincronizar');
     $routes->get('asignar', 'Configuracion::asignar');
     $routes->post('update_url', 'Configuracion::actualizar_url');
+    $routes->post('AddDocument', 'Configuracion::AddDocument');
 });
 
 

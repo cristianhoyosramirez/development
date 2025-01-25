@@ -33,7 +33,8 @@ function limpiar_todo() {
     $('#total_propina').val(0);
     $('#efectivo').val(0);
     $('#propina_pesos').val(0);
-    $('#transaccion').val('');
+    //$('#transaccion').val('');
+    $('#transaccion').val(0);
     //$("#documento")[0].selectedIndex = 0;
     $('#pago').html('Valor pago: 0');
     $('#cambio').html('Cambio: 0');

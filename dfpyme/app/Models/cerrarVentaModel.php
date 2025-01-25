@@ -85,7 +85,7 @@ class cerrarVentaModel extends Model
 
 
 
-            $actualizar_inventario = $inventario->actualizar_inventario($detalle['codigointernoproducto'], $id_tipo_inventario['id_tipo_inventario'], $detalle['cantidad_producto']);
+            $actualizar_inventario = $inventario->actualizar_inventario($detalle['codigointernoproducto'], $id_tipo_inventario['id_tipo_inventario'], $detalle['cantidad_producto'],'CORTESIAS',$factura_venta);
 
             $impuesto_saludable = model('productoModel')->select('valor_impuesto_saludable')->where('codigointernoproducto', $detalle['codigointernoproducto'])->first();
             $id_saludable = model('productoModel')->select('id_impuesto_saludable')->where('codigointernoproducto', $detalle['codigointernoproducto'])->first();

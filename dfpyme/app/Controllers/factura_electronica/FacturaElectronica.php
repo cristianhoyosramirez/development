@@ -26,7 +26,9 @@ class FacturaElectronica extends BaseController
     {
         //var_dump($this->request->getPost());
         $id_mesa = $this->request->getPost('id_mesa');
-        //$id_mesa = 1;
+        // $id_mesa = 6;
+
+        //var_dump($this->request->getPost());
 
         $pedido = model('pedidoModel')->select('id')->where('fk_mesa', $id_mesa)->first();
         $numero_pedido = $pedido['id'];
@@ -63,18 +65,19 @@ class FacturaElectronica extends BaseController
             $nota = model('pedidoModel')->select('nota_pedido')->where('fk_mesa', $id_mesa)->first();
 
 
-
-            /*   $id_mesa = 1;
+            /* 
+            $id_mesa = 1;
             $tipo_pago = 1;         // Tipo de pago 1 = pago completo; 0 pago parcial
             $id_usuario = 6;      // Tipo de pago 1 = pago completo; 0 pago parcial
-            $efectivo = 100000;         // Tipo de pago 1 = pago completo; 0 pago parcial
-            $transaccion = 0;  // Tipo de pago 1 = pago completo; 0 pago parcial
+            $efectivo = 0;         // Tipo de pago 1 = pago completo; 0 pago parcial
+            $transaccion = 100000;  // Tipo de pago 1 = pago completo; 0 pago parcial
             $valor_venta = 100000; // Tipo de pago 1 = pago completo; 0 pago parcial
             $nit_cliente = 222222222222;
             $estado = 8;
             $pago_total = 200000;
             $propina = 0;
-            $nota = model('pedidoModel')->select('nota_pedido')->where('fk_mesa', $id_mesa)->first();*/
+            $nota = model('pedidoModel')->select('nota_pedido')->where('fk_mesa', $id_mesa)->first();
+            $medio_de_pago = '10'; */
 
 
 
@@ -317,7 +320,7 @@ class FacturaElectronica extends BaseController
                     $codigo_categoria = model('productoModel')->select('codigocategoria')->where('codigointernoproducto', $detalle['codigointernoproducto'])->first();
                     $costo = model('productoModel')->select('precio_costo')->where('codigointernoproducto', $detalle['codigointernoproducto'])->first();
 
-                    
+
                     $id_pedido = model('kardexModel')->select('id_pedido')->where('id_pedido', $detalle['id'])->first();
 
                     $id_tipo_inventario = model('productoModel')->select('id_tipo_inventario')->where('codigointernoproducto', $detalle['codigointernoproducto'])->first();
@@ -528,10 +531,54 @@ class FacturaElectronica extends BaseController
                         $movimientos_transaccion = model('pagosModel')->pago_transferencia($idUlt);
                         $movimientos_efectivo = model('pagosModel')->pago_efectivo($idUlt);
 
+                        if (empty($movimientos_efectivo[0]['recibido_efectivo'])) {
+                            $efectivo = 0;
+                            $total_efectivo = 0;
+                        } else if (empty($movimientos_efectivo[0]['recibido_efectivo'])) {
+                            $efectivo = $movimientos_efectivo[0]['recibido_efectivo'];
+                            $total_efectivo = $movimientos_efectivo[0]['recibido_efectivo'];
+                        }
+
+
+
+                        /*    if (!empty($movimientos_transaccion)) {
+                            if ($movimientos_transaccion[0]['recibido_transferencia'] > 0) {
+                                $imp = new impresion();
+
+                                if (empty($movimientos_efectivo[0]['total_pago'])) {
+                                    $total_efectivo = 0;
+                                    $efectivo = 0;
+                                } else if (empty($movimientos_efectivo[0]['total_pago'])) {
+                                    $total_efectivo = $movimientos_efectivo[0]['total_pago'];
+                                    $efectivo = $total_efectivo;
+                                }
+
+                                $imprimir = $imp->imprimir_comprobnate_transferencia($idUlt, $movimientos_transaccion[0]['recibido_transferencia'], $efectivo, $total_efectivo);
+                            }
+                        } */
 
                         if (!empty($movimientos_transaccion)) {
-                            $imp = new impresion();
-                            $imprimir = $imp->imprimir_comprobnate_transferencia($idUlt, $movimientos_transaccion[0]['recibido_transferencia'], $movimientos_efectivo[0]['recibido_efectivo'], $movimientos_efectivo[0]['total_pago']);
+                            if ($movimientos_transaccion[0]['recibido_transferencia'] > 0) {
+                                $imp = new impresion();
+
+                                // Inicializamos variables para evitar errores
+                                $total_efectivo = 0;
+                                $efectivo = 0;
+
+                                // Verificar si existe 'total_pago' en 'movimientos_efectivo'
+                                if (!empty($movimientos_efectivo[0]['total_pago'])) {
+                                    $total_efectivo = $movimientos_efectivo[0]['total_pago'];
+                                    $efectivo = $total_efectivo;
+                                }
+
+                                // Llamada al método imprimir
+                                $imprimir = $imp->imprimir_comprobnate_transferencia(
+                                    $idUlt,
+                                    $movimientos_transaccion[0]['recibido_transferencia'],
+                                    $efectivo,
+                                    $total_efectivo
+                                );
+                            }
                         }
                     }
 

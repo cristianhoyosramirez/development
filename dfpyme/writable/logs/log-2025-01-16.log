@@ -1,0 +1,1045 @@
+CRITICAL - 2025-01-16 09:11:41 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\caja_general\cajaGeneralController->exportCostoExcel()
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja_general\cajaGeneralController))
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-01-16 09:14:13 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\caja_general\cajaGeneralController->exportCostoExcel()
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja_general\cajaGeneralController))
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-01-16 09:14:53 --> Unable to bind unstringable array
+#0 C:\xampp\htdocs\dfpyme\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Cell\Cell.php(228): PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder->bindValue(Object(PhpOffice\PhpSpreadsheet\Cell\Cell), Array)
+#1 C:\xampp\htdocs\dfpyme\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1117): PhpOffice\PhpSpreadsheet\Cell\Cell->setValue(Array, Object(PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder))
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\caja_general\cajaGeneralController.php(980): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValue('E9', Array)
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\caja_general\cajaGeneralController->exportCostoExcel()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja_general\cajaGeneralController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-01-16 09:15:41 --> Array to string conversion
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\caja_general\cajaGeneralController.php(973): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 973)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\caja_general\cajaGeneralController->exportCostoExcel()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\caja_general\cajaGeneralController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 11:10:48 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 159)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 11:56:38 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 12:26:57 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\xampp\htdocs\dfpyme\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\dfpyme\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-01-16 13:23:33 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 13:24:00 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 14:51:02 --> Undefined variable $total_efectivo
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\factura_electronica\FacturaElectronica.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 555)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\factura_electronica\FacturaElectronica->pre_factura()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_electronica\FacturaElectronica))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 14:55:09 --> Undefined variable $total_efectivo
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\factura_electronica\FacturaElectronica.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 555)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\factura_electronica\FacturaElectronica->pre_factura()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_electronica\FacturaElectronica))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 14:58:28 --> Undefined variable $total_efectivo
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\factura_electronica\FacturaElectronica.php(557): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 557)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\factura_electronica\FacturaElectronica->pre_factura()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\factura_electronica\FacturaElectronica))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2025-01-16 15:00:56 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:00:56 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:00:57 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:00:57 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:00:58 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:00:58 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:00:59 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:00:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:00 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:00 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 15:01:00 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:00 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:01 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:01 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:02 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:02 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:03 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:03 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:04 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:04 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:05 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:05 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 15:01:05 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:05 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:06 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+CRITICAL - 2025-01-16 15:01:06 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  no existe la base de datos �PORKOS�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 15:01:07 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:07 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:09 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:09 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:10 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:10 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:10 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «apertura_registro»
+LINE 2: FROM &quot;apertura_registro&quot;
+             ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #157, 'SELECT "numero"...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "numero"...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "numero"...')
+#4 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#5 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-16 15:01:10 --> pg_query(): Query failed: ERROR:  no existe la relación «apertura_registro»
+LINE 2: FROM &quot;apertura_registro&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #157, 'SELECT "numero"...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "numero"...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "numero"...')
+#4 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#5 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-16 15:01:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:11 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:11 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:11 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:12 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:12 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:13 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:13 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:14 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:14 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:14 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:15 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:15 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:15 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «apertura_registro»
+LINE 2: FROM &quot;apertura_registro&quot;
+             ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #157, 'SELECT "numero"...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "numero"...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "numero"...')
+#4 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#5 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-16 15:01:15 --> pg_query(): Query failed: ERROR:  no existe la relación «apertura_registro»
+LINE 2: FROM &quot;apertura_registro&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #157, 'SELECT "numero"...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "numero"...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "numero"...')
+#4 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#5 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#10 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-16 15:01:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:16 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:16 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:17 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:17 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 15:01:18 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^ in C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php:135
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:18 --> pg_query(): Query failed: ERROR:  no existe la relación «pedido»
+LINE 11:             pedido
+                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\dfpyme\system\Database\Postgre\Connection.php(135): pg_query(Resource id #155, '\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('\r\n        SELEC...')
+#3 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#4 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-16 15:01:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-16 19:13:42 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:42 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 19:13:43 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:43 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT "numero"...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(636): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 19:13:43 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:43 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 19:13:44 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\app\Models\pedidoModel.php(94): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(762): App\Models\pedidoModel->update_mesa()
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->actualizacion_estado_mesas()
+#4 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2025-01-16 19:13:44 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Mesas.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Mesas->index()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Mesas))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 19:13:56 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:13:56 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Mesas.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Mesas->index()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Mesas))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 19:14:08 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:14:08 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Mesas.php(17): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Mesas->index()
+#6 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Mesas))
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-16 19:14:15 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+CRITICAL - 2025-01-16 19:14:15 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Usuario�
+#0 C:\xampp\htdocs\dfpyme\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\dfpyme\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#2 C:\xampp\htdocs\dfpyme\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\dfpyme\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_not_unique('8888', 'pinusuario_sist...', Array, NULL)
+#4 C:\xampp\htdocs\dfpyme\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('pin', 'pin', '8888', Array, Array)
+#5 C:\xampp\htdocs\dfpyme\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\login\loginController.php(19): CodeIgniter\Controller->validate(Array)
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\login\loginController->login()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\loginController))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:14 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:16 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:17 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:17 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:18 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:18 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:18 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:18 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:20 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:39 --> copy(\\DESKTOP-33GR05N\PIZZERO): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(108): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '43', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 19:15:56 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 19:16:22 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 19:17:09 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-16 19:19:00 --> copy(\\DESKTOP-33GR05N\BEBIDAS): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(80): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1819', 'MESA 4 ', '48', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 23:03:13 --> copy(\\DESKTOP-33GR05N\BEBIDAS): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'copy(\\\\DESKTOP-...', 'C:\\xampp\\htdocs...', 372)
+#1 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(372): copy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#2 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(290): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->runCopy('C:\\Users\\Usuari...', '\\\\DESKTOP-33GR0...')
+#3 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x01\x1D!\x00**Coman...')
+#4 C:\xampp\htdocs\dfpyme\app\Controllers\mike42\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#5 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(372): Mike42\Escpos\Printer->close()
+#6 C:\xampp\htdocs\dfpyme\app\Controllers\pedidos\Imprimir.php(156): App\Controllers\pedidos\Imprimir->generar_comanda(Array, '1816', 'MESA 1', '48', 'Comanda')
+#7 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\pedidos\Imprimir->imprimirComanda()
+#8 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pedidos\Imprimir))
+#9 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 23:03:39 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

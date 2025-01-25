@@ -363,4 +363,191 @@ class categoriaController extends BaseController
             echo  json_encode($returnData);
         }
     }
+
+    /*    public function consulta_sub_categoria()
+{
+    // Recibir datos desde el cuerpo JSON
+    $data = $this->request->getJSON();
+
+    // Asegurarse de que el id_categoria esté presente
+    if (!isset($data->id_categoria)) {
+        return $this->response->setJSON([
+            "resultado" => 0,
+            "mensaje" => "El parámetro id_categoria es obligatorio."
+        ]);
+    }
+
+    $id_categoria = $data->id_categoria;
+
+    // Obtener la subcategoría asociada
+    $sub_categoria = model('categoriasModel')
+        ->select('subcategoria')
+        ->where('id', $id_categoria)
+        ->first();
+
+    if (!$sub_categoria) {
+        return $this->response->setJSON([
+            "resultado" => 0,
+            "mensaje" => "No se encontró la categoría especificada."
+        ]);
+    }
+
+    // Si subcategoria es 't', devolver las subcategorías
+    if ($sub_categoria['subcategoria'] === 't') {
+        $sub_categorias = model('subCategoriaModel')
+            ->where('id_categoria', $id_categoria)
+            ->findAll();
+
+        return $this->response->setJSON([
+            "resultado" => 1,
+            "sub_categoria" => $sub_categoria['subcategoria'],
+            "datos" => view('categoria/sub_categoria', [
+                'sub_categorias' => $sub_categorias
+            ])
+        ]);
+    }
+
+    // Si subcategoria es 'f', devolver sin datos adicionales
+    if ($sub_categoria['subcategoria'] === 'f') {
+        return $this->response->setJSON([
+            "resultado" => 1,
+            "sub_categoria" => $sub_categoria['subcategoria']
+        ]);
+    }
+} */
+
+
+    function productos_categoria()
+    {
+
+        $categorias = model('categoriasModel')->select('codigocategoria,nombrecategoria,id')->orderBy('orden', 'asc')->findAll();
+
+        return view('producto/categorias', [
+            'categorias' => $categorias
+        ]);
+    }
+
+    public function actualizar_productos()
+    {
+        // Obtener los datos enviados en formato JSON
+        $data = $this->request->getJSON();
+
+        if ($data && isset($data->id, $data->valor)) {
+            $id = $data->id;
+            $valor = $data->valor;
+
+            // Aquí puedes agregar la lógica para actualizar en la base de datos
+            // Ejemplo con un modelo (asegúrate de cargarlo en tu controlador o usar la inyección de dependencias)
+            // $this->productoModel->update($id, ['nombre' => $valor]);
+
+
+            $data = [
+                'nombreproducto' => $valor
+            ];
+
+            $model = model('productoModel');
+            $numero_factura = $model->set($data);
+            $numero_factura = $model->where('id', $id);
+            $numero_factura = $model->update();
+
+
+            // Retornar una respuesta JSON
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Producto actualizado correctamente',
+            ]);
+        }
+
+        // Si los datos están incompletos o son inválidos
+        return $this->response->setJSON([
+            'success' => false,
+            'message' => 'Datos insuficientes o inválidos',
+        ])->setStatusCode(400); // Código de error
+    }
+
+    public function actualizacion_productos()
+    {
+        // Obtener los datos enviados en formato JSON
+        $data = $this->request->getJSON();
+
+        if ($data && isset($data->id, $data->valor)) {
+            $id = $data->id;
+            $valor = $data->valor;
+
+            // Aquí puedes agregar la lógica para actualizar en la base de datos
+            // Ejemplo con un modelo (asegúrate de cargarlo en tu controlador o usar la inyección de dependencias)
+            // $this->productoModel->update($id, ['nombre' => $valor]);
+
+
+            $data = [
+                'nombreproducto' => $valor
+            ];
+
+            $model = model('productoModel');
+            $numero_factura = $model->set($data);
+            $numero_factura = $model->where('id', $id);
+            $numero_factura = $model->update();
+
+
+            // Retornar una respuesta JSON
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Producto actualizado correctamente',
+            ]);
+        }
+
+        // Si los datos están incompletos o son inválidos
+        return $this->response->setJSON([
+            'success' => false,
+            'message' => 'Datos insuficientes o inválidos',
+        ])->setStatusCode(400); // Código de error
+    }
+
+    function componentes_producto()
+    {
+
+        $data = $this->request->getJSON();
+
+        $idProducto = $data->id;
+
+        $codigointernoproducto = model('productoModel')->select('codigointernoproducto')->where('id', $idProducto)->first();
+        $nombreProducto = model('productoModel')->select('nombreproducto')->where('id', $idProducto)->first();
+
+        $ingredientes = model('productoModel')->getIngredientes($codigointernoproducto['codigointernoproducto']);
+        $totalCosto = model('productoModel')->getTotalReceta($codigointernoproducto['codigointernoproducto']);
+
+
+        return $this->response->setJSON([
+            'success' => true,
+            'ingredientes' => $ingredientes,
+            'producto' => $nombreProducto['nombreproducto'],
+            'costo' => "Costo total receta " . "$" . number_format($totalCosto[0]['costo_total'], 0, ',', '.')
+
+        ]);
+    }
+
+    function verRecetas()
+    {
+
+        $recetas = model('productoModel')->select('id,nombreproducto,codigointernoproducto')->where('id_tipo_inventario', 3)->findAll();
+
+        if (!empty($recetas)) {
+
+            return $this->response->setJSON([
+                'success' => true,
+                'recetas' => view('ventas/recetas', [
+                    'recetas' => $recetas
+                ])
+            ]);
+        }
+        if (empty($recetas)) {
+
+            return $this->response->setJSON([
+                'success' => false,
+                'recetas' => view('ventas/recetas', [
+                    'recetas' => $recetas
+                ])
+            ]);
+        }
+    }
 }

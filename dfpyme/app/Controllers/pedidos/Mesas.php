@@ -13,7 +13,8 @@ class Mesas extends BaseController
     public function index()
     {
 
-        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        //$categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('orden', 'asc')->findAll();
         $salones = model('salonesModel')->findAll();
         $mesas = model('mesasModel')->where('estado', 0)->orderBy('id', 'ASC')->findAll();
         $estado = model('estadoModel')->orderBy('idestado', 'ASC')->findAll();
@@ -50,7 +51,8 @@ class Mesas extends BaseController
         $tipo_pedido = $_POST['tipo_pedido'];
 
         //$tipo_pedido = "computador";
-        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        //$categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('orden', 'asc')->findAll();
 
 
 
@@ -909,7 +911,8 @@ class Mesas extends BaseController
     function mesas_salon()
     {
         $id_salon = $this->request->getPost('id_salon');
-        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        //$categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('nombrecategoria', 'asc')->findAll();
+        $categorias = model('categoriasModel')->where('permitir_categoria', 'true')->orderBy('orden', 'asc')->findAll();
 
         $mesas = model('mesasModel')->where('fk_salon', $id_salon)->orderBy('id', 'ASC')->findAll();
         $returnData = array(

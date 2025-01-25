@@ -53,4 +53,19 @@ class empresaModel extends Model
         ");
         return $datos->getResultArray();
     }
+    public function Empresa()
+    {
+        $datos = $this->db->query("
+        select nombreregimen,
+            nombrecomercialempresa,
+            nombredepartamento,
+            direccionempresa,
+            nombreciudad
+            from empresa  inner join regimen on regimen.idregimen= empresa.idregimen 
+            inner join departamento on departamento.iddepartamento= empresa.iddepartamento
+            inner join ciudad on ciudad.idciudad = empresa.idciudad
+
+        ");
+        return $datos->getResultArray();
+    }
 }

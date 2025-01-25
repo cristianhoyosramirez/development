@@ -25,6 +25,8 @@ function pagar() {
 
     let valor_venta = "";
 
+    
+
     if (tipo_pago == 1) {
         //var propina = document.getElementById("propina_del_pedido").value;
         var propina = document.getElementById("total_propina").value;
@@ -67,15 +69,11 @@ function pagar() {
         if (estado == 8) {
             if (pago_total >= parseInt(valor_venta)) {
                 factura_electronica(id_mesa, estado, nit_cliente, id_usuario, url, pago_total, valor_venta, tipo_pago, efectivo, transaccion, id_usuario, propina_Format, medio_de_pago)
-                if (pago_total < parseInt(valor_venta)) {
-                    $('#valor_pago_error').html('¡ Pago insuficiente !')
-                }
-
             }
-
-
-
-        } else if (estado == 1 || estado == 7) {
+            if (pago_total < parseInt(valor_venta)) {
+                $('#valor_pago_error').html('¡ Pago insuficiente  !')
+            }
+        } else if (estado == 1 || estado == 7 || estado == 6) {
             let button = document.querySelector("#btn_pagar");
             button.disabled = true; // Deshabilitar el botón de pagar
 

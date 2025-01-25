@@ -907,7 +907,7 @@
                             $('#propina_pesos_final').val(0)
                             $('#total_propina').val(0)
                             $('#valor_total_a_pagar').val(resultado.total_sin_formato)
-                            $('#efectivo').val(resultado.total)
+                            //$('#efectivo').val(resultado.total)
                             $('#total_pedido').html("Valor pago: " + resultado.total)
                             $('#valor_pedido').html('$' + resultado.total)
 
@@ -2068,7 +2068,7 @@
                             $('#valor_pedido').html(resultado.total_pedido)
                             $('#val_pedido').html(resultado.total_pedido)
                             $('#total_propina').val(resultado.propina)
-                            $('#efectivo').val(resultado.total_pedido)
+                            //$('#efectivo').val(resultado.total_pedido)
                             $('#total_pedido').html("Valor pago:  " + resultado.total_pedido)
                             $('#valor_total_a_pagar').val(resultado.val_pedido)
 

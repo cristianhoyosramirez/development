@@ -16,7 +16,7 @@ class productoCategoriaModel extends Model
         $datos = $this->db->query("
         SELECT DISTINCT id_sub_categoria
         FROM producto_catego_sub
-        WHERE id_categoria='$codigo_categoria'
+        WHERE id_categoria='$codigo_categoria' 
         ");
         return $datos->getResultArray();
     }

@@ -242,7 +242,7 @@ class devolucionModel extends Model
         return $datos->getResultArray();
     }
 
-    public function tarifa_iva($fecha_inicial, $fecha_final)
+    /*  public function tarifa_iva($fecha_inicial, $fecha_final)
     {
         $datos = $this->db->query("
         select distinct(iva) 
@@ -250,10 +250,20 @@ class devolucionModel extends Model
         where fecha_y_hora_venta between '$fecha_inicial' and '$fecha_final'
         ");
         return $datos->getResultArray();
+    } */
+
+    public function tarifa_iva($fecha_inicial, $fecha_final)
+    {
+        $datos = $this->db->query("
+        select distinct(codigo) 
+        from detalle_devolucion_venta 
+        where fecha_y_hora_venta between '$fecha_inicial' and '$fecha_final'
+        ");
+        return $datos->getResultArray();
     }
 
 
-    public function devolucion_iva($tarifa_iva, $fecha_inicial, $fecha_final)
+    public function devolucion_iva($tarifa_iva, $fecha_inicial, $fecha_final,$codigo)
     {
         $datos = $this->db->query("
         SELECT
@@ -262,7 +272,7 @@ class devolucionModel extends Model
         FROM
             detalle_devolucion_venta
         WHERE
-        fecha_y_hora_venta BETWEEN '$fecha_inicial' AND '$fecha_final' AND iva = $tarifa_iva 
+        fecha_y_hora_venta BETWEEN '$fecha_inicial' AND '$fecha_final' AND iva = $tarifa_iva  and codigo=$codigo
         ");
         return $datos->getResultArray();
     }
@@ -276,7 +286,7 @@ class devolucionModel extends Model
         ");
         return $datos->getResultArray();
     }
-    
+
     public function devolucion_ico($tarifa_ico, $fecha_inicial, $fecha_final)
     {
         $datos = $this->db->query("

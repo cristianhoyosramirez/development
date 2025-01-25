@@ -507,4 +507,332 @@ class productoModel extends Model
         ");
         return $datos->getResultArray();
     }
+    function getTipoProducto($id)
+    {
+
+        $datos = $this->db->query("
+           SELECT 
+                tipo_inventario.nombre,
+                producto.id_tipo_inventario,
+                tipo_inventario.descripcion
+           FROM 
+                tipo_inventario 
+            INNER JOIN 
+                producto 
+            ON 
+                producto.id_tipo_inventario = tipo_inventario.id 
+            WHERE 
+                producto.id = $id;
+        ");
+        return $datos->getResultArray();
+    }
+    function getIngredientes($codigo)
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    producto.nombreproducto, 
+    inventario.cantidad_inventario, 
+    producto_fabricado.cantidad AS cantidad_receta,
+    prod_proceso AS codigointernoproducto,
+    precio_costo,
+    SUM(precio_costo * producto_fabricado.cantidad) AS costo_producto
+FROM 
+    producto_fabricado
+INNER JOIN 
+    producto 
+    ON producto_fabricado.prod_proceso = producto.codigointernoproducto
+INNER JOIN 
+    inventario 
+    ON inventario.codigointernoproducto = producto_fabricado.prod_proceso
+WHERE 
+    producto_fabricado.prod_fabricado = '$codigo'
+GROUP BY 
+    producto.nombreproducto, 
+    inventario.cantidad_inventario, 
+    producto_fabricado.cantidad, 
+    prod_proceso, 
+    precio_costo;
+
+        ");
+        return $datos->getResultArray();
+    }
+
+    function IvaProducto()
+    {
+
+        $datos = $this->db->query("
+           SELECT 
+            nombreproducto, 
+            codigointernoproducto, 
+            conceptoiva,
+            valoriva
+        FROM 
+            producto
+        INNER JOIN 
+            iva 
+        ON 
+            producto.idiva = iva.idiva
+        WHERE 
+            aplica_ico = 'false';
+        ");
+        return $datos->getResultArray();
+    }
+    function IncProducto()
+    {
+
+        $datos = $this->db->query("
+           SELECT 
+            nombreproducto, 
+            codigointernoproducto, 
+            valor_ico,
+            codigointernoproducto
+        FROM 
+            producto
+        INNER JOIN 
+            ico_consumo
+        ON 
+            producto.id_ico_producto = ico_consumo.id_ico
+        WHERE aplica_ico = 'true';
+        ");
+        return $datos->getResultArray();
+    }
+
+    /**
+     * Obtiene una lista de productos con su respectivo inventario.
+     *
+     * Esta función realiza una consulta a la base de datos en las tablas producto unida con inventario  para obtener 
+     * información de los productos junto con su cantidad en inventario, 
+     * considerando únicamente ciertos tipos de inventario (1, 4, 2). 
+     * 1 = producto venta , 2= ?? , 4 = insumos.
+     * Los resultados se ordenan alfabéticamente por el nombre del producto.
+     *
+     * @return array Retorna un arreglo asociativo con los siguientes campos:
+     *               - id (int): ID del producto.
+     *               - codigointernoproducto (string): Código interno del producto.
+     *               - nombreproducto (string): Nombre del producto.
+     *               - cantidad_inventario (int): Cantidad disponible en el inventario.
+     *
+     * @throws DatabaseException Si ocurre algún error en la ejecución de la consulta.
+     */
+    function ProductoInventario()
+    {
+
+        $datos = $this->db->query("
+    SELECT 
+    producto.id,
+    producto.codigointernoproducto,
+    producto.nombreproducto,
+    inventario.cantidad_inventario
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+WHERE 
+    id_tipo_inventario IN (1, 4, 2)
+ORDER BY 
+    producto.nombreproducto ASC;
+
+        ");
+        return $datos->getResultArray();
+    }
+    function getInventario()
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    categoria.nombrecategoria,
+    producto.id,
+    producto.codigointernoproducto,
+    producto.nombreproducto,
+    inventario.cantidad_inventario,
+    REPLACE(TO_CHAR(precio_costo, 'FM999,999,999'), ',', '.') AS costo_unitario,  -- Reemplazamos las comas por puntos
+    REPLACE(TO_CHAR(precio_costo * cantidad_inventario, 'FM999,999,999'), ',', '.') AS costo_producto  -- Reemplazamos las comas por puntos
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+INNER JOIN 
+    categoria 
+    ON producto.codigocategoria = categoria.codigocategoria
+WHERE 
+    id_tipo_inventario IN (1, 4, 2,3)
+ORDER BY 
+    categoria.nombrecategoria ASC,
+    producto.nombreproducto ASC;
+        ");
+        return $datos->getResultArray();
+    }
+    function ExcelInventario()
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    categoria.nombrecategoria,
+    producto.id,
+    producto.codigointernoproducto,
+    producto.nombreproducto,
+    inventario.cantidad_inventario,
+    precio_costo AS costo_unitario, 
+    (precio_costo * cantidad_inventario) AS costo_producto  
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+INNER JOIN 
+    categoria 
+    ON producto.codigocategoria = categoria.codigocategoria
+WHERE 
+    id_tipo_inventario IN (1, 4, 2)
+ORDER BY 
+    categoria.nombrecategoria ASC,
+    producto.nombreproducto ASC
+        ");
+        return $datos->getResultArray();
+    }
+
+    function getTotalReceta($codigo)
+    {
+
+        $datos = $this->db->query("
+SELECT   
+    sum(precio_costo * producto_fabricado.cantidad) as costo_total
+FROM 
+    producto_fabricado 
+INNER JOIN 
+    producto 
+ON 
+    producto_fabricado.prod_proceso = producto.codigointernoproducto 
+WHERE 
+    producto_fabricado.prod_fabricado = '$codigo'
+   
+   
+        ");
+        return $datos->getResultArray();
+    }
+    function getProducto($codigo)
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    id,
+    producto.codigointernoproducto,
+    nombreproducto,
+    cantidad_inventario
+   
+FROM 
+    producto
+    inner join inventario on inventario.codigointernoproducto=producto.codigointernoproducto
+WHERE 
+    (producto.codigointernoproducto ILIKE '%$codigo%' OR nombreproducto ILIKE '%$codigo%')
+    AND id_tipo_inventario IN (1, 2, 4);
+        ");
+        return $datos->getResultArray();
+    }
+    function TotalInv()
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    sum(precio_costo * cantidad_inventario) as costo_total
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+WHERE 
+    id_tipo_inventario IN (1, 4, 2,3)
+        ");
+        return $datos->getResultArray();
+    }
+    function TotalInvCat($codigo)
+    {
+
+        $datos = $this->db->query("
+SELECT 
+    sum(precio_costo * cantidad_inventario) as costo_total
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+WHERE 
+    codigocategoria='$codigo'
+        ");
+        return $datos->getResultArray();
+    }
+    function CostoProducto($codigo)
+    {
+
+        $datos = $this->db->query("
+        SELECT 
+            precio_costo,valorventaproducto
+        FROM 
+            producto
+
+        WHERE 
+            codigointernoproducto='$codigo'
+        ");
+        return $datos->getResultArray();
+    }
+
+    function Getinv($valor)
+    {
+
+        $datos = $this->db->query("
+        SELECT 
+    categoria.nombrecategoria,
+    producto.id,
+    producto.codigointernoproducto,
+    producto.nombreproducto,
+    inventario.cantidad_inventario,
+    REPLACE(TO_CHAR(precio_costo, 'FM999,999,999'), ',', '.') AS costo_unitario,  -- Reemplazamos las comas por puntos
+    REPLACE(TO_CHAR(precio_costo * cantidad_inventario, 'FM999,999,999'), ',', '.') AS costo_producto  -- Reemplazamos las comas por puntos
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+INNER JOIN 
+    categoria 
+    ON producto.codigocategoria = categoria.codigocategoria
+WHERE 
+    id_tipo_inventario IN (1, 4, 2,3)  AND (producto.nombreproducto ILIKE '%$valor%' OR producto.codigointernoproducto ILIKE '%$valor%')
+ORDER BY 
+    categoria.nombrecategoria ASC,
+    producto.nombreproducto ASC;
+        ");
+        return $datos->getResultArray();
+    }
+    function GetinvCategoria($valor)
+    {
+
+        $datos = $this->db->query("
+ SELECT 
+    categoria.nombrecategoria,
+    producto.id,
+    producto.codigointernoproducto,
+    producto.nombreproducto,
+    inventario.cantidad_inventario,
+    REPLACE(TO_CHAR(precio_costo, 'FM999,999,999'), ',', '.') AS costo_unitario,  -- Reemplazamos las comas por puntos
+    REPLACE(TO_CHAR(precio_costo * cantidad_inventario, 'FM999,999,999'), ',', '.') AS costo_producto  -- Reemplazamos las comas por puntos
+FROM 
+    producto
+INNER JOIN 
+    inventario 
+    ON producto.codigointernoproducto = inventario.codigointernoproducto
+INNER JOIN 
+    categoria 
+    ON producto.codigocategoria = categoria.codigocategoria
+WHERE 
+    id_tipo_inventario IN (1, 4, 2,3)  AND producto.codigocategoria='$valor'
+ORDER BY 
+    categoria.nombrecategoria ASC,
+    producto.nombreproducto ASC
+        ");
+        return $datos->getResultArray();
+    }
 }

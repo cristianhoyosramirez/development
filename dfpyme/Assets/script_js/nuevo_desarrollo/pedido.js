@@ -1,7 +1,4 @@
 function pedido(id_mesa, nombre_mesa) {
-
-
-
     const cardHeader = document.getElementById('myCardHeader');
     if (cardHeader) {
         cardHeader.classList.remove('border-1', 'bg-indigo-lt');
@@ -13,8 +10,9 @@ function pedido(id_mesa, nombre_mesa) {
     }
 
     const mesa = document.getElementById('mesa_pedido');
-    mesa.style.display = 'block';
-
+    if (mesa) {
+        mesa.style.display = 'block';
+    }
     const pedid = document.getElementById('pedido_mesa');
     const mesero = document.getElementById('nombre_mesero');
     if (pedid) {
@@ -67,19 +65,19 @@ function pedido(id_mesa, nombre_mesa) {
     let url = document.getElementById("url").value;
 
     $.ajax({
-        data:{id_mesa},
+        data: { id_mesa },
         url: url + "/" + "salones/consultar_mesa",
         type: "POST",
         success: function (resultado) {
             var resultado = JSON.parse(resultado);
             // Aquí puedes manejar el resultado como desees
-            if (resultado.resultado==1){
+            if (resultado.resultado == 1) {
                 $('#mesa_productos').html(resultado.productos_pedido)
                 $('#valor_pedido').html(resultado.total_pedido)
                 $('#subtotal_pedido').val(resultado.sub_total)
                 $('#propina_del_pedido').val(resultado.propina)
                 $('#propina_pesos_final').val(resultado.propina)
-                sweet_alert_start('success','Venta con pedido')
+                sweet_alert_start('success', 'Venta con pedido')
             }
         },
         error: function (xhr, status, error) {

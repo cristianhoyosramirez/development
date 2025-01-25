@@ -160,19 +160,27 @@
                 </tr>
             </thead>
             <tbody>
-                <?php //dd($iva_devolucion); 
-                ?>
-                <?php foreach ($iva_devolucion as $iva_devolucion) { ?>
+
+                <?php if (!empty($iva_devolucion)): ?>
+                    <?php foreach ($iva_devolucion as $item): ?>
+                        <tr>
+                            <th>Factura General</th> <!-- TARIFA ICO -->
+                            <th><?php echo $item['tarifa']; ?>%</th> <!-- TARIFA ICO -->
+                            <th><?php echo "$" . number_format($item['base'], 0, ",", "."); ?></th> <!-- TARIFA ICO -->
+                            <th><?php echo "$" . number_format($item['impuesto'], 0, ",", "."); ?></th> <!-- TARIFA ICO -->
+                            <th><?php echo "$" . number_format($item['total'], 0, ",", "."); ?></th> <!-- TARIFA ICO -->
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
                     <tr>
-                        <th>Factura General</th> <!-- TARIFA ICO  -->
-                        <th><?php echo $iva_devolucion['tarifa'] ?>%</th> <!-- TARIFA ICO  -->
-
-                        <th><?php echo "$" . number_format($iva_devolucion['base'], 0, ",", ".") ?></th> <!-- TARIFA ICO  -->
-                        <th><?php echo "$" . number_format($iva_devolucion['impuesto'], 0, ",", ".") ?></th> <!-- TARIFA ICO  -->
-                        <th><?php echo "$" . number_format($iva_devolucion['total'], 0, ",", ".") ?></th> <!-- TARIFA ICO  -->
-
+                        <th>Factura General</th>
+                        <th>0%</th>
+                        <th>$0</th>
+                        <th>$0</th>
+                        <th>$0</th>
                     </tr>
-                <?php } ?>
+                <?php endif; ?>
+
             </tbody>
         </table>
 
@@ -206,40 +214,21 @@
             </tbody>
         </table>
 
-        <form class="row g-3" action="<?= base_url('consultas_y_reportes/fiscal_manual_pdf') ?>" method="POST" id="formulario_reporte_caja_diaria">
+        <p class="text-start h3 text-primary">Formas de pago </p>
+        <?php foreach ($pago as $keyPago) {
 
-            <p class="text-center text-primary h3">RECALCULAR IMPUESTO AL CONSUMO</p>
+            $nombre_comercial = model('medioPagoModel')->getNombre($keyPago['medio_pago']);
+            $total = model('medioPagoModel')->getTotal($keyPago['medio_pago'], $id_apertura);
 
-            <input type="hidden" value="<?php echo $consecutivo ?>" name="consecutivo">
-            <input type="hidden" value="<?php echo $fecha_apertura ?>" name="fecha_manual">
-            <input type="hidden" value="<?php echo $registro_inicial ?>" name="registro_inicial">
-            <input type="hidden" value="<?php echo $registro_final ?>" name="registro_final">
-            <input type="hidden" value="<?php echo $total_registros ?>" name="total_registros">
-            <input type="hidden" value="<?php echo base_url() ?>" id="url">
+        ?>
 
 
-            <div class="col-3">
-                <label for="inputAddress2" class="form-label">BASE ICO</label>
-                <input type="text" class="form-control" id="base_ico_manual" name="base_ico_manual" readonly>
-                <span id="falta_base_ico" style="color:#FF0000"></span>
-            </div>
-            <div class="col-md-3">
-                <label for="inputCity" class="form-label">IMPUESTO</label>
-                <input type="text" class="form-control" value="8" id="impuesto_8_manual" name="impuesto_8_manual" readonly>
-            </div>
-            <div class="col-md-3">
-                <label for="inputState" class="form-label">V IMPUESTO</label>
-                <input type="text" class="form-control" name="valor_impuesto_8_manual" id="valor_impuesto_8_manual" readonly>
-            </div>
-            <div class="col-md-3">
-                <label for="inputZip" class="form-label">TOTAL </label>
-                <input type="text" class="form-control" id="total_venta_8_manual" name="total_venta_8_manual" onkeyup="impoconsumo_manual(event),this.value">
-            </div>
 
-            <div class="col-4">
-                <button type="submit" class="btn btn-danger">Pdf</button>
-            </div>
-        </form>
+            <p class="text-start h4 text-dark"> <?php echo $nombre_comercial[0]['nombre_comercial'] . "   " . number_format($total[0]['total'], 0, ",", ".") . "</br>";   ?> </p>
+
+        <?php } ?>
+
+
 
     </div>
 </div>

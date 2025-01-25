@@ -1,0 +1,1290 @@
+CRITICAL - 2024-11-24 08:05:30 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:05:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:05:35 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:05:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:05:40 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:05:40 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:27:35 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:27:47 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:31:16 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:51:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:51:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:51:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:51:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:51:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:51:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:02 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:52:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:52:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:02 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:53:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:53:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:02 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:54:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:54:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:02 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:55:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:55:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:02 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:07 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:17 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:37 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:42 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:56:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:56:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:57:03 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\reportes\ReportesController.php(630): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 630)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\reportes\ReportesController->total_ventas_electronicas()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\reportes\ReportesController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:57:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp\htdocs\dfpyme\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\dfpyme\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp\htdocs\dfpyme\system\Debug\Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2024-11-24 08:57:03 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 08:57:43 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 10:48:59 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 10:54:28 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\categoria\categoriaController.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 341)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\categoria\categoriaController->consulta_sub_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\categoria\categoriaController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 10:58:29 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 10:59:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\categoria\categoriaController.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 341)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\categoria\categoriaController->consulta_sub_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\categoria\categoriaController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 11:00:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\categoria\categoriaController.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 341)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\categoria\categoriaController->consulta_sub_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\categoria\categoriaController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 11:22:40 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\categoria\categoriaController.php(341): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 341)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\categoria\categoriaController->consulta_sub_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\categoria\categoriaController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 11:22:48 --> Undefined array key "id_producto"
+#0 C:\xampp\htdocs\dfpyme\app\Controllers\producto\productoController.php(567): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 567)
+#1 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(832): App\Controllers\producto\productoController->agregar_productos_x_categoria()
+#2 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\producto\productoController))
+#3 C:\xampp\htdocs\dfpyme\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\dfpyme\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

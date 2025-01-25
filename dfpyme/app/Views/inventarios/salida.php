@@ -77,7 +77,7 @@
                         <div class="row mb-3">
 
 
-                            <div class="col">
+                            <div class="col-2">
                                 <label class="form-label">Concepto</label>
                                 <?php $concepto = model('KardexConceptoModel')->where('idoperacion', 1)->findAll(); ?>
 
@@ -89,7 +89,7 @@
                                 </select>
 
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
 
                                 <input type="hidden" value="<?php echo base_url() ?>" id="url">
                                 <input type="hidden" id="id_producto" name="id_producto">
@@ -112,25 +112,25 @@
                                 </div>
                                 <div class="text-danger"><?= session('errors.salon') ?></div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="inputEmail4" class="form-label">Cantidad inventario </label>
                                 <input type="text" class="form-control" name="cantidad_inventario" id="cantidad_inventario" disabled>
                                 <div class="text-danger"><?= session('errors.nombre') ?></div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="inputEmail4" class="form-label">Cantidad salida </label>
                                 <input type="number" class="form-control" name="cantidad_entrada" id="cantidad_entrada" required onkeyup="cantidad_entrada_final()">
                                 <div class="text-danger"><?= session('errors.nombre') ?></div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="inputEmail4" class="form-label">Cantidad final </label>
                                 <input type="text" class="form-control" name="cantidad_final" id="cantidad_final" disabled>
                                 <div class="text-danger"><?= session('errors.nombre') ?></div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <label for="inputEmail4" class="form-label">Nota </label>
-                                <textarea name="nota" id="nota" class="form-select" required></textarea>
+                                <textarea name="nota" id="nota" class="form-control" required></textarea>
                                 <div class="text-danger"><?= session('errors.nombre') ?></div>
                             </div>
 
@@ -140,7 +140,7 @@
                         </div>
                         <div class="col-md-4">
 
-                            <button type="submit" class="btn btn-primary w-md"><i class="mdi mdi-plus"></i> Aceptar </button>
+                            <button type="submit" class="btn btn-primary w-md"><i class="mdi mdi-plus"></i> Salida de inventario </button>
                         </div>
                     </form>
                     <br>

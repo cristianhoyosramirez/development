@@ -377,22 +377,7 @@ class prefacturaController extends BaseController
         }
     }
 
-    /* public function buscar_por_codigo()
-    {
-       
 
-        if (!empty($buscar_producto_por_codigo_de_barras)) {
-            $returnData = array(
-                "resultado" => 1,
-                "codigo_interno_producto" => $buscar_producto_por_codigo_de_barras[0]['codigointernoproducto'],
-                "nombre_producto" => $buscar_producto_por_codigo_de_barras[0]['nombreproducto'],
-                "valor_venta_producto" => number_format($buscar_producto_por_codigo_de_barras[0]['valorventaproducto'], 0, ",", "."),
-            );
-            echo  json_encode($returnData);
-        } 
-
-        
-    }*/
 
     function buscar_por_codigo()
     {
@@ -694,13 +679,255 @@ class prefacturaController extends BaseController
                     echo  json_encode($returnData);
                 }
             }
-        }if(empty($buscar_producto_por_codigo_de_barras)){
+        }
+        if (empty($buscar_producto_por_codigo_de_barras)) {
             $returnData = array(
                 "resultado" => 0,
-         
+
 
             );
             echo  json_encode($returnData);
+        }
+    }
+
+    function cruzarInventario()
+    {
+
+
+        $cruceInv = model('inventarioFisicoModel')->where('corte_inventario_fisico', 'false')->findAll();
+
+        if (!empty($cruceInv)) {
+
+            $actualizar_inventario = model('inventarioModel')->set('cantidad_inventario', 0)->update();
+            $inventario_fisico = model('inventarioModel')->getInventarioFisico();
+            $inventario = model('inventarioModel')->findAll();
+
+            if ($actualizar_inventario) {
+
+                foreach ($inventario_fisico as $keyInventarioFisico) {
+                    foreach ($inventario as $keyInventario) {
+
+                        if ($keyInventarioFisico['codigointernoproducto'] === $keyInventario['codigointernoproducto']) {
+                            $actualizacion_inventario = model('inventarioModel')
+                                ->set('cantidad_inventario', $keyInventarioFisico['cantidad_inventario_fisico'])
+                                ->where('codigointernoproducto', $keyInventario['codigointernoproducto'])
+                                ->update();
+                        }
+                    }
+                }
+            }
+
+            $inventario = model('inventarioModel')->updateCorte();
+
+            $consecutivo = model('consecutivosModel')->select('numeroconsecutivo')->where('idconsecutivos', 39)->first();
+
+            $actualizacion_inventario = model('consecutivosModel')
+                ->set('numeroconsecutivo', $consecutivo['numeroconsecutivo'] + 1)
+                ->where('idconsecutivos', 39)
+                ->update();
+
+            $numero_corte = model('inventarioModel')->getFechaCorte();
+
+            $data = [
+
+                'numero' => $numero_corte[0]['corte'],
+                'fecha' => $numero_corte[0]['fecha']
+
+            ];
+
+            $insertar = model('corteModel')->insert($data);
+
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Producto actualizado correctamente',
+            ]);
+        } else if (empty($cruceInv)) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'No hay inventario para cruzar ',
+            ]);
+        }
+    }
+
+    function productosIva()
+    {
+
+        $productos = model('productoModel')->IvaProducto();
+        if (!empty($productos)) {
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => $productos
+            ]);
+        }
+        if (empty($productos)) {
+            return $this->response->setJSON([
+                'success' => false,
+                'productos' => $productos
+            ]);
+        }
+    }
+    function productosInc()
+    {
+
+        $productos = model('productoModel')->IncProducto();
+        if (!empty($productos)) {
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => $productos
+            ]);
+        }
+        if (empty($productos)) {
+            return $this->response->setJSON([
+                'success' => false,
+                'productos' => $productos
+            ]);
+        }
+    }
+
+    function ingresarInv()
+    {
+
+        $datos = $this->request->getJSON();
+
+        $id = $datos->id;
+        $cantidad = $datos->valor;
+
+
+        $codigo = model('productoModel')->select('codigointernoproducto')->where('id', $id)->first();
+
+        $verficar = model('inventarioFisicoModel')->existeProducto($codigo['codigointernoproducto']);
+
+        if (!empty($verficar)) {
+            $actualizar = model('inventarioFisicoModel')->set('cantidad_inventario_fisico', $cantidad)->where('codigointernoproducto', $codigo['codigointernoproducto'])->update();
+            $diferencia = model('inventarioModel')->conteo_manual($codigo['codigointernoproducto']);
+            return $this->response->setJSON([
+                'success' => true,
+                //'diferencia' => $diferencia['diferencia'],
+                'diferencia' => $diferencia[0]['diferencia'],
+                'id' => $id
+            ]);
+        } else if (empty($verficar)) {
+
+            $id_valor_medida = model('productoMedidaModel')->select('idvalor_unidad_medida')->where('codigointernoproducto', $codigo['codigointernoproducto'])->first();
+            $consecutivo = model('consecutivosModel')->select('numeroconsecutivo')->where('idconsecutivos', 39)->first();
+            $costo = model('productoModel')->select('precio_costo')->where('codigointernoproducto', $codigo['codigointernoproducto'])->first();
+            $data = [
+                'fecha_inventario_fisico' => date('Y-m-d'),
+                'codigointernoproducto' => $codigo['codigointernoproducto'],
+                'idvalor_unidad_medida' => $id_valor_medida['idvalor_unidad_medida'],
+                'idcolor' => 0,
+                'cantidad_inventario_fisico' => $cantidad,
+                'corte_inventario_fisico' => false,
+                'numero_corte' => $consecutivo['numeroconsecutivo'] + 1,
+                'costo' => $costo['precio_costo']
+            ];
+
+            $insert = model('inventarioFisicoModel')->insert($data);
+
+            $diferencia = model('inventarioModel')->conteo_manual($codigo['codigointernoproducto']);
+
+            //var_dump($diferencia); exit();
+
+            if ($insert) {
+                return $this->response->setJSON([
+                    'success' => true,
+                    'diferencia' => $diferencia[0]['diferencia'],
+                    'id' => $id
+                ]);
+            }
+        }
+    }
+
+    function buscarProducto()
+    {
+
+        $datos = $this->request->getJSON();
+        $busqueda = $datos->valor;
+
+        $productos = model('productoModel')->getProducto($busqueda);
+
+        if (!empty($productos)) {
+
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => view('ventas/productos', [
+                    'productos' => $productos
+                ])
+            ]);
+        }
+        if (empty($productos)) {
+
+            return $this->response->setJSON([
+                'success' => false,
+            ]);
+        }
+    }
+
+    function busqueda()
+    {
+
+        $datos = $this->request->getJSON();
+        $valor = $datos->valor;
+
+
+        $productos = model('productoModel')->Getinv($valor);
+
+        if (!empty($productos)) {
+
+            $costoTotal = model('productoModel')->TotalInv();
+            $unidades = model('inventarioModel')
+                ->selectSum('cantidad_inventario')
+                ->where('cantidad_inventario >', 0)
+                ->findAll();
+
+
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => $productos,
+                'costo_total' => "$ " . number_format($costoTotal[0]['costo_total'], 0, ",", "."),
+                'unidades' => number_format($unidades[0]['cantidad_inventario'], 0, ",", ".")
+            ]);
+        }
+        if (empty($productos)) {
+
+            return $this->response->setJSON([
+                'success' => false,
+            ]);
+        }
+    }
+
+    function busquedaCategoria()
+    {
+
+        $datos = $this->request->getJSON();
+        $idCategoria = $datos->valor;
+        //$idCategoria = 8;
+        $CodigoCategoria = model('categoriasModel')->select('codigocategoria')->where('id', $idCategoria)->first();
+
+
+        $productos = model('productoModel')->GetinvCategoria($CodigoCategoria['codigocategoria']);
+
+        if (!empty($productos)) {
+
+            $costoTotal = model('productoModel')->TotalInvCat($CodigoCategoria['codigocategoria']);
+            $unidades = model('inventarioModel')
+                ->selectSum('cantidad_inventario')
+                ->where('cantidad_inventario >', 0)
+                ->findAll();
+
+
+            return $this->response->setJSON([
+                'success' => true,
+                'productos' => $productos,
+                'costo_total' => "$ " . number_format($costoTotal[0]['costo_total'], 0, ",", "."),
+                'unidades' => 0
+            ]);
+        }
+        if (empty($productos)) {
+
+            return $this->response->setJSON([
+                'success' => false,
+            ]);
         }
     }
 }

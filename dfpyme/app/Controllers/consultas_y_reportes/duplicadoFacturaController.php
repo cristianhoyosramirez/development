@@ -107,8 +107,8 @@ class duplicadoFacturaController extends BaseController
   
     public function imprimir_duplicado_factura()
     {
-        //$id_factura = $_POST['id_de_factura'];
-        $id_factura = 48;
+        $id_factura = $_POST['id_de_factura'];
+        //$id_factura = 48;
         $imp = new impresion();
         $impresion = $imp->imprimir_factura($id_factura);
     }

@@ -5,7 +5,7 @@
         <div class="card-body">
 
             <div class="container">
-         <!--        <div class="row gx-1">
+                <!--        <div class="row gx-1">
                     
 
                         <form action="<?= base_url('consultas_y_reportes/datos_consultar_producto_agrupado_pdf') ?>">
@@ -25,7 +25,8 @@
                             <button type="submit" class="btn btn-danger btn-icon">Pdf</button>
                         </form>
                     <div class="col">
-                        <form action="<? # base_url('caja/exportar_a_excel_reporte_categorias') ?>" method="POST">
+                        <form action="<? # base_url('caja/exportar_a_excel_reporte_categorias') 
+                                        ?>" method="POST">
                             <input type="hidden" value="<?php echo $id_apertura ?>" id="id_apertura" name="id_apertura">
                             <input type="hidden" value="<?php echo $fecha_inicial ?>" id="fecha_inicial_reporte" name="fecha_inicial_agrupado">
                             <input type="hidden" value="<?php echo $fecha_final ?>" id="fecha_final_reporte" name="fecha_final_agrupado">
@@ -86,7 +87,7 @@
                                 ?>
 
                                 <tbody>
-                                    
+
                                     <?php foreach ($categorias as $detalle) {  //echo $detalle['id_categoria']."</br>"; 
                                     ?>
 
@@ -95,6 +96,8 @@
                                         <tr class="table-primary">
 
                                             <td><?php echo $nombre_categoria['nombrecategoria'] ?></td>
+                                            <td></td>
+                                            <td></td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -110,6 +113,8 @@
                                             <tr class="table-dark">
                                                 <td>CÓDIGO</td>
                                                 <td>PRODUCTO</td>
+                                                <td>VALOR COSTO UNIDAD </td>
+                                                <td>VALOR COSTO TOTAL</td>
                                                 <td>CANTIDAD</td>
                                                 <td>VALOR UNIDAD</td>
                                                 <td>TOTAL</td>
@@ -117,11 +122,13 @@
 
                                             <?php foreach ($productos_categoria as $detalle_producto) { ?>
 
-
+                                                <?php $costo = model('productoModel')->select('precio_costo')->where('codigointernoproducto',$detalle_producto['codigo_interno_producto'])->first(); ?>
 
                                                 <tr>
                                                     <td><?php echo $detalle_producto['codigo_interno_producto'] ?></td>
                                                     <td><?php echo $detalle_producto['nombre_producto'] ?></td>
+                                                    <td><?php echo "$" . number_format($costo['precio_costo'], 0, ",", ".") ?></td>
+                                                    <td><?php echo "$" . number_format($costo['precio_costo']*$detalle_producto['cantidad'], 0, ",", ".") ?></td>
                                                     <td><?php echo $detalle_producto['cantidad'] ?></td>
                                                     <td><?php echo "$" . number_format($detalle_producto['precio_venta'], 0, ",", ".") ?></td>
                                                     <td><?php echo "$" . number_format($detalle_producto['valor_total'], 0, ",", ".") ?></td>
@@ -129,6 +136,8 @@
                                             <?php } ?>
 
                                             <tr>
+                                                <td></td>
+                                                <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>

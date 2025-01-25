@@ -252,8 +252,6 @@ class Configuracion extends BaseController
 
         // $facturas=model('estadoModel')->find()->orderBy('orden','asc');
         $facturas = model('estadoModel')->orderBy('idestado', 'asc')->find();
-
-
         return view('tipos_de_factura/facturas', [
             'tipo_factura' => $facturas
         ]);
@@ -756,44 +754,6 @@ class Configuracion extends BaseController
     }
 
 
-    /*   function select_impuestos()
-    {
-
-        $opcion = $this->request->getPost('opcion');
-        //$opcion = 2;
-
-        if ($opcion == 1) {
-            $inc = model('icoConsumoModel')->findAll();
-            $tipo_impuesto = "INC";
-            $impuesto = view('impuestos/inc', [
-                'inc' => $inc
-            ]);
-            $returnData = array(
-                "resultado" => 1, //Falta plata 
-                "impuesto" => $impuesto,
-                "tipo_impuesto" => $tipo_impuesto
-
-            );
-            echo  json_encode($returnData);
-        }
-        if ($opcion == 2) {
-            $iva = model('ivaModel')->findAll();
-            $tipo_impuesto = "IVA";
-            $impuesto = view('impuestos/iva', [
-                'iva' => $iva
-            ]);
-            $returnData = array(
-                "resultado" => 1, //Falta plata 
-                "impuesto" => $impuesto,
-                "tipo_impuesto" => $tipo_impuesto
-
-            );
-            echo  json_encode($returnData);
-        }
-        //echo $impuesto; exit();
-
-    } */
-
     public function select_impuestos()
     {
         $opcion = $this->request->getGet('opcion'); // Obtener el valor de 'opcion' desde la solicitud
@@ -958,11 +918,7 @@ class Configuracion extends BaseController
             $propina = $valor_pedido[0]['valor_total'] * $porcentaje_propina;
         }
 
-        /* $model = model('pedidoModel');
-        //$actualizar = $model->set('valor_total', $valor_pedido['valor_total']+$propina);
-        $actualizar = $model->set('propina_parcial', $propina);
-        $actualizar = $model->where('id', $numero_pedido['id']);
-        $actualizar = $model->update(); */
+   
 
 
 
@@ -986,14 +942,7 @@ class Configuracion extends BaseController
             $qrcode = new Generator;
             $qrCodes = [];
             $qrCodes['simple'] = $qrcode->size(120)->generate($url['url']);
-            /* $qrCodes['changeColor'] = $qrcode->size(120)->color(255, 0, 0)->generate('https://www.binaryboxtuts.com/');
-        $qrCodes['changeBgColor'] = $qrcode->size(120)->color(0, 0, 0)->backgroundColor(255, 0, 0)->generate('https://www.binaryboxtuts.com/');
-          
-        $qrCodes['styleDot'] = $qrcode->size(120)->color(0, 0, 0)->backgroundColor(255, 255, 255)->style('dot')->generate('https://www.binaryboxtuts.com/');
-        $qrCodes['styleSquare'] = $qrcode->size(120)->color(0, 0, 0)->backgroundColor(255, 255, 255)->style('square')->generate('https://www.binaryboxtuts.com/');
-        $qrCodes['styleRound'] = $qrcode->size(120)->color(0, 0, 0)->backgroundColor(255, 255, 255)->style('round')->generate('https://www.binaryboxtuts.com/'); */
-
-            //$qrCodes['withImage'] = $qrcode->size(200)->format('png')->merge('img/logo.png', .4)->generate('https://www.binaryboxtuts.com/');
+     
             return view('qr/qr', $qrCodes);
         }
         if (empty($url['url'])) {
@@ -1020,6 +969,10 @@ class Configuracion extends BaseController
             "resultado" => 1, //Falta plata  
         );
         echo  json_encode($returnData);
+        
+    }
+
+    function AddDocument(){
         
     }
 }

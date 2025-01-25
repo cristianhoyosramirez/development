@@ -40,8 +40,8 @@
                 <td scope="col">(V VENTA + PROPINA) </th>
                 <td scope="col">EFECTIVO</th>
                 <td scope="col">TRANSFERENCIA</th>
-                <td scope="col">TOTAL MEDIO DE  PAGO</th>
-                <!-- <td scope="col">CAMBIO </th> -->
+                <td scope="col">TOTAL MEDIO DE PAGO</th>
+                    <!-- <td scope="col">CAMBIO </th> -->
                 <td scope="col">USUARIO </th>
                 <td scope="col">Accion </th>
             </tr>
@@ -58,14 +58,29 @@
                     <td><?php echo $valor['fecha'] ?></td>
 
                     <td><?php echo date("h:i A", strtotime($valor['hora'])) ?></td>
-                    <td><?php echo $valor['documento'] ?></td>
+                    <td>
+
+                        <?php
+
+                        if ($valor['id_estado'] == 8) {
+                            $numero = model('facturaElectronicaModel')->select('numero')->where('id', $valor['id_factura'])->first();
+                            echo $numero_doc = $numero['numero'];
+                        } else if ($valor['id_estado'] != 8) {
+                            echo $valor['documento'];
+                        }
+
+                        ?>
+
+
+                    </td>
                     <td><?php echo "$ " . number_format($valor['valor'], 0, ",", ".") ?></td>
                     <td><?php echo "$ " . number_format($valor['propina'], 0, ",", ".") ?></td>
                     <td><?php echo "$ " . number_format($valor['total_documento'], 0, ",", ".") ?></td>
                     <td><?php echo "$ " . number_format($valor['recibido_efectivo'], 0, ",", ".") ?></td>
                     <td><?php echo "$ " . number_format($valor['recibido_transferencia'], 0, ",", ".") ?></td>
                     <td><?php echo "$ " . number_format($valor['total_pago'], 0, ",", ".") ?></td>
-                    <!-- <td><?php #echo "$ " . number_format($valor['cambio'], 0, ",", ".") ?></td> -->
+                    <!-- <td><?php #echo "$ " . number_format($valor['cambio'], 0, ",", ".") 
+                                ?></td> -->
                     <td><?php echo $nombre_usuario['nombresusuario_sistema'] ?></td>
                     <td><a href="#" class="btn btn-outline-success  btn-icon" onclick="editar_pago(<?php echo $valor['id'] ?>)">
                             <!-- Download SVG icon from http://tabler-icons.io/i/pencil -->
@@ -86,12 +101,14 @@
     function editar_pago(id) {
 
         $("#modal_propinas").modal("hide");
-        
+
 
         var url = document.getElementById("url").value;
 
         $.ajax({
-            data:{id},
+            data: {
+                id
+            },
             url: url +
                 "/" +
                 "reportes/datos_pagos",
@@ -100,11 +117,11 @@
                 var resultado = JSON.parse(resultado);
                 if (resultado.resultado == 1) {
 
-                    
-                 $('#efectivo_factura').val(resultado.efectivo)
-                 $('#transferencia_factura').val(resultado.transferencia)
-                 $('#id_factura').val(resultado.id)
-                 $("#editar_pagos").modal("show");
+
+                    $('#efectivo_factura').val(resultado.efectivo)
+                    $('#transferencia_factura').val(resultado.transferencia)
+                    $('#id_factura').val(resultado.id)
+                    $("#editar_pagos").modal("show");
 
 
 

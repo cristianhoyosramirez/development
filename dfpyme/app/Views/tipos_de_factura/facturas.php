@@ -12,6 +12,12 @@ DFpyme
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
+                    <div class="d-flex justify-content-end mb-3">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#documento">
+                            Agregar documento
+                        </button>
+                    </div>
                     <table id="mesas" class="table  table-hover">
                         <thead class="table-dark">
                             <tr>
@@ -71,7 +77,71 @@ DFpyme
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="documento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar documento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <label for="" class="form-label">Documento</label>
+                        <input type="text" class="form-control" id="newDocumento">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-outline-success">Guardar </button>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<script>
+    async function verComponentes(id) {
+        try {
+            const baseUrl = "<?php echo base_url(); ?>"; // Obtiene el base_url desde PHP
+            const url = `${baseUrl}/configuracion/AddDocument`; // Construye la URL dinámica
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    id: id
+                })
+            });
+
+
+            if (!response.ok) {
+                throw new Error(`Error en la solicitud: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+
+            if (data.success === true) {
+                
+               
+
+    
+
+                
+            }
+
+
+
+        } catch (error) {
+            console.error('Hubo un problema al actualizar el producto:', error);
+            alert('No se pudo actualizar el producto. Por favor, intenta de nuevo.');
+        }
+    }
+</script>
 
 <script>
     function actualizar_estados(id_estado) {

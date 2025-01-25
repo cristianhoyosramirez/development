@@ -26,6 +26,17 @@
             <p class="h4 text-green">Información general</p>
           </div>
 
+          <div class="row mb-3">
+            <div class="col-2">
+              <?php $inventarios = model('tipoInventarioModel')->orderBy('id','asc')->findAll(); ?>
+              <label for="">Tipo producto</label>
+              <select name="tipoProducto" id="tipoProducto" class="form-select">
+                <?php foreach ($inventarios as $keyInventario): ?>
+                  <option value="<?php echo $keyInventario['id'];  ?>"> <?php echo $keyInventario['descripcion'];  ?> </option>
+                <?php endforeach ?>
+              </select>
+            </div>
+          </div>
 
 
           <div class="col-md-1">
@@ -182,9 +193,9 @@
               <label for="inputPassword4" class="form-label" id="tributo_producto">Tipo de impuesto </label>
 
               <div id="opc_imp">
-              <select class="form-select" id="opci_imp" >
+                <select class="form-select" id="opci_imp">
 
-              </select>
+                </select>
               </div>
             </div>
           <?php endif ?>
@@ -201,12 +212,12 @@
                   <path d="M12 6v2m0 8v2" />
                 </svg>
               </span>
-<!--               <input type="text" class="form-control" id="valor_venta_producto" name="valor_venta_producto" onkeyup="saltar_creacion_producto(event,'precio_2')" value=0>
- -->            
+              <!--               <input type="text" class="form-control" id="valor_venta_producto" name="valor_venta_producto" onkeyup="saltar_creacion_producto(event,'precio_2')" value=0>
+ -->
 
- <input type="text" class="form-control" id="valor_venta_producto" name="valor_venta_producto" onkeyup="saltar_creacion_producto(event,'precio_2'); actualizarPrecios(this.value);" value="0">
+              <input type="text" class="form-control" id="valor_venta_producto" name="valor_venta_producto" onkeyup="saltar_creacion_producto(event,'precio_2'); actualizarPrecios(this.value);" value="0">
 
-</div>
+            </div>
             <span class="text-danger error-text valor_venta_producto_error"></span>
           </div>
 
@@ -341,14 +352,56 @@
             $("#div_sub_categoria").hide();
             $("#requiere_categoria").val(0);
           }
-
-
-
         }
       },
     });
   }
 </script>
+
+<!-- <script>
+  async function sub_categorias_productos(id_categoria) {
+    // Obtén la URL base del elemento input con id "url"
+    const url = document.getElementById("url").value;
+
+    try {
+      // Realiza la petición POST usando Fetch
+      const response = await fetch(`${url}/categoria/consulta_sub_categoria`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Indica que el cuerpo es JSON
+        },
+        body: JSON.stringify({
+          id_categoria
+        }), // Convierte los datos a formato JSON
+      });
+
+      // Procesa la respuesta
+      if (response.ok) {
+        const resultado = await response.json();
+
+        // Maneja el resultado recibido
+        if (resultado.resultado === 1) {
+          if (resultado.sub_categoria === "t") {
+            document.getElementById("div_sub_categoria").style.display = "block";
+            document.getElementById("requiere_categoria").value = 1;
+            document.getElementById("sub_categoria").innerHTML = resultado.datos;
+          }
+
+          if (resultado.sub_categoria === "f") {
+            document.getElementById("div_sub_categoria").style.display = "none";
+            document.getElementById("requiere_categoria").value = 0;
+          }
+        }
+      } else {
+        console.error("Error en la respuesta del servidor:", response.status);
+      }
+    } catch (error) {
+      // Captura y muestra errores si ocurren
+      console.error("Error en la petición Fetch:", error);
+    }
+  }
+</script> -->
+
 
 <script>
   function cancelar_creacion_producto() {

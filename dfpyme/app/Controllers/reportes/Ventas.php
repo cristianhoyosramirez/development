@@ -8,6 +8,10 @@ use App\Controllers\BaseController;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use App\Libraries\PedidosBorrados;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Style\Font;
 
 class Ventas extends BaseController
 {
@@ -61,45 +65,173 @@ class Ventas extends BaseController
         echo  json_encode($returnData);
     }
 
-    public function exportar_excel()
+
+
+    function exportar_excel()
     {
         $id_apertura = $this->request->getPost('id_apertura');
-        //$id_apertura = 25;
+        $fechaApertura = model('aperturaModel')->select('fecha')->where('id', $id_apertura)->first();
+
+        $fechaCierre = model('cierreModel')->select('fecha')->where('idapertura', $id_apertura)->first();
         $movimientos = model('pagosModel')->where('id_apertura', $id_apertura)->orderBy('id', 'asc')->findAll();
-        $ventas_pos = model('pagosModel')->set_ventas_pos($id_apertura);
+        if (empty($fechaCierre)) {
+            $cierre = "No se ha cerrado caja ";
+        }
+
+        if (!empty($fechaCierre)) {
+            $cierre = $fechaCierre['fecha'];
+        }
+
+        $datos_empresa = model('empresaModel')->datosEmpresa();
+        $file_name = 'Movimiento de caja .xlsx';
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+
+
+        $sheet->setCellValue('A1', $datos_empresa[0]['nombrejuridicoempresa']);
+
+        // Combina las celdas de A1 a J1
+        $sheet->mergeCells('A1:O1');
+
+        // Centra el texto en el rango combinado
+        $sheet->getStyle('A1:O1')->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('A1:O1')->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
+
+        $sheet->setCellValue('A2', $datos_empresa[0]['nombrecomercialempresa']);
+
+        // Combina las celdas de A1 a J1
+        $sheet->mergeCells('A2:O2');
+
+        // Centra el texto en el rango combinado
+        $sheet->getStyle('A2:O2')->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('A2:O2')->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
+
+
+        $sheet->setCellValue('A3', 'NIT: ' . $datos_empresa[0]['nitempresa']);
+        $sheet->mergeCells('A3:O3');
+
+        // Centra el texto en el rango combinado
+        $sheet->getStyle('A3:O3')->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('A3:O3')->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
+
+
+        $sheet->setCellValue(
+            'A4',
+            'Dirección: ' . $datos_empresa[0]['direccionempresa'] . " " . $datos_empresa[0]['nombreciudad'] . " " . $datos_empresa[0]['nombredepartamento']
+        );
+
+        $sheet->mergeCells('A4:O4');
+
+        // Centra el texto en el rango combinado
+        $sheet->getStyle('A4:O4')->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
+        $sheet->getStyle('A4:O4')->getAlignment()->setVertical(\PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER);
+
+        $sheet->setCellValue('A5', 'REPORTE MOVIMIENTO DE CAJA   ');
+        $sheet->mergeCells('A5:O5');
+
+        $sheet->setCellValue('A6', 'Fecha apertura:');
+        $sheet->setCellValue('B6', $fechaApertura['fecha']);
+
+        $sheet->setCellValue('D6', 'Fecha cierre:');
+        $sheet->setCellValue('E6', $cierre);
+
+        $sheet->setCellValue('G6', 'Fecha generacion:');
+        $sheet->setCellValue('H6', date('Y-m-d'));
+
+        $sheet->setCellValue('A8', 'Fecha');
+        $sheet->setCellValue('B8', 'Hora');
+        $sheet->setCellValue('C8', 'Documento');
+        $sheet->setCellValue('D8', 'Valor venta');
+        $sheet->setCellValue('E8', 'Propina');
+        $sheet->setCellValue('F8', 'Venta + propina');
+        $sheet->setCellValue('G8', 'Efectivo');
+        $sheet->setCellValue('H8', 'Transferencia');
+        $sheet->setCellValue('I8', 'Total medio de pago');
+        $sheet->setCellValue('J8', 'Usuario');
+
+        $row = 9; // Comienza en la fila siguiente a los encabezados (fila 8)
+
+        foreach ($movimientos as $valor) {
+            $nombre_usuario = model('usuariosModel')->select('nombresusuario_sistema')->where('idusuario_sistema', $valor['id_mesero'])->first();
+            $documento = model('facturaElectronicaModel')->select('numero')->where('id', $valor['id_factura'])->first();
+            if (empty($documento)) {
+                $factura = $valor['documento'];
+            }
+            if (!empty($documento)) {
+                $factura = $documento['numero'];
+            }
+            $sheet->setCellValue('A' . $row, $valor['fecha']); // Asigna la fecha
+            $sheet->setCellValue('B' . $row, date("h:i A", strtotime($valor['hora']))); // Asigna la hora
+            $sheet->setCellValue('C' . $row, $factura); // Asigna el documento
+            $sheet->setCellValue('D' . $row, $valor['valor']); // Asigna el valor de la venta
+            $sheet->setCellValue('E' . $row, $valor['propina']); // Asigna la propina
+            $sheet->setCellValue('F' . $row, $valor['total_documento']); // Asigna venta + propina
+            $sheet->setCellValue('G' . $row, $valor['efectivo']); // Asigna el efectivo
+            $sheet->setCellValue('H' . $row, $valor['transferencia']); // Asigna la transferencia
+            $sheet->setCellValue('I' . $row, $valor['total_pago']); // Asigna el total de medios de pago
+            $sheet->setCellValue('J' . $row, $nombre_usuario['nombresusuario_sistema']); // Asigna el usuario
+
+            $row++; // Avanza a la siguiente fila
+        }
+
+        $row++;
+
         $ventas_electronicas = model('pagosModel')->set_ventas_electronicas($id_apertura);
+        $ventas_pos = model('pagosModel')->set_ventas_pos($id_apertura);
         $propinas = model('pagosModel')->selectSum('propina')->where('id_apertura', $id_apertura)->findAll();
-        $efectivo = model('pagosModel')->selectSum('recibido_efectivo')->where('id_apertura', $id_apertura)->findAll();
         $transferencia = model('pagosModel')->selectSum('recibido_transferencia')->where('id_apertura', $id_apertura)->findAll();
-        $cambio = model('pagosModel')->selectSum('cambio')->where('id_apertura', $id_apertura)->findAll();
+        $efectivo = model('pagosModel')->selectSum('recibido_efectivo')->where('id_apertura', $id_apertura)->findAll();
 
-        $valor = model('pagosModel')->selectSum('valor')->where('id_apertura', $id_apertura)->findAll();
-        $total_documento = model('pagosModel')->selectSum('total_documento')->where('id_apertura', $id_apertura)->findAll();
+        $sheet->setCellValue('A' . $row, 'Venta Electrónica'); // Coloca "Venta Electrónica" en la columna A
+        $sheet->setCellValue('B' . $row, $ventas_electronicas[0]['valor']); // Coloca 1 millón en la columna D
+    
+        $row++;
+        $sheet->setCellValue('A' . $row, 'Propinas'); // Coloca "Valor Neto" en la columna A
+        $sheet->setCellValue('B' . $row, $propinas[0]['propina']); //
+        $row++;
+        /* $sheet->setCellValue('A' . $row, 'Trasferencias'); // Coloca "Valor Neto" en la columna A
+        $sheet->setCellValue('B' . $row, $transferencia[0]['recibido_transferencia']); // */
 
 
-        return view('reportes/excel_ventas', [
-            'movimientos' => $movimientos,
-            "ventas_pos" => "$" . number_format($ventas_pos[0]['valor'], 0, ",", "."),
-            "ventas_electronicas" => "$" . number_format($ventas_electronicas[0]['valor'], 0, ",", "."),
-            "propinas" => "$" . number_format($propinas[0]['propina'], 0, ",", "."),
-            "efectivo" => "$" . number_format($efectivo[0]['recibido_efectivo'], 0, ",", "."),
-            "transferencia" => "$" . number_format($transferencia[0]['recibido_transferencia'], 0, ",", "."),
-            "total_ingresos" => "$" . number_format(($transferencia[0]['recibido_transferencia'] + $efectivo[0]['recibido_efectivo']) - $cambio[0]['cambio'], 0, ",", "."),
-            "valor" => "$" . number_format($valor[0]['valor'], 0, ",", "."),
-            "total_documento" => "$" . number_format($total_documento[0]['total_documento'], 0, ",", "."),
-            "cambio" => "$" . number_format($cambio[0]['cambio'], 0, ",", "."),
-        ]);
-        /*  "resultado" => 1,
-            "ventas_pos" => "$" . number_format($ventas_pos[0]['valor'], 0, ",", "."),
-            "ventas_electronicas" => "$" . number_format($ventas_electronicas[0]['valor'], 0, ",", "."),
-            "propinas" => "$" . number_format($propinas[0]['propina'], 0, ",", "."),
-            "efectivo" => "$" . number_format($efectivo[0]['recibido_efectivo'], 0, ",", "."),
-            "transferencia" => "$" . number_format($transferencia[0]['recibido_transferencia'], 0, ",", "."),
-            "total_ingresos" => "$" . number_format(($transferencia[0]['recibido_transferencia'] + $efectivo[0]['recibido_efectivo']) - $cambio[0]['cambio'], 0, ",", "."),
-            "valor" => "$" . number_format($valor[0]['valor'], 0, ",", "."),
-            "total_documento" => "$" . number_format($total_documento[0]['total_documento'], 0, ",", "."),
-            "cambio" => "$" . number_format($cambio[0]['cambio'], 0, ",", "."), */
+        $pago = model('pagosModel')->total_formas_pago($id_apertura);
+
+        foreach ($pago as $keyPago) {
+            $nombre_comercial = model('medioPagoModel')->getNombre($keyPago['medio_pago']);
+            $total = model('medioPagoModel')->getTotalExcel($keyPago['medio_pago'], $id_apertura);
+    
+
+            // Limita el texto del nombre comercial
+            $nombre = $nombre_comercial[0]['nombre_comercial'];
+
+            // Formatea el monto con separación de miles
+            $monto = $total[0]['total'];
+
+            // Escribe los datos en el Excel
+            $row++;
+            $sheet->setCellValue('A' . $row, $nombre); // Escribe el nombre comercial en la columna A
+            $sheet->setCellValue('B' . $row, $monto);  // Escribe el monto en la columna B
+        }
+
+        $row++;
+        $sheet->setCellValue('A' . $row, 'Total ingresos'); // Coloca "Valor Neto" en la columna A
+        $sheet->setCellValue('B' . $row, $transferencia[0]['recibido_transferencia'] + $efectivo[0]['recibido_efectivo']); //
+
+        $writer = new Xlsx($spreadsheet);
+        $writer->save($file_name);
+
+        header("Content-Type: application/vnd.ms-excel");
+        header('Content-Disposition: attachment; filename="' . basename($file_name) . '"');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length:' . filesize($file_name));
+
+        flush();
+        readfile($file_name);
+        exit;
     }
+
+
 
     function consolidado_ventas()
     {
@@ -1282,7 +1414,7 @@ class Ventas extends BaseController
                 $sub_array[] = $detalle['documento'];
             }
 
-            $sub_array[] = "$ " . number_format($detalle['total_documento'], 0, ",", ".");
+
             $tipo_documento = model('estadoModel')->select('descripcionestado')->where('idestado', $detalle['id_estado'])->first();
 
             $sub_array[] = $tipo_documento['descripcionestado'];
@@ -1290,6 +1422,7 @@ class Ventas extends BaseController
             $sub_array[] = number_format($detalle['total_documento'] - ($iva[0]['iva'] + $inc[0]['ico']), 0, ",", ".");
             $sub_array[] = number_format($iva[0]['iva'], 0, ",", ".");
             $sub_array[] = number_format($inc[0]['ico'], 0, ",", ".");
+            $sub_array[] = "$ " . number_format($detalle['total_documento'], 0, ",", ".");
 
 
             $data[] = $sub_array;
@@ -1311,12 +1444,12 @@ class Ventas extends BaseController
             //'costo' => number_format($costo[0]['costo'], 0, ",", "."),
             'fecha_inicial' => $fecha_inicial,
             'fecha_final' => $fecha_final,
-           'impuestos' => view('impuestos/impuestos', [
+            /*  'impuestos' => view('impuestos/impuestos', [
                 'iva' => $iva,
                 'inc' => $inc,
                 'costo_total' => $costo[0]['costo'],
                 'venta_total' => number_format($total_venta[0]['valor'], 0, ",", ".")
-            ]) 
+            ])  */
         ];
 
         echo  json_encode($json_data);

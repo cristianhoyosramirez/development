@@ -56,11 +56,11 @@ MOVIMIENTO DE CAJA
                     <?php endif ?>
 
 
-                    <span class="d-none d-sm-inline">
+                    <!-- <span class="d-none d-sm-inline">
                         <a href="#" class="btn btn-outline-indigo" onclick="consolidado_ventas()" title="Consolidado de ventas pos y electrónicas  " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-placement="bottom">
                             Consolidado
                         </a>
-                    </span>
+                    </span> -->
 
                     <span class="d-none d-sm-inline">
                         <a href="#" class="btn btn-outline-green" onclick="imprimir_movimientos(<?php echo $id_apertura ?>)" title="Imprimir el reporte de caja " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-placement="bottom">
@@ -74,10 +74,10 @@ MOVIMIENTO DE CAJA
                             <button type="button" class="btn btn-outline-warning btn-icon" onclick="reporte_ventas()" title="Reporte de ventas de producto por categoria " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-placement="bottom">Ventas</button>
                         </form>
                     </span>
-                    <form action="<?= base_url('consultas_y_reportes/informe_fiscal_desde_caja') ?>" method="POST">
+                  <!--   <form action="<?= base_url('consultas_y_reportes/informe_fiscal_desde_caja') ?>" method="POST">
                         <input type="hidden" name="id_apertura" value="<?php echo $id_apertura ?>" id="id_aperturas">
                         <button type="button" class="btn btn-outline-dark btn-icon" target="_blank" onclick="fiscal()" title="Informe fiscal de ventas " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-placement="bottom">Fiscal POS</button>
-                    </form>
+                    </form> -->
                     <form action="<?= base_url('consultas_y_reportes/informe_fiscal_desde_caja') ?>" method="POST">
                         <input type="hidden" name="id_apertura" value="<?php echo $id_apertura ?>" id="id_aperturas">
                         <button type="button" class="btn btn-outline-dark btn-icon" target="_blank" onclick="fiscal_electronico()" title="Informe fiscal de ventas " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-placement="bottom">Fiscal electrónico </button>

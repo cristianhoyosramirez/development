@@ -20,102 +20,95 @@ Reporte de costos
 
     <div class="my-4"></div> <!-- Added space between the title and date inputs -->
 
-
-    <div class="row">
+    <div class="row g-3">
         <input type="hidden" id="url" value="<?php echo base_url() ?>">
-        <div class="col-3">
-            <label for="">Período</label>
+
+        <!-- Selección de Período -->
+        <div class="col-md-3">
+            <label for="periodo" class="form-label fw-bold">Período</label>
             <select name="periodo" id="periodo" class="form-select" onchange="select_periodo(this.value)">
-                <option value=""></option>
+                <option value="">Seleccione...</option>
                 <option value="1">Desde el inicio</option>
                 <option value="2">Fecha</option>
                 <option value="3">Período</option>
             </select>
-            <span class="text-danger" id="error_buscar"></span>
+            <small class="text-danger" id="error_buscar"></small>
         </div>
-        <div class="col-md-2" id="inicial" style="display: none;">
-            <label for="fecha_inicial">Fecha inicial </label>
 
-            <div class="input-group input-group-flat">
-                <input type="text" class="form-control" id="fecha_inicial" value="<?php echo date('Y-m-d'); ?>">
-                <span class="input-group-text">
-                    <a href="#" class="link-secondary" title="Limpiar campo" data-bs-toggle="tooltip" onclick="limpiar_campo('fecha_inicial')"><!-- Download SVG icon from http://tabler-icons.io/i/x -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <form action="<?php echo base_url() ?>/caja_general/exportVentas " method="POST">
+            <!-- Fecha Inicial -->
+            <div class="col-md-3" id="inicial" style="display: none;">
+                <label for="fecha_inicial" class="form-label fw-bold">Fecha Inicial</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="fecha_inicial" value="<?php echo date('Y-m-d'); ?>" name="fecha_inicial">
+                    <button class="btn btn-outline-secondary" type="button" onclick="limpiar_campo('fecha_inicial')" title="Limpiar campo" data-bs-toggle="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M18 6l-12 12" />
                             <path d="M6 6l12 12" />
                         </svg>
-                    </a>
-                </span>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="col-md-2 " id="final" style="display: none;">
-            <label for="fecha_final">Fecha final </label>
-            <div class="input-group input-group-flat">
-                <input type="text" class="form-control" id="fecha_final" value="<?php echo date('Y-m-d'); ?>">
-                <span class="input-group-text">
-                    <a href="#" class="link-secondary" title="Limpiar campo" data-bs-toggle="tooltip" onclick="limpiar_campo('fecha_final')"><!-- Download SVG icon from http://tabler-icons.io/i/x -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- Fecha Final -->
+            <div class="col-md-3" id="final" style="display: none;">
+                <label for="fecha_final" class="form-label fw-bold">Fecha Final</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="fecha_final" value="<?php echo date('Y-m-d'); ?>" name="fecha_final">
+                    <button class="btn btn-outline-secondary" type="button" onclick="limpiar_campo('fecha_final')" title="Limpiar campo" data-bs-toggle="tooltip">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M18 6l-12 12" />
                             <path d="M6 6l12 12" />
                         </svg>
-                    </a>
-                </span>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="col-1" id="boton_consulta"> <br>
-            <button type="button" class="btn btn-outline-primary btn-icon" onclick="buscar()" title="Buscar datos" data-bs-toggle="tooltip">
-                Buscar
-            </button>
 
 
-        </div>
+            <!-- Botones de Acción -->
+            <div class="col-md-3 d-flex align-items-end">
+                <div class="d-flex justify-content-between w-100 gap-2">
+                    <button type="button" class="btn btn-outline-primary w-50" onclick="buscar()" title="Buscar datos" data-bs-toggle="tooltip">
+                        Buscar
+                    </button>
 
-        <!--    <div class="col-md-2 text-end"><br>
-            <form action="<?= base_url('reportes/exportar_reporte_ventas_excel') ?>" method="POST">
-                <input type="hidden" id="inicial" name="inicial">
-                <input type="hidden" id="final" name="final">
-                <button class="btn btn-outline-success" type="submit" title="Exportar a Excel" data-bs-toggle="tooltip">Excel</button>
-            </form>
-        </div>
-        <div class="col text-start"><br>
-
-
-            <form action="<?= base_url('reportes/exportar_reporte_ventas') ?>" method="POST">
-                <input type="hidden" id="inicial" name="inicial">
-                <input type="hidden" id="final" name="final">
-                <button class="btn btn-outline-danger" type="submit" title="Exportar a PDF" data-bs-toggle="tooltip">PDF</button>
-            </form>
-        </div> -->
-
+                    <button type="submit" class="btn btn-outline-success w-50" title="Exportar a Excel" data-bs-toggle="tooltip">
+                        Excel
+                    </button>
+        </form>
     </div>
+</div>
 
-    <div class="my-3"></div> <!-- Added space between the buttons and the table -->
+</div>
 
-    <table class="table table-striped table-hover" id="reporte_ventas">
-        <thead class="table-dark">
-            <tr>
-                <td>Fecha</th>
-                <td>Nit cliente </th>
-                <td>Cliente</th>
-                <td>Documento</th>
 
-                <td>Tipo documento</th>
-                <td>Base</td>
-                <td>IVA</th>
-                <td>INC</th>
-                <td>Venta</th>
-            </tr>
-        </thead>
-        <tbody id="datos_costos">
+<div class="my-3"></div> <!-- Added space between the buttons and the table -->
 
-        </tbody>
-    </table>
-    <br>
-    <p class="text-primary h1 text-center " id="no_hay_datos"> </p>
+<table class="table table-striped table-hover" id="reporte_ventas">
+    <thead class="table-dark">
+        <tr>
+            <td>Fecha</th>
+            <td>Nit cliente </th>
+            <td>Cliente</th>
+            <td>Documento</th>
 
-    <div id="impuestos"></div>
+            <td>Tipo documento</th>
+            <td>Base</td>
+            <td>IVA</th>
+            <td>INC</th>
+            <td>Venta</th>
+        </tr>
+    </thead>
+    <tbody id="datos_costos">
+
+    </tbody>
+</table>
+<br>
+<p class="text-primary h1 text-center " id="no_hay_datos"> </p>
+
+<div id="impuestos"></div>
 
 </div>
 
@@ -394,11 +387,11 @@ Reporte de costos
             $('#error_buscar').html('Debe seleccionar un criterio de busqueda')
         } else if (periodo != "") {
 
-        /*     // Validación de fechas no vacías
-            if (fecha_inicial === '' || fecha_final === '') {
-                $('#error_fecha').html('Ingresa ambas fechas ')
-                return;
-            } */
+            /*     // Validación de fechas no vacías
+                if (fecha_inicial === '' || fecha_final === '') {
+                    $('#error_fecha').html('Ingresa ambas fechas ')
+                    return;
+                } */
 
             /*   $.ajax({
                   url: url + "/" + "reportes/datos_reportes_ventas",

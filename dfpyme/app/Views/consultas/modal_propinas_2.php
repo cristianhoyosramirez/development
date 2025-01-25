@@ -23,7 +23,7 @@
                             <td class="table-dark">TOTAL DOCUMENTO </td>
                             <td class="table-dark">EFECTIVO </td>
                             <td class="table-dark">TRANSFERENCIA </td>
-                            <td class="table-dark">CAMBIO </td>
+                            
                             <td class="table-dark">TOTAL INGRESOS</td>
                             <td></td>
                         </tr>
@@ -47,10 +47,10 @@
                             </td>
                             <td>
                                 <p id="transferencia">
-                            </td>
-                            <td>
+                            </td>gg
+                            <!-- <td>
                                 <p id="cambio">
-                            </td>
+                            </td> -->
                             <td>
                                 <p id="total_de_ingresos"></p>
                             </td>

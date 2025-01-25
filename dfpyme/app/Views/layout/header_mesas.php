@@ -1021,6 +1021,18 @@
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <line x1="5" y1="12" x2="19" y2="12" />
                     </svg> Salidas</a>
+                  <a href="<?= base_url() ?>/administracion_impresora/inventario" class="dropdown-item">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/building-skyscraper -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <line x1="3" y1="21" x2="21" y2="21" />
+                      <path d="M5 21v-14l8 -4v18" />
+                      <path d="M19 21v-10l-6 -4" />
+                      <line x1="9" y1="9" x2="9" y2="9.01" />
+                      <line x1="9" y1="12" x2="9" y2="12.01" />
+                      <line x1="9" y1="15" x2="9" y2="15.01" />
+                      <line x1="9" y1="18" x2="9" y2="18.01" />
+                    </svg> Consultar inventario </a>
 
                 </div>
               </div>
@@ -1032,6 +1044,27 @@
                   <path d="M10 16v-8h2.5a2.5 2.5 0 1 1 0 5h-2.5" />
                   <circle cx="12" cy="12" r="9" />
                 </svg>Movimiento de producto
+              </a>
+              <a class="dropdown-item" href="<?= base_url() ?>/consultas_y_reportes/cruce_inventario">
+                <!-- Download SVG icon from http://tabler-icons.io/i/arrows-horizontal -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="7 8 3 12 7 16" />
+                  <polyline points="17 8 21 12 17 16" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                </svg>Cruce de inventario
+              </a>
+              <a class="dropdown-item" href="<?= base_url() ?>/categoria/productos_categoria">
+                <!-- Download SVG icon from http://tabler-icons.io/i/clipboard-list -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                  <rect x="9" y="3" width="6" height="4" rx="2" />
+                  <line x1="9" y1="12" x2="9.01" y2="12" />
+                  <line x1="13" y1="12" x2="15" y2="12" />
+                  <line x1="9" y1="16" x2="9.01" y2="16" />
+                  <line x1="13" y1="16" x2="15" y2="16" />
+                </svg>Categorias producto
               </a>
 
             </div>

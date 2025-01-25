@@ -34,7 +34,9 @@ public function get_productos($id_usuario)
         $datos = $this->db->query("
         SELECT *
         FROM tem_mov
-        WHERE id_usuario = $id_usuario group by tem_mov.id order by hora desc
+        WHERE id_usuario = $id_usuario
+        GROUP BY tem_mov.id
+        ORDER BY fecha DESC, hora DESC;
         ");
         return $datos->getResultArray();
     }

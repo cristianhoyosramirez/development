@@ -166,8 +166,8 @@ class SalonesController extends BaseController
 
     function consultar_mesa()
     {
-        $id_mesa = $this->request->getPost('id_mesa');
-        //$id_mesa = 1;
+        //$id_mesa = $this->request->getPost('id_mesa');
+        $id_mesa = 1;
 
         $tiene_pedido = model('pedidoModel')->select('fk_mesa')->where('fk_mesa', $id_mesa)->first();
 

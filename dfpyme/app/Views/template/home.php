@@ -75,7 +75,51 @@
         <script src="<?= base_url() ?>/Assets/plugin/data_tables/jquery.dataTables.min.js"></script>
         <script src="<?= base_url() ?>/Assets/plugin/data_tables/dataTables.bootstrap5.min.js"></script>
 
-       
+
+        
+
+        <script>
+            function cerrarModal() {
+                async function limpiarInput(valor) {
+                    const baseUrl = "<?php echo base_url(); ?>"; // Obtiene el base_url desde PHP
+                    const url = `${baseUrl}/consultas_y_reportes/productos_inventario`; // Construye la URL dinámica
+
+                    document.getElementById('noHay').innerHTML = "";
+
+                    try {
+                        const response = await fetch(url, {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`Error en la solicitud: ${response.statusText}`);
+                        }
+
+                        const data = await response.json();
+
+                        if (data.success === true) {
+                            const input = document.getElementById('inventarioInput');
+                            if (input) {
+                                input.value = ''; // Limpia el valor del input
+                                input.focus(); // Da el foco al input
+                            }
+                            document.getElementById('ProdInv').innerHTML = data.productos;
+                        } else if (data.success === false) {
+                            sweet_alert_centrado('warning', 'No hay inventario para cruzar');
+                        }
+                    } catch (error) {
+                        console.error("Error al cruzar el inventario:", error);
+                        sweet_alert_centrado('error', 'Ocurrió un error inesperado al cruzar el inventario');
+                    }
+                }
+            }
+        </script>
+
+
 
         <script>
             function validacion(movimiento, producto, fecha_inicial, fecha_final) {
@@ -131,15 +175,10 @@
                 var fecha_final = document.getElementById("fecha_final").value;
                 let id_usuario = document.getElementById("id_usuario").value;
 
-                //validacion(movimiento, producto, fecha_inicial, fecha_inicial);
-
-                //console.log(validacion);
-
-
                 document.getElementById("barra_progreso").style.display = "block"
 
 
-                //if (validacion == 1) {
+
                 $.ajax({
                     data: {
                         movimiento,
@@ -160,22 +199,7 @@
 
                             let rows = '';
 
-                            // Itera sobre los datos recibidos
-                            /*    resultado.datos.forEach(item => {
-                                   // Agrega cada fila a la cadena
-                                   rows += `<tr>
-                                       <td>${item.fecha}</td>
-                                       <td>${item.hora}</td>
-                                       <td>${item.movimiento}</td>
-                                       <td>${item.producto}</td>
-                                       <td>${item.cantidad_inicial}</td>
-                                       <td>${item.cantidad_movi}</td>
-                                       <td>${item.cantidad_final}</td>
-                                       <td>${item.documento}</td>
-                                       <td>${item.usuario}</td>
-                                       <td>${item.nota}</td>
-                                   </tr>`;
-                               }); */
+
 
                             resultado.datos.forEach(item => {
                                 // Determina el icono y el color según el tipo de movimiento
@@ -188,24 +212,6 @@
 	<span class="text-red"> <svg xmlns="http://www.w3.org/2000/svg" class="icon " width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" /></svg></span>`;
 
 
-
-                                // Agrega cada fila a la cadena
-                                /*                          rows += `<tr>
-        <td>${item.fecha}</td>
-        <td>${item.hora}</td>
-        <td>${item.movimiento}</td>
-        <td>${item.producto}</td>
-        <td>${item.cantidad_inicial}</td>
-
-        <td>${item.movimiento === "Factuta venta electrónica" ? `${Salida} ${item.cantidad_movi}` : item.cantidad_movi}</td>
-
-
-
-        <td>${item.cantidad_final}</td>
-        <td>${item.documento}</td>
-        <td>${item.usuario}</td>
-        <td>${item.nota}</td>
-    </tr>`; */
 
                                 rows += `<tr>
         <td>${item.fecha}</td>
@@ -230,6 +236,7 @@
 
                         if (resultado.resultado == 0) {
 
+                            document.getElementById("res_producto").innerHTML = "";
                             sweet_alert_centrado('warning', 'No hay registros para la consulta ')
                             document.getElementById("barra_progreso").style.display = "none";
 
@@ -384,27 +391,7 @@
 
                 if (opcion == "") {
 
-                    /*       $.ajax({
-                              data: {
-                                  tipo_documento,
-                                  fecha_inicial,
-                                  fecha_final
-                              },
-                              url: url +
-                                  "/" +
-                                  "eventos/consultar_documento",
-                              type: "post",
-                              success: function(resultado) {
-                                  var resultado = JSON.parse(resultado);
-                                  if (resultado.resultado == 1) {
 
-                                      $('#resultado_consultado').html(resultado.datos)
-
-
-
-                                  }
-                              },
-                          }); */
 
 
                     $('#consulta_ventas').DataTable({
@@ -549,11 +536,6 @@
                                         });
                                     },
                                     dataSrc: function(json) {
-                                        /* $('#saldo_total').html(json.total);
-                                        $('#saldo_cliente').html(json.saldo);
-                                        $('#pagos_factura').html(json.pagos); */
-
-
 
                                         $('#saldo').html(json.saldo_pendiente_por_cobrar);
                                         $('#abonos').html(json.abonos);
@@ -640,28 +622,7 @@
 
                     }
                     if (nit_cliente != "") {
-                        /*  $.ajax({
-                             data: {
-                                 nit_cliente,
-                                 tipo_documento,
-                                 fecha_inicial,
-                                 fecha_final
-                             },
-                             url: url +
-                                 "/" +
-                                 "eventos/get_cliente",
-                             type: "post",
-                             success: function(resultado) {
-                                 var resultado = JSON.parse(resultado);
-                                 if (resultado.resultado == 1) {
 
-                                     $('#resultado_consultado').html(resultado.datos)
-
-
-
-                                 }
-                             },
-                         }); */
 
                         $('#consulta_ventas').DataTable({
                             serverSide: true,

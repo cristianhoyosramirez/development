@@ -12,6 +12,8 @@ class configuracionPedidoModel extends Model
     protected $allowedFields = [
         'agregar_item', 'propina', 'mesero_pedido',
         'valor_defecto_propina', 'sub_categoria', 'borrar_remisiones', 'partir_comanda', 'producto_favoroitos', 'requiere_mesa',
-        'encabezado_factura', 'pie_factura','eliminar_factura_electronica','impuesto','comanda','calculo_propina','url','altura','codigo_pantalla'
+        'encabezado_factura', 'pie_factura','eliminar_factura_electronica','impuesto','comanda','calculo_propina','url','altura',
+        'codigo_pantalla',
+        'notaPedido'
     ];
 }
