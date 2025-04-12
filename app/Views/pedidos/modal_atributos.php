@@ -36,6 +36,8 @@
 
                 <input type="hidden" id="valUnidad">
                 <input type="hidden" id="codigoInternoProd">
+                <!-- Input oculto para enviar al backend -->
+                <input type="hidden" id="inputComponentes" name="componentes" placeholder="">
                 <input
                   type="number"
                   class="form-control form-control-sm text-center custom-width"
@@ -73,7 +75,14 @@
 
         <br>
         <div id="asigCompo"></div>
+
+        <div id="contenedorBotonesComponentes">
+
+
+        </div>
+
         <input type="text" id="id_tabla_producto" hidden>
+
         <div id="row">
           <label for="" class="form-label">Nota producto</label>
           <textarea name="notaAtributo" id="notaAtributo" class="form-control" onkeyup="notaAtributo(this.value)"></textarea>
@@ -88,6 +97,10 @@
     </div>
   </div>
 </div>
+
+
+
+
 
 <script>
   function cerrarModalAtributos() {
@@ -118,8 +131,9 @@
       const id_mesa = document.getElementById("id_mesa_pedido").value;
       const id_usuario = document.getElementById("id_usuario").value;
       const mesero = document.getElementById("mesero").value;
+      const componentes = document.getElementById("inputComponentes").value;
 
-
+    
 
       const payload = {
         codigoProducto: codigoProducto,
@@ -127,7 +141,8 @@
         nota: nota,
         id_mesa: id_mesa,
         id_usuario: id_usuario,
-        id_mesero: mesero
+        id_mesero: mesero,
+        componentes: componentes
       };
 
       const response = await fetch(`${url}/producto/adicionDeProducto`, {
@@ -200,7 +215,7 @@
     // Obtener el valor unitario desde el input (sin separadores de miles)
     let precioUnitario = parseFloat(document.getElementById('valUnidad').value) || 0;
 
-    
+
 
     // Convertir la cantidad a número por seguridad
     let cantidadNum = parseInt(cantidad) || 0;
@@ -215,13 +230,14 @@
 
       // Mostrar en el <p> con id="totalProducto"
       document.getElementById('totalProducto').innerText = `$ ${totalFormateado}`;
-    }  *//* else if (cantidad === "") {
-      // Si la cantidad está vacía, no hacer nada
-      document.getElementById('totalProducto').innerText = ''; // Limpiar el total
-    } else {
-      // Si la cantidad no es válida (cero o negativa), puedes mostrar un mensaje o simplemente no hacer nada
-      document.getElementById('totalProducto').innerText = '$ 0f'; // Opcional: Mostrar $0 si la cantidad no es válida
-    } */
+    }  */
+    /* else if (cantidad === "") {
+          // Si la cantidad está vacía, no hacer nada
+          document.getElementById('totalProducto').innerText = ''; // Limpiar el total
+        } else {
+          // Si la cantidad no es válida (cero o negativa), puedes mostrar un mensaje o simplemente no hacer nada
+          document.getElementById('totalProducto').innerText = '$ 0f'; // Opcional: Mostrar $0 si la cantidad no es válida
+        } */
   }
 </script>
 
@@ -238,7 +254,7 @@
 
     const total = cantidad * valorUnidad;
     const totalFormateado = new Intl.NumberFormat('es-CO').format(total);
-    
+
     document.getElementById('totalProducto').innerText = `$ ${totalFormateado}`;
   }
 

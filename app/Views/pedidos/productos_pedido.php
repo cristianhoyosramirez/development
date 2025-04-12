@@ -378,6 +378,82 @@
 
 <?php } ?>
 
+
+<script>
+    const componentesSeleccionados = [];
+
+    function seleccionarComponentes(nombreComponente, componenteId, numeroComponentes) {
+        const productoId = document.getElementById('codigoInternoProd').value;
+
+        if (!productoId) {
+            console.warn('No se ha ingresado un código de producto');
+            return;
+        }
+
+        if (componentesSeleccionados.length >= 2) {
+            alert('Solo puedes agregar hasta 2 componentes.');
+            return;
+        }
+
+        const yaExiste = componentesSeleccionados.some(comp => comp.componenteId === componenteId);
+        if (yaExiste) {
+            alert('Este componente ya ha sido agregado.');
+            return;
+        }
+
+        const componente = {
+            productoId: productoId,
+            componenteId: componenteId,
+            componenteNombre: nombreComponente // <- ¡esto es lo que faltaba!
+        };
+
+        componentesSeleccionados.push(componente);
+
+        document.getElementById('inputComponentes').value = JSON.stringify(componentesSeleccionados);
+
+        renderizarBotonesComponentes();
+    }
+
+    function eliminarComponente(index) {
+        componentesSeleccionados.splice(index, 1);
+        document.getElementById('inputComponentes').value = JSON.stringify(componentesSeleccionados);
+        renderizarBotonesComponentes();
+    }
+
+    function renderizarBotonesComponentes() {
+        const contenedor = document.getElementById('contenedorBotonesComponentes');
+        contenedor.innerHTML = '';
+
+        componentesSeleccionados.forEach((item, index) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'btn btn-success rounded-pill position-relative me-2 mb-2';
+            button.id = `btnComponente${item.componenteId}`;
+
+            button.innerHTML = `
+        ${item.componenteNombre}
+        <span class="badge rounded-pill bg-success" onclick="eliminarComponente(${index})" style="cursor:pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </span>
+    `;
+
+            contenedor.appendChild(button);
+        });
+
+
+    }
+</script>
+
+
+
+
+
+
+
 <script>
     async function finalizarAtributos(id) {
 

@@ -1078,7 +1078,6 @@ class Mesas extends BaseController
 
 
         $tipo_usuario = model('usuariosModel')->select('idtipo')->where('idusuario_sistema', $id_usuario)->first();
-        var_dump($tipo_usuario); exit();
         $numero_pedido = model('productoPedidoModel')->select('numero_de_pedido')->where('id', $id_tabla_producto)->first();
         $configuracion_propina = model('configuracionPedidoModel')->select('calculo_propina')->first();
 

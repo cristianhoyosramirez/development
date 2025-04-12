@@ -1,45 +1,57 @@
+<style>
+    .scroll-container {
+        overflow-x: auto;
+        /* Habilita el desplazamiento horizontal */
+        white-space: nowrap;
+        /* Evita que los botones salten de línea */
+        display: flex;
+        /* Asegura que los botones se alineen en fila */
+        gap: 10px;
+        /* Espacio entre botones */
+        padding-bottom: 10px;
+        /* Espacio entre los botones y el scroll */
+        margin-bottom: 10px;
+        /* Espacio entre los botones y el siguiente contenido */
+    }
+
+    .btn-ajustable {
+        flex-shrink: 0;
+        /* Evita que los botones se reduzcan demasiado */
+        width: auto;
+        /* Permite que el ancho se adapte al contenido */
+        min-width: 120px;
+        /* Define un ancho mínimo */
+        text-align: center;
+        margin-bottom: 5px;
+        /* Espacio entre el botón y el scroll */
+    }
+</style>
+
 <?php foreach ($idAtributos as $keyAtributo):
     $nombre = model('atributosProductoModel')->select('nombre')->where('id', $keyAtributo['id_atributo'])->first();
     $numeroComponentes = model('configuracionAtributosProductoModel')->getNumeroComponentes($idProducto, $keyAtributo['id_atributo']);
     $id = model('configuracionAtributosProductoModel')->getId($idProducto, $keyAtributo['id_atributo']);
+    
 ?>
     <?php if (!empty($nombre)): ?>
 
-        <?php echo $nombre['nombre']; ?>
-        <?php $componentes = model('componentesAtributosProductoModel')->select('nombre,id')->where('id_atributo', $detalle['id'])->findAll(); ?>
 
 
+        <p class="text-orange fw-bold"><?php echo $nombre['nombre']; ?></p>
 
-
-        <tr>
-            <td><?php echo $nombre['nombre']; ?></td>
-            <td>
-                <input type="text"
-                    class="form-control text-center"
-                    value="<?php echo $numeroComponentes[0]['numero_componentes']; ?>"
-                    onkeyup="maxComponentes(this.value,<?php echo $id[0]['id']; ?>)"
-                    onclick="this.select()"
-                    placeholder="1">
-            </td>
-
-            <td>
-
-                <button type="button" class="btn btn-outline-danger btn-icon" onclick="eliminaComponente(<?php echo $id[0]['id'];
-                                                                                                            ?>,<?php echo $idProducto ?>)"><!-- Download SVG icon from http://tabler-icons.io/i/trash -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="4" y1="7" x2="20" y2="7" />
-                        <line x1="10" y1="11" x2="10" y2="17" />
-                        <line x1="14" y1="11" x2="14" y2="17" />
-                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-                    </svg></button>
-
-            </td>
-        </tr>
+        <?php $componentes = model('componentesAtributosProductoModel')->select('nombre,id')->where('id_atributo', $keyAtributo['id_atributo'])->findAll(); ?>
+        <div class="scroll-container">
+            <?php foreach ($componentes as $detalleComponentes): ?>
+                <button type="button"
+                    class="btn btn-outline-primary btn-sm btn-pill btn-ajustable text-truncate"
+                    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                    onclick="seleccionarComponentes('<?php echo $detalleComponentes['nombre']; ?>', <?php echo $detalleComponentes['id']; ?>,<?php $numeroComponentes[0]['numero_componentes']; ?>)">
+                    <?php echo htmlspecialchars($detalleComponentes['nombre'], ENT_QUOTES, 'UTF-8'); ?>
+                </button>
+            <?php endforeach; ?>
+        </div>
     <?php else: ?>
-        <tr>
-            <td colspan="3" class="text-center">No hay atributos disponibles</td>
-        </tr>
+
     <?php endif; ?>
 <?php endforeach ?>
+<br>
